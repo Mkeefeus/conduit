@@ -1,0 +1,290 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+      "sources": [
+        {
+          "json": "The Conduit Package",
+          "abbreviation": "TCP",
+          "full": "The Conduit Package",
+          "authors": ["Malcolm Keefe", "Scott", "Riley"],
+          "convertedBy": ["Malcolm Keefe"],
+          "version": "0.1.0"
+        }
+      ],
+      "edition": "classic",
+      "dateAdded": 1737686781,
+      "dateLastModified": 1737686781
+    },
+    "class": [{
+      "name": "Condiut",
+      "source": "TCP",
+      "classFeatures": [
+        "Flighting Style|Conduit|TCP|1",
+        "Primordial Knowledge|Conduit|TCP|1",
+        "Elemental Mastery|Conduit|TCP|1",
+        "Spellcasting|Conduit|TCP|2",
+        "Energy Imbumement|Conduit|TCP|2",
+        {
+          "classFeature": "Elemental Study|Conduit|TCP|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Conduit|TCP|4",
+        "Extra Attack|Conduit|TCP|5",
+        "Improved Imbuement|Conduit|TCP|5",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|6",
+          "gainSubclassFeature": true
+        },
+        "Overcome Resistance|Conduit|TCP|7",
+        "Ability Score Improvement|Conduit|TCP|8",
+        "Elemental Assault|Conduit|TCP|9",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|10",
+          "gainSubclassFeature": true
+        },
+        "Overpower Immunity|Conduit|TCP|11",
+        "Ability Score Improvement|Conduit|TCP|12",
+        "Non Combat Ability 2|Conduit|TCP|13",
+        "beefy|Conduit|TCP|14",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Conduit|TCP|16",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|17",
+          "gainSubclassFeature": true
+        },
+        "Elemental Barrier|Conduit|TCP|18",
+        "Ability Score Improvement|Conduit|TCP|19",
+        "Energetic Conduit|Conduit|TCP|20"
+
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": ["dex", "int"],
+      "spellcastingAbility": "int",
+      "spellsKnownProgression": [0,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11],
+      "casterProgression": "1/2",
+      "startingProficiencies": {
+        "armor": ["light", "medium", "shield"],
+        "weapons": ["simple", "martial"],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "athletics",
+                "history",
+                "investigation",
+                "nature",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) Scale Mail or (b) Leather Armor",
+          "(a) a martial weapon and a shield (b) two martial weapons",
+          "(a) a dungeoneer's pack or (b) an explorer's pack",
+          "A spellcasting focus"
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13,
+          "or": [
+              {
+                  "str": 13,
+                  "dex": 13
+              }
+          ]
+      },
+        "proficienciesGained": {
+          "weapons": ["simple", "martial"],
+          "armor": ["light", "medium", "shield"]
+        }
+      },
+      "optionalfeatureProgression": [
+				{
+					"name": "Fighting Style",
+					"featureType": [
+						"FS:F"
+					],
+					"progression": {
+						"1": 1
+					}
+				}
+			],
+      "featProgression": [
+				{
+					"name": "Fighting Style",
+					"category": [
+						"FS"
+					],
+					"progression": {
+						"1": 1
+					}
+				}
+      ]
+    }],
+    "classFeature": [
+      {
+        "name": "Flighting Style",
+        "source": "TCP",
+        "level": 1,
+        "className": "Conduit",
+        "classSource": "TCP",
+        "entries": [
+          "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+          {
+            "type": "options",
+            "count": 1,
+            "entries": [
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Archery"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Blind Fighting"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Defense"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Dueling"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Great Weapon Fighting"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Thrown Weapon Fighting"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Two-Weapon Fighting"
+              },
+              {
+                "type": "refOptionalfeature",
+                "optionalfeature": "Unarmed Fighting"
+              }
+            ]
+            }
+        ]
+      },
+      {
+        "name": "Primordial Knowledge",
+        "source": "TCP",
+        "level": 1,
+        "className": "Conduit",
+        "classSource": "TCP",
+        "entries": [
+          "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
+        ]
+      },
+      {
+        "name": "Elemental Mastery",
+        "source": "TCP",
+        "level": 1,
+        "className": "Conduit",
+        "classSource": "TCP",
+        "entries": [
+          "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+          {
+            "type": "list",
+            "items": [
+              "You may create a small pool of acid to slowly corrode a metal",
+              "You may set a flammable object on fire",
+              "You may freeze an area of water or create a small amount of ice",
+              "You may create a thunderclap audible from 100 feet away",
+              "You may shoot a bolt of lightning harmlessly into the air"
+            ]
+          },
+          "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+          {
+            "type": "list",
+            "items": [
+              "You cannot effect an area greater than 1 cubic foot",
+              "The cannot directly effect a creature"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spellcasting",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 2,
+        "entries": [
+          "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
+          {
+            "type": "entries",
+            "name": "Spell Slots",
+            "entries": [
+              "The Conduit table shows how many spell slots you have to cast your Conduit spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Spells Known of 1st Level and Higher",
+            "entries": [
+              "You know two 1st-level spells of your choice from the conduit spell list.",
+              "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+              "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Spellcasting Ability",
+            "entries": [
+              "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+              {
+                "type": "abilityDc",
+                "name": "Spell",
+                "attributes": [
+                  "int"
+                ]
+              },
+              {
+                "type": "abilityAttackMod",
+                "name": "Spell",
+                "attributes": [
+                  "int"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Ritual Casting",
+            "entries": [
+              "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spellcasting Focus",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 2,
+        "entries": [
+          "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+        ]
+      }
+    ],
+    "subclassFeature": []
+}
