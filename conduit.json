@@ -16,20 +16,21 @@
       "dateLastModified": 1737686781
     },
     "class": [{
-      "name": "Condiut",
+      "name": "Conduit",
       "source": "TCP",
       "classFeatures": [
         "Flighting Style|Conduit|TCP|1",
         "Primordial Knowledge|Conduit|TCP|1",
         "Elemental Mastery|Conduit|TCP|1",
         "Spellcasting|Conduit|TCP|2",
-        "Energy Imbumement|Conduit|TCP|2",
+        "Energy Imbuement|Conduit|TCP|2",
         {
           "classFeature": "Elemental Study|Conduit|TCP|3",
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Conduit|TCP|4",
         "Extra Attack|Conduit|TCP|5",
+        "Martial Versatility|Conduit|TCP|5",
         "Improved Imbuement|Conduit|TCP|5",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|6",
@@ -153,7 +154,7 @@
               },
               {
                 "type": "refOptionalfeature",
-                "optionalfeature": "Blind Fighting"
+                "optionalfeature": "Blind Fighting|TCE"
               },
               {
                 "type": "refOptionalfeature",
@@ -169,7 +170,7 @@
               },
               {
                 "type": "refOptionalfeature",
-                "optionalfeature": "Thrown Weapon Fighting"
+                "optionalfeature": "Thrown Weapon Fighting|TCE"
               },
               {
                 "type": "refOptionalfeature",
@@ -177,7 +178,7 @@
               },
               {
                 "type": "refOptionalfeature",
-                "optionalfeature": "Unarmed Fighting"
+                "optionalfeature": "Unarmed Fighting|TCE"
               }
             ]
             }
@@ -283,6 +284,142 @@
         "level": 2,
         "entries": [
           "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+        ]
+      },
+      {
+        "name": "Energy Imbuement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 2,
+        "entries": [
+          "When you reach 2nd level, you may imbue your weapons with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
+        ]
+      },
+      {
+        "name": "Elemental Study",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 3,
+        "entries": [
+          "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 4,
+        "entries": [
+          "When you reach 4th level, and again at th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+        ]
+      },
+      {
+        "name": "Martial Versatility",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+          "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+          "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+          ]
+      },
+      {
+        "name": "Extra Attack",
+        "source": "TCP",
+        "page": 72,
+        "srd": true,
+        "basicRules": true,
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 5,
+        "entries": [
+          "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+          "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+        ]
+      },
+      {
+        "name": "Improved Imbuement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 5,
+        "entries": [
+          "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
+        ]
+      },
+      {
+        "name": "Overcome Resistance",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 7,
+        "entries": [
+          "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
+        ]
+      },
+      {
+        "name": "Elemental Assault",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 9,
+        "entries": [
+          "To be updated"
+        ]
+      },
+      {
+        "name": "Overpower Immunity",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 11,
+        "entries": [
+          "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+        ]
+      },
+      {
+        "name": "Non Combat Ability 2",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 13,
+        "entries": [
+          "To be updated"
+        ]
+      },
+      {
+        "name": "beefy",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 14,
+        "entries": [
+          "To be updated"
+        ]
+      },
+      {
+        "name": "Elemental Barrier",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 18,
+        "entries": [
+          "To be updated"
+        ]
+      },
+      {
+        "name": "Energetic Conduit",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 20,
+        "entries": [
+          "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
         ]
       }
     ],
