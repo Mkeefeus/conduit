@@ -10,5 +10,16 @@
     "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
     "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
     "Ice Prison|Conduit|TCP|Frost Guardian|TCP|17"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "3": ["Armor of Agathys", "Frost Fingers|IDtoF"],
+        "5": ["Rime's Binding Ice|FTD", "Snilloc's Snowball Swarm|XGE"],
+        "9": ["Sleet Storm", "Slow"],
+        "13": ["Ice Storm", "Control Water"],
+        "17": ["Cone of Cold", "Hold Monster"]
+      }
+    }
   ]
 }

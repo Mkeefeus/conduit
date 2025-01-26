@@ -56,6 +56,7 @@ prompt.get(
     const newJson = {
       $schema: 'https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json',
     };
+    const time = Date.now();
     const _meta = {
       sources: [
         {
@@ -64,12 +65,15 @@ prompt.get(
           full: 'The Conduit Package',
           authors: ['Malcolm Keefe', 'Scott', 'Riley'],
           convertedBy: ['Malcolm Keefe'],
-          version: '0.1.0',
+          dateReleased: new Date(time).toISOString().split('T')[0],
+          version: version,
+          color: '0bdbe2',
         },
       ],
       edition: 'classic',
-      dateAdded: 0,
-      dateLastModified: Math.round(Date.now() / 1000),
+      dateAdded: 1737935647,
+      dateLastModified: Math.round(time / 1000),
+      status: 'wip',
     };
     newJson['_meta'] = _meta;
     FOLDERS.forEach((folder) => {

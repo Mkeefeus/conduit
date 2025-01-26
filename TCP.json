@@ -8,12 +8,15 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Riley"],
         "convertedBy": ["Malcolm Keefe"],
-        "version": "0.1.0"
+        "dateReleased": "2025-01-26",
+        "version": "0.0.1",
+        "color": "0bdbe2"
       }
     ],
     "edition": "classic",
-    "dateAdded": 0,
-    "dateLastModified": 1737933730
+    "dateAdded": 1737935647,
+    "dateLastModified": 1737935719,
+    "status": "wip"
   },
   "class": [
     {
@@ -583,6 +586,17 @@
         "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
         "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
         "Ice Prison|Conduit|TCP|Frost Guardian|TCP|17"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Armor of Agathys", "Frost Fingers|IDtoF"],
+            "5": ["Rime's Binding Ice|FTD", "Snilloc's Snowball Swarm|XGE"],
+            "9": ["Sleet Storm", "Slow"],
+            "13": ["Ice Storm", "Control Water"],
+            "17": ["Cone of Cold", "Hold Monster"]
+          }
+        }
       ]
     }
   ],
