@@ -15,8 +15,8 @@
       "colLabels": ["Conduit Level", "Spell"],
       "colStyles": ["col-2 text-center", "col-10"],
       "rows": [
-        ["3rd", "{@spell Armor of Agathys}, {@spell Frost Fingers}"],
-        ["5th", "{@spell Rimes Binding Ice}, {@spell Snilloc's Snowball Swarm}"],
+        ["3rd", "{@spell Armor of Agathys}, {@spell Frost Fingers|IDRotF}"],
+        ["5th", "{@spell Rime's Binding Ice|FTD}, {@spell Snilloc's Snowball Swarm|XGE}"],
         ["9th", "{@spell Sleet Storm}, {@spell Slow}"],
         ["13th", "{@spell Ice Storm}, {@spell Control Water}"],
         ["17th", "{@spell Cone of Cold}, {@spell Hold Monster}"]
