@@ -1,0 +1,50 @@
+{
+  "name": "Spellcasting",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 2,
+  "entries": [
+    "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
+    {
+      "type": "entries",
+      "name": "Spell Slots",
+      "entries": [
+        "The Conduit table shows how many spell slots you have to cast your Conduit spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Spells Known of 1st Level and Higher",
+      "entries": [
+        "You know two 1st-level spells of your choice from the conduit spell list.",
+        "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+        "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Spellcasting Ability",
+      "entries": [
+        "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+        {
+          "type": "abilityDc",
+          "name": "Spell",
+          "attributes": ["int"]
+        },
+        {
+          "type": "abilityAttackMod",
+          "name": "Spell",
+          "attributes": ["int"]
+        }
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Ritual Casting",
+      "entries": [
+        "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Overcome Resistance",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 7,
+  "entries": [
+    "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
+  ]
+}

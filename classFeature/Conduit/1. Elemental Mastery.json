@@ -1,0 +1,25 @@
+{
+  "name": "Elemental Mastery",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 1,
+  "entries": [
+    "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+    {
+      "type": "list",
+      "items": [
+        "You may create a small pool of acid to slowly corrode a metal",
+        "You may set a flammable object on fire",
+        "You may freeze an area of water or create a small amount of ice",
+        "You may create a thunderclap audible from 100 feet away",
+        "You may shoot a bolt of lightning harmlessly into the air"
+      ]
+    },
+    "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+    {
+      "type": "list",
+      "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
+    }
+  ]
+}

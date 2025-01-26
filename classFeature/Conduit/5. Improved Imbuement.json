@@ -1,0 +1,10 @@
+{
+  "name": "Improved Imbuement",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 5,
+  "entries": [
+    "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
+  ]
+}

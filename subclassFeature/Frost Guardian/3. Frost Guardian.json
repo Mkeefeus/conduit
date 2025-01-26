@@ -1,0 +1,25 @@
+{
+  "name": "Frost Guardian",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Frost Guardian",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Frost Guardian Spells|Conduit|TCP|Frost Guardian|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Icy Pillars|Conduit|TCP|Frost Guardian|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Freezing Grasp|Conduit|TCP|Frost Guardian|TCP|3"
+    }
+  ]
+}

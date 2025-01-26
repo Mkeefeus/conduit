@@ -1,0 +1,12 @@
+{
+  "name": "Martial Versatility",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 5,
+  "isClassFeatureVariant": true,
+  "entries": [
+    "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+    "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+  ]
+}

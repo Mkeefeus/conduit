@@ -1,0 +1,10 @@
+{
+  "name": "Elemental Study",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 3,
+  "entries": [
+    "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
+  ]
+}

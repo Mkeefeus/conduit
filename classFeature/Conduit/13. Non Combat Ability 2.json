@@ -1,0 +1,8 @@
+{
+  "name": "Non Combat Ability 2",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 13,
+  "entries": ["To be updated"]
+}

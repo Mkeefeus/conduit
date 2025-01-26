@@ -3,7 +3,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "The Conduit Package",
+        "json": "TCP",
         "abbreviation": "TCP",
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Riley"],
@@ -12,32 +12,61 @@
       }
     ],
     "edition": "classic",
-    "dateAdded": 1737686781,
-    "dateLastModified": 1737686781
+    "dateAdded": 0,
+    "dateLastModified": 1737933337
   },
   "class": [
     {
       "name": "Conduit",
       "source": "TCP",
-      "edition": "classic",
+      "classFeatures": [
+        "Fighting Style|Conduit|TCP|1",
+        "Primordial Knowledge|Conduit|TCP|1",
+        "Elemental Mastery|Conduit|TCP|1",
+        "Spellcasting|Conduit|TCP|2",
+        "Spellcasting Focus|Conduit|TCP|2",
+        "Energy Imbuement|Conduit|TCP|2",
+        {
+          "classFeature": "Elemental Study|Conduit|TCP|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Conduit|TCP|4",
+        "Extra Attack|Conduit|TCP|5",
+        "Martial Versatility|Conduit|TCP|5",
+        "Improved Imbuement|Conduit|TCP|5",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|6",
+          "gainSubclassFeature": true
+        },
+        "Overcome Resistance|Conduit|TCP|7",
+        "Ability Score Improvement|Conduit|TCP|8",
+        "Elemental Assault|Conduit|TCP|9",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|10",
+          "gainSubclassFeature": true
+        },
+        "Overpower Immunity|Conduit|TCP|11",
+        "Ability Score Improvement|Conduit|TCP|12",
+        "Non Combat Ability 2|Conduit|TCP|13",
+        "beefy|Conduit|TCP|14",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Conduit|TCP|16",
+        {
+          "classFeature": "Elemental Study Feature|Conduit|TCP|17",
+          "gainSubclassFeature": true
+        },
+        "Elemental Barrier|Conduit|TCP|18",
+        "Ability Score Improvement|Conduit|TCP|19",
+        "Energetic Conduit|Conduit|TCP|20"
+      ],
       "hd": {
         "number": 1,
         "faces": 8
       },
-
       "proficiency": ["dex", "int"],
-      "spellcastingAbility": "int",
-      "casterProgression": "1/2",
-      "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
-      "optionalfeatureProgression": [
-        {
-          "name": "Fighting Style",
-          "featureType": ["FS:F"],
-          "progression": {
-            "1": 1
-          }
-        }
-      ],
       "startingProficiencies": {
         "armor": ["light", "medium", "shield"],
         "weapons": ["simple", "martial"],
@@ -105,6 +134,24 @@
           "armor": ["light", "medium", "shield"]
         }
       },
+      "casterProgression": "1/2",
+      "spellcastingAbility": "int",
+      "classSpells": [
+        {
+          "className": "Warlock",
+          "classSource": "PHB"
+        }
+      ],
+      "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
+      "optionalfeatureProgression": [
+        {
+          "name": "Fighting Style",
+          "featureType": ["FS:F"],
+          "progression": {
+            "1": 1
+          }
+        }
+      ],
       "subclassTitle": "Elemental Study",
       "featProgression": [
         {
@@ -173,52 +220,35 @@
             [4, 3, 3, 3, 2]
           ]
         }
-      ],
-      "classFeatures": [
-        "Flighting Style|Conduit|TCP|1",
-        "Primordial Knowledge|Conduit|TCP|1",
-        "Elemental Mastery|Conduit|TCP|1",
-        "Spellcasting|Conduit|TCP|2",
-        "Energy Imbuement|Conduit|TCP|2",
-        {
-          "classFeature": "Elemental Study|Conduit|TCP|3",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Conduit|TCP|4",
-        "Extra Attack|Conduit|TCP|5",
-        "Martial Versatility|Conduit|TCP|5",
-        "Improved Imbuement|Conduit|TCP|5",
-        {
-          "classFeature": "Elemental Study Feature|Conduit|TCP|6",
-          "gainSubclassFeature": true
-        },
-        "Overcome Resistance|Conduit|TCP|7",
-        "Ability Score Improvement|Conduit|TCP|8",
-        "Elemental Assault|Conduit|TCP|9",
-        {
-          "classFeature": "Elemental Study Feature|Conduit|TCP|10",
-          "gainSubclassFeature": true
-        },
-        "Overpower Immunity|Conduit|TCP|11",
-        "Ability Score Improvement|Conduit|TCP|12",
-        "Non Combat Ability 2|Conduit|TCP|13",
-        "beefy|Conduit|TCP|14",
-        {
-          "classFeature": "Elemental Study Feature|Conduit|TCP|15",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Conduit|TCP|16",
-        {
-          "classFeature": "Elemental Study Feature|Conduit|TCP|17",
-          "gainSubclassFeature": true
-        },
-        "Elemental Barrier|Conduit|TCP|18",
-        "Ability Score Improvement|Conduit|TCP|19",
-        "Energetic Conduit|Conduit|TCP|20"
       ]
     }
   ],
   "classFeature": [
+    {
+      "name": "Elemental Mastery",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+        {
+          "type": "list",
+          "items": [
+            "You may create a small pool of acid to slowly corrode a metal",
+            "You may set a flammable object on fire",
+            "You may freeze an area of water or create a small amount of ice",
+            "You may create a thunderclap audible from 100 feet away",
+            "You may shoot a bolt of lightning harmlessly into the air"
+          ]
+        },
+        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+        {
+          "type": "list",
+          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
+        }
+      ]
+    },
     {
       "name": "Fighting Style",
       "source": "TCP",
@@ -249,23 +279,11 @@
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Protection"
-            },
-            {
-              "type": "refOptionalfeature",
               "optionalfeature": "Two-Weapon Fighting"
             },
             {
               "type": "refOptionalfeature",
               "optionalfeature": "Blind Fighting|TCE"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Interception|TCE"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Superior Technique|TCE"
             },
             {
               "type": "refOptionalfeature",
@@ -282,36 +300,31 @@
     {
       "name": "Primordial Knowledge",
       "source": "TCP",
-      "level": 1,
       "className": "Conduit",
       "classSource": "TCP",
+      "level": 1,
       "entries": [
         "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
       ]
     },
     {
-      "name": "Elemental Mastery",
+      "name": "Energy Imbuement",
       "source": "TCP",
-      "level": 1,
       "className": "Conduit",
       "classSource": "TCP",
+      "level": 2,
       "entries": [
-        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
-        {
-          "type": "list",
-          "items": [
-            "You may create a small pool of acid to slowly corrode a metal",
-            "You may set a flammable object on fire",
-            "You may freeze an area of water or create a small amount of ice",
-            "You may create a thunderclap audible from 100 feet away",
-            "You may shoot a bolt of lightning harmlessly into the air"
-          ]
-        },
-        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
-        {
-          "type": "list",
-          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
-        }
+        "When you reach 2nd level, you may imbue your weapons with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
+      ]
+    },
+    {
+      "name": "Spellcasting Focus",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
       ]
     },
     {
@@ -365,26 +378,6 @@
       ]
     },
     {
-      "name": "Spellcasting Focus",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "entries": [
-        "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-      ]
-    },
-    {
-      "name": "Energy Imbuement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "entries": [
-        "When you reach 2nd level, you may imbue your weapons with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
-      ]
-    },
-    {
       "name": "Elemental Study",
       "source": "TCP",
       "className": "Conduit",
@@ -406,18 +399,6 @@
       ]
     },
     {
-      "name": "Martial Versatility",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 4,
-      "isClassFeatureVariant": true,
-      "entries": [
-        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
-        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
-      ]
-    },
-    {
       "name": "Extra Attack",
       "source": "TCP",
       "className": "Conduit",
@@ -429,14 +410,6 @@
       ]
     },
     {
-      "name": "Elemental Study Feature",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 6,
-      "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
-    },
-    {
       "name": "Improved Imbuement",
       "source": "TCP",
       "className": "Conduit",
@@ -445,6 +418,26 @@
       "entries": [
         "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
       ]
+    },
+    {
+      "name": "Martial Versatility",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 5,
+      "isClassFeatureVariant": true,
+      "entries": [
+        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 6,
+      "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
     },
     {
       "name": "Overcome Resistance",
@@ -584,39 +577,27 @@
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "edition": "classic",
       "subclassFeatures": [
-        "Frost Guardian|Conduit|TCP|3",
-        "Comforting Cold|Conduit|TCP|6",
-        "Shattering Frost|Conduit|TCP|10",
-        "Frozen Form|Conduit|TCP|15",
-        "Ice Prison|Conduit|TCP|17"
+        "Frost Guardian|Conduit|TCP|Frost Guardian|TCP|3",
+        "Comforting Cold|Conduit|TCP|Frost Guardian|TCP|6",
+        "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
+        "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
+        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|17"
       ]
     }
   ],
   "subclassFeature": [
     {
-      "name": "Frost Guardian",
+      "name": "Freezing Grasp",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "subclassShortName": "Frost Guardian",
       "subclassSource": "TCP",
       "level": 3,
+      "header": 1,
       "entries": [
-        "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Frost Guardian Spells"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Icy Pillars"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Freezing Grasp"
-        }
+        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a long rest."
       ]
     },
     {
@@ -646,6 +627,31 @@
       ]
     },
     {
+      "name": "Frost Guardian",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Frost Guardian Spells|Conduit|TCP|Frost Guardian|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Icy Pillars|Conduit|TCP|Frost Guardian|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Freezing Grasp|Conduit|TCP|Frost Guardian|TCP|3"
+        }
+      ]
+    },
+    {
       "name": "Icy Pillars",
       "source": "TCP",
       "className": "Conduit",
@@ -658,19 +664,6 @@
         "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses of them on a long rest and one use on a short rest.",
         "As an action, you can create up to as many pillars as you have available. Pick points you can see within 60 feet of you to create the Icy Pillars. Each pillar can be either 5 ft tall and 10 ft wide or 10 ft tall and 5 ft wide. The pillars all have HP equal to 5 times your level in this class and an AC of 14. The pillars last for up to a minute, after which they melt harmlessly into the ground.",
         "If an enemy starts their turn within 5 ft of a pillar then their movement speed is reduced by 10 ft until the end of their turn."
-      ]
-    },
-    {
-      "name": "Freezing Grasp",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a long rest."
       ]
     },
     {

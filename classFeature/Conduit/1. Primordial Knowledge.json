@@ -1,0 +1,10 @@
+{
+  "name": "Primordial Knowledge",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 1,
+  "entries": [
+    "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
+  ]
+}

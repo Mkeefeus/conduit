@@ -1,0 +1,185 @@
+{
+  "name": "Conduit",
+  "source": "TCP",
+  "classFeatures": [
+    "Fighting Style|Conduit|TCP|1",
+    "Primordial Knowledge|Conduit|TCP|1",
+    "Elemental Mastery|Conduit|TCP|1",
+    "Spellcasting|Conduit|TCP|2",
+    "Spellcasting Focus|Conduit|TCP|2",
+    "Energy Imbuement|Conduit|TCP|2",
+    {
+      "classFeature": "Elemental Study|Conduit|TCP|3",
+      "gainSubclassFeature": true
+    },
+    "Ability Score Improvement|Conduit|TCP|4",
+    "Extra Attack|Conduit|TCP|5",
+    "Martial Versatility|Conduit|TCP|5",
+    "Improved Imbuement|Conduit|TCP|5",
+    {
+      "classFeature": "Elemental Study Feature|Conduit|TCP|6",
+      "gainSubclassFeature": true
+    },
+    "Overcome Resistance|Conduit|TCP|7",
+    "Ability Score Improvement|Conduit|TCP|8",
+    "Elemental Assault|Conduit|TCP|9",
+    {
+      "classFeature": "Elemental Study Feature|Conduit|TCP|10",
+      "gainSubclassFeature": true
+    },
+    "Overpower Immunity|Conduit|TCP|11",
+    "Ability Score Improvement|Conduit|TCP|12",
+    "Non Combat Ability 2|Conduit|TCP|13",
+    "beefy|Conduit|TCP|14",
+    {
+      "classFeature": "Elemental Study Feature|Conduit|TCP|15",
+      "gainSubclassFeature": true
+    },
+    "Ability Score Improvement|Conduit|TCP|16",
+    {
+      "classFeature": "Elemental Study Feature|Conduit|TCP|17",
+      "gainSubclassFeature": true
+    },
+    "Elemental Barrier|Conduit|TCP|18",
+    "Ability Score Improvement|Conduit|TCP|19",
+    "Energetic Conduit|Conduit|TCP|20"
+  ],
+  "hd": {
+    "number": 1,
+    "faces": 8
+  },
+  "proficiency": ["dex", "int"],
+  "startingProficiencies": {
+    "armor": ["light", "medium", "shield"],
+    "weapons": ["simple", "martial"],
+    "skills": [
+      {
+        "choose": {
+          "from": ["acrobatics", "athletics", "history", "investigation", "nature", "survival"],
+          "count": 2
+        }
+      }
+    ]
+  },
+  "startingEquipment": {
+    "additionalFromBackground": true,
+    "default": [
+      "(a) Scale Mail or (b) Leather Armor",
+      "(a) a martial weapon and a shield (b) two martial weapons",
+      "(a) a dungeoneer's pack or (b) an explorer's pack",
+      "A druidic focus"
+    ],
+    "defaultData": [
+      {
+        "a": ["scale mail|phb"],
+        "b": ["leather armor|phb"]
+      },
+      {
+        "a": [
+          {
+            "equipmentType": "weaponMartial"
+          },
+          "shield|phb"
+        ],
+        "b": [
+          {
+            "equipmentType": "weaponMartial",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "a": ["dungeoneer's pack|phb"],
+        "b": ["explorer's pack|phb"]
+      },
+      {
+        "_": [
+          {
+            "equipmentType": "focusSpellcastingDruidic"
+          }
+        ]
+      }
+    ]
+  },
+  "multiclassing": {
+    "requirements": {
+      "int": 13,
+      "or": [
+        {
+          "str": 13,
+          "dex": 13
+        }
+      ]
+    },
+    "proficienciesGained": {
+      "weapons": ["simple", "martial"],
+      "armor": ["light", "medium", "shield"]
+    }
+  },
+  "casterProgression": "1/2",
+  "spellcastingAbility": "int",
+  "classSpells": [
+    {
+      "className": "Warlock",
+      "classSource": "PHB"
+    }
+  ],
+  "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
+  "optionalfeatureProgression": [
+    {
+      "name": "Fighting Style",
+      "featureType": ["FS:F"],
+      "progression": {
+        "1": 1
+      }
+    }
+  ],
+  "subclassTitle": "Elemental Study",
+  "featProgression": [
+    {
+      "name": "Fighting Style",
+      "category": ["FS"],
+      "progression": {
+        "1": 1
+      }
+    }
+  ],
+  "classTableGroups": [
+    {
+      "colLabels": ["{@filter Spells Known|spells|class=conduit}"],
+      "rows": [[0], [2], [3], [3], [4], [4], [5], [5], [6], [6], [7], [7], [8], [8], [9], [9], [10], [10], [11], [11]]
+    },
+    {
+      "title": "Spell Slots per Spell Level",
+      "colLabels": [
+        "{@filter 1st|spells|level=1|class=Ranger}",
+        "{@filter 2nd|spells|level=2|class=Ranger}",
+        "{@filter 3rd|spells|level=3|class=Ranger}",
+        "{@filter 4th|spells|level=4|class=Ranger}",
+        "{@filter 5th|spells|level=5|class=Ranger}"
+      ],
+      "rowsSpellProgression": [
+        [0, 0, 0, 0, 0],
+        [2, 0, 0, 0, 0],
+        [3, 0, 0, 0, 0],
+        [3, 0, 0, 0, 0],
+        [4, 2, 0, 0, 0],
+        [4, 2, 0, 0, 0],
+        [4, 3, 0, 0, 0],
+        [4, 3, 0, 0, 0],
+        [4, 3, 2, 0, 0],
+        [4, 3, 2, 0, 0],
+        [4, 3, 3, 0, 0],
+        [4, 3, 3, 0, 0],
+        [4, 3, 3, 1, 0],
+        [4, 3, 3, 1, 0],
+        [4, 3, 3, 2, 0],
+        [4, 3, 3, 2, 0],
+        [4, 3, 3, 3, 1],
+        [4, 3, 3, 3, 1],
+        [4, 3, 3, 3, 2],
+        [4, 3, 3, 3, 2]
+      ]
+    }
+  ]
+}

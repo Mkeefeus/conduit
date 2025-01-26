@@ -1,0 +1,8 @@
+{
+  "name": "beefy",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 14,
+  "entries": ["To be updated"]
+}
