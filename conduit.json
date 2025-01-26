@@ -325,7 +325,8 @@
         "classSource": "TCP",
         "level": 4,
         "entries": [
-          "When you reach 4th level, and again at th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
         ]
       },
       {
@@ -343,9 +344,6 @@
       {
         "name": "Extra Attack",
         "source": "TCP",
-        "page": 72,
-        "srd": true,
-        "basicRules": true,
         "className": "Conduit",
         "classSource": "TCP",
         "level": 5,
@@ -375,6 +373,17 @@
         ]
       },
       {
+        "name": "Ability Score Improvement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 8,
+        "entries": [
+          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+        ]
+      },
+      {
         "name": "Elemental Assault",
         "source": "TCP",
         "className": "Conduit",
@@ -392,6 +401,17 @@
         "level": 11,
         "entries": [
           "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 12,
+        "entries": [
+          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
         ]
       },
       {
@@ -415,6 +435,17 @@
         ]
       },
       {
+        "name": "Ability Score Improvement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 16,
+        "entries": [
+          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+        ]
+      },
+      {
         "name": "Elemental Barrier",
         "source": "TCP",
         "className": "Conduit",
@@ -422,6 +453,17 @@
         "level": 18,
         "entries": [
           "To be updated"
+        ]
+      },
+      {
+        "name": "Ability Score Improvement",
+        "source": "TCP",
+        "className": "Conduit",
+        "classSource": "TCP",
+        "level": 19,
+        "entries": [
+          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
         ]
       },
       {
