@@ -1,23 +1,179 @@
 {
-    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
-    "_meta": {
-      "sources": [
-        {
-          "json": "The Conduit Package",
-          "abbreviation": "TCP",
-          "full": "The Conduit Package",
-          "authors": ["Malcolm Keefe", "Scott", "Riley"],
-          "convertedBy": ["Malcolm Keefe"],
-          "version": "0.1.0"
-        }
-      ],
-      "edition": "classic",
-      "dateAdded": 1737686781,
-      "dateLastModified": 1737686781
-    },
-    "class": [{
+  "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+  "_meta": {
+    "sources": [
+      {
+        "json": "The Conduit Package",
+        "abbreviation": "TCP",
+        "full": "The Conduit Package",
+        "authors": ["Malcolm Keefe", "Scott", "Riley"],
+        "convertedBy": ["Malcolm Keefe"],
+        "version": "0.1.0"
+      }
+    ],
+    "edition": "classic",
+    "dateAdded": 1737686781,
+    "dateLastModified": 1737686781
+  },
+  "class": [
+    {
       "name": "Conduit",
       "source": "TCP",
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+
+      "proficiency": ["dex", "int"],
+      "spellcastingAbility": "int",
+      "casterProgression": "1/2",
+      "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
+      "optionalfeatureProgression": [
+        {
+          "name": "Fighting Style",
+          "featureType": ["FS:F"],
+          "progression": {
+            "1": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": ["light", "medium", "shield"],
+        "weapons": ["simple", "martial"],
+        "skills": [
+          {
+            "choose": {
+              "from": ["acrobatics", "athletics", "history", "investigation", "nature", "survival"],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) Scale Mail or (b) Leather Armor",
+          "(a) a martial weapon and a shield (b) two martial weapons",
+          "(a) a dungeoneer's pack or (b) an explorer's pack",
+          "A druidic focus"
+        ],
+        "defaultData": [
+          {
+            "a": ["scale mail|phb"],
+            "b": ["leather armor|phb"]
+          },
+          {
+            "a": [
+              {
+                "equipmentType": "weaponMartial"
+              },
+              "shield|phb"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponMartial",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "a": ["dungeoneer's pack|phb"],
+            "b": ["explorer's pack|phb"]
+          },
+          {
+            "_": [
+              {
+                "equipmentType": "focusSpellcastingDruidic"
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13,
+          "or": [
+            {
+              "str": 13,
+              "dex": 13
+            }
+          ]
+        },
+        "proficienciesGained": {
+          "weapons": ["simple", "martial"],
+          "armor": ["light", "medium", "shield"]
+        }
+      },
+      "subclassTitle": "Elemental Study",
+      "featProgression": [
+        {
+          "name": "Fighting Style",
+          "category": ["FS"],
+          "progression": {
+            "1": 1
+          }
+        }
+      ],
+      "classTableGroups": [
+        {
+          "colLabels": ["{@filter Spells Known|spells|class=conduit}"],
+          "rows": [
+            [0],
+            [2],
+            [3],
+            [3],
+            [4],
+            [4],
+            [5],
+            [5],
+            [6],
+            [6],
+            [7],
+            [7],
+            [8],
+            [8],
+            [9],
+            [9],
+            [10],
+            [10],
+            [11],
+            [11]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Ranger}",
+            "{@filter 2nd|spells|level=2|class=Ranger}",
+            "{@filter 3rd|spells|level=3|class=Ranger}",
+            "{@filter 4th|spells|level=4|class=Ranger}",
+            "{@filter 5th|spells|level=5|class=Ranger}"
+          ],
+          "rowsSpellProgression": [
+            [0, 0, 0, 0, 0],
+            [2, 0, 0, 0, 0],
+            [3, 0, 0, 0, 0],
+            [3, 0, 0, 0, 0],
+            [4, 2, 0, 0, 0],
+            [4, 2, 0, 0, 0],
+            [4, 3, 0, 0, 0],
+            [4, 3, 0, 0, 0],
+            [4, 3, 2, 0, 0],
+            [4, 3, 2, 0, 0],
+            [4, 3, 3, 0, 0],
+            [4, 3, 3, 0, 0],
+            [4, 3, 3, 1, 0],
+            [4, 3, 3, 1, 0],
+            [4, 3, 3, 2, 0],
+            [4, 3, 3, 2, 0],
+            [4, 3, 3, 3, 1],
+            [4, 3, 3, 3, 1],
+            [4, 3, 3, 3, 2],
+            [4, 3, 3, 3, 2]
+          ]
+        }
+      ],
       "classFeatures": [
         "Flighting Style|Conduit|TCP|1",
         "Primordial Knowledge|Conduit|TCP|1",
@@ -59,463 +215,367 @@
         "Elemental Barrier|Conduit|TCP|18",
         "Ability Score Improvement|Conduit|TCP|19",
         "Energetic Conduit|Conduit|TCP|20"
-
-      ],
-      "hd": {
-        "number": 1,
-        "faces": 8
-      },
-      "proficiency": ["dex", "int"],
-      "spellcastingAbility": "int",
-      "spellsKnownProgression": [0,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11],
-      "casterProgression": "1/2",
-      "startingProficiencies": {
-        "armor": ["light", "medium", "shield"],
-        "weapons": ["simple", "martial"],
-        "skills": [
-          {
-            "choose": {
-              "from": [
-                "acrobatics",
-                "athletics",
-                "history",
-                "investigation",
-                "nature",
-                "survival"
-              ],
-              "count": 2
-            }
-          }
-        ]
-      },
-      "startingEquipment": {
-        "additionalFromBackground": true,
-        "default": [
-          "(a) Scale Mail or (b) Leather Armor",
-          "(a) a martial weapon and a shield (b) two martial weapons",
-          "(a) a dungeoneer's pack or (b) an explorer's pack",
-          "A spellcasting focus"
-        ]
-      },
-      "multiclassing": {
-        "requirements": {
-          "int": 13,
-          "or": [
-              {
-                  "str": 13,
-                  "dex": 13
-              }
-          ]
-      },
-        "proficienciesGained": {
-          "weapons": ["simple", "martial"],
-          "armor": ["light", "medium", "shield"]
-        }
-      },
-      "optionalfeatureProgression": [
-				{
-					"name": "Fighting Style",
-					"featureType": [
-						"FS:F"
-					],
-					"progression": {
-						"1": 1
-					}
-				}
-			],
-      "featProgression": [
-				{
-					"name": "Fighting Style",
-					"category": [
-						"FS"
-					],
-					"progression": {
-						"1": 1
-					}
-				}
       ]
-    }],
-    "classFeature": [
-      {
-        "name": "Fighting Style",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 1,
-        "entries": [
-          "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
-          {
-            "type": "options",
-            "count": 1,
-            "entries": [
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Archery"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Defense"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Dueling"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Great Weapon Fighting"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Protection"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Two-Weapon Fighting"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Blind Fighting|TCE"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Interception|TCE"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Superior Technique|TCE"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Thrown Weapon Fighting|TCE"
-              },
-              {
-                "type": "refOptionalfeature",
-                "optionalfeature": "Unarmed Fighting|TCE"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Primordial Knowledge",
-        "source": "TCP",
-        "level": 1,
-        "className": "Conduit",
-        "classSource": "TCP",
-        "entries": [
-          "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
-        ]
-      },
-      {
-        "name": "Elemental Mastery",
-        "source": "TCP",
-        "level": 1,
-        "className": "Conduit",
-        "classSource": "TCP",
-        "entries": [
-          "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
-          {
-            "type": "list",
-            "items": [
-              "You may create a small pool of acid to slowly corrode a metal",
-              "You may set a flammable object on fire",
-              "You may freeze an area of water or create a small amount of ice",
-              "You may create a thunderclap audible from 100 feet away",
-              "You may shoot a bolt of lightning harmlessly into the air"
-            ]
-          },
-          "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
-          {
-            "type": "list",
-            "items": [
-              "You cannot effect an area greater than 1 cubic foot",
-              "The cannot directly effect a creature"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spellcasting",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 2,
-        "entries": [
-          "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
-          {
-            "type": "entries",
-            "name": "Spell Slots",
-            "entries": [
-              "The Conduit table shows how many spell slots you have to cast your Conduit spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
-            ]
-          },
-          {
-            "type": "entries",
-            "name": "Spells Known of 1st Level and Higher",
-            "entries": [
-              "You know two 1st-level spells of your choice from the conduit spell list.",
-              "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-              "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
-            ]
-          },
-          {
-            "type": "entries",
-            "name": "Spellcasting Ability",
-            "entries": [
-              "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
-              {
-                "type": "abilityDc",
-                "name": "Spell",
-                "attributes": [
-                  "int"
-                ]
-              },
-              {
-                "type": "abilityAttackMod",
-                "name": "Spell",
-                "attributes": [
-                  "int"
-                ]
-              }
-            ]
-          },
-          {
-            "type": "entries",
-            "name": "Ritual Casting",
-            "entries": [
-              "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Spellcasting Focus",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 2,
-        "entries": [
-          "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-        ]
-      },
-      {
-        "name": "Energy Imbuement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 2,
-        "entries": [
-          "When you reach 2nd level, you may imbue your weapons with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
-        ]
-      },
-      {
-        "name": "Elemental Study",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 3,
-        "entries": [
-          "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
-        ]
-      },
-      {
-        "name": "Ability Score Improvement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 4,
-        "entries": [
-          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-        ]
-      },
-      {
-        "name": "Martial Versatility",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 4,
-        "isClassFeatureVariant": true,
-        "entries": [
-          "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
-          "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Fighting Style",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+        {
+          "type": "options",
+          "count": 1,
+          "entries": [
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Archery"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Defense"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Dueling"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Great Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Protection"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Two-Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Blind Fighting|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Interception|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Superior Technique|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Thrown Weapon Fighting|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Unarmed Fighting|TCE"
+            }
           ]
-      },
-      {
-        "name": "Extra Attack",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 5,
-        "entries": [
-          "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
-          "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
-        ]
-      },
-      {
-        "name": "Elemental Study Feature",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 6,
-        "entries": [
-          "At 6th level, you gain a feature based on your Elemental Study."
-        ]
-      },
-      {
-        "name": "Improved Imbuement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 5,
-        "entries": [
-          "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
-        ]
-      },
-      {
-        "name": "Overcome Resistance",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 7,
-        "entries": [
-          "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
-        ]
-      },
-      {
-        "name": "Ability Score Improvement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 8,
-        "entries": [
-          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-        ]
-      },
-      {
-        "name": "Elemental Assault",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 9,
-        "entries": [
-          "To be updated"
-        ]
-      },
-      {
-        "name": "Elemental Study Feature",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 10,
-        "entries": [
-          "At 10th level, you gain a feature based on your Elemental Study."
-        ]
-      },
-      {
-        "name": "Overpower Immunity",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 11,
-        "entries": [
-          "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
-        ]
-      },
-      {
-        "name": "Ability Score Improvement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 12,
-        "entries": [
-          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-        ]
-      },
-      {
-        "name": "Non Combat Ability 2",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 13,
-        "entries": [
-          "To be updated"
-        ]
-      },
-      {
-        "name": "beefy",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 14,
-        "entries": [
-          "To be updated"
-        ]
-      },
-      {
-        "name": "Elemental Study Feature",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 15,
-        "entries": [
-          "At 15th level, you gain a feature based on your Elemental Study."
-        ]
-      },
-      {
-        "name": "Ability Score Improvement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 16,
-        "entries": [
-          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-        ]
-      },
-      {
-        "name": "Elemental Study Feature",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 17,
-        "entries": [
-          "At 17th level, you gain a feature based on your Elemental Study."
-        ]
-      },
-      {
-        "name": "Elemental Barrier",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 18,
-        "entries": [
-          "To be updated"
-        ]
-      },
-      {
-        "name": "Ability Score Improvement",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 19,
-        "entries": [
-          "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-          "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-        ]
-      },
-      {
-        "name": "Energetic Conduit",
-        "source": "TCP",
-        "className": "Conduit",
-        "classSource": "TCP",
-        "level": 20,
-        "entries": [
-          "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
-        ]
-      }
-    ],
-    "subclassFeature": []
+        }
+      ]
+    },
+    {
+      "name": "Primordial Knowledge",
+      "source": "TCP",
+      "level": 1,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "entries": [
+        "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
+      ]
+    },
+    {
+      "name": "Elemental Mastery",
+      "source": "TCP",
+      "level": 1,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "entries": [
+        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+        {
+          "type": "list",
+          "items": [
+            "You may create a small pool of acid to slowly corrode a metal",
+            "You may set a flammable object on fire",
+            "You may freeze an area of water or create a small amount of ice",
+            "You may create a thunderclap audible from 100 feet away",
+            "You may shoot a bolt of lightning harmlessly into the air"
+          ]
+        },
+        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+        {
+          "type": "list",
+          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
+        }
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
+        {
+          "type": "entries",
+          "name": "Spell Slots",
+          "entries": [
+            "The Conduit table shows how many spell slots you have to cast your Conduit spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spells Known of 1st Level and Higher",
+          "entries": [
+            "You know two 1st-level spells of your choice from the conduit spell list.",
+            "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "entries": [
+            "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": ["int"]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": ["int"]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "entries": [
+            "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spellcasting Focus",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+      ]
+    },
+    {
+      "name": "Energy Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "When you reach 2nd level, you may imbue your weapons with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
+      ]
+    },
+    {
+      "name": "Elemental Study",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Martial Versatility",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 4,
+      "isClassFeatureVariant": true,
+      "entries": [
+        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 5,
+      "entries": [
+        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+        "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 6,
+      "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Improved Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 5,
+      "entries": [
+        "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
+      ]
+    },
+    {
+      "name": "Overcome Resistance",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 7,
+      "entries": [
+        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 8,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Elemental Assault",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 9,
+      "entries": ["To be updated"]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 10,
+      "entries": ["At 10th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Overpower Immunity",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 11,
+      "entries": [
+        "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 12,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Non Combat Ability 2",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 13,
+      "entries": ["To be updated"]
+    },
+    {
+      "name": "beefy",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 14,
+      "entries": ["To be updated"]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 15,
+      "entries": ["At 15th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 16,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 17,
+      "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Elemental Barrier",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 18,
+      "entries": ["To be updated"]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 19,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Energetic Conduit",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 20,
+      "entries": [
+        "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
+      ]
+    }
+  ],
+  "subclassFeature": []
 }
