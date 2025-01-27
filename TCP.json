@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737941203,
+    "dateLastModified": 1737941830,
     "status": "wip"
   },
   "class": [
@@ -27,7 +27,6 @@
         "Primordial Knowledge|Conduit|TCP|1",
         "Elemental Mastery|Conduit|TCP|1",
         "Spellcasting|Conduit|TCP|2",
-        "Spellcasting Focus|Conduit|TCP|2",
         "Energy Imbuement|Conduit|TCP|2",
         {
           "classFeature": "Elemental Study|Conduit|TCP|3",
@@ -350,16 +349,6 @@
       ]
     },
     {
-      "name": "Spellcasting Focus",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "entries": [
-        "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-      ]
-    },
-    {
       "name": "Spellcasting",
       "source": "TCP",
       "className": "Conduit",
@@ -371,7 +360,7 @@
           "type": "entries",
           "name": "Spell Slots",
           "entries": [
-            "The Conduit table shows how many spell slots you have to cast your Conduit spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+            "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=conduit} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
           ]
         },
         {
@@ -405,6 +394,13 @@
           "name": "Ritual Casting",
           "entries": [
             "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "entries": [
+            "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
           ]
         }
       ]
