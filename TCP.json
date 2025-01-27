@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Riley"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-01-26",
+        "dateReleased": "2025-01-27",
         "version": "0.0.1",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737935719,
+    "dateLastModified": 1737941203,
     "status": "wip"
   },
   "class": [
@@ -140,10 +140,39 @@
       "casterProgression": "1/2",
       "spellcastingAbility": "int",
       "classSpells": [
-        {
-          "className": "Warlock",
-          "classSource": "PHB"
-        }
+        "Absorb Elements|XGE",
+        "Catapult|XGE",
+        "Create or Destroy Water",
+        "Earth Tremor|XGE",
+        "Faerie Fire",
+        "Feather Fall",
+        "Fog Cloud",
+        "Jump",
+        "Air Bubble|AAG",
+        "Continual Flame",
+        "Dust Devil|XGE",
+        "Earthbind|XXGE",
+        "Gust of Wind",
+        "Pyrotechnics|XGE",
+        "Skywrite|XGE",
+        "Warding Wind|XGE",
+        "Erupting Earth|XGE",
+        "Fly",
+        "Gaseous Form",
+        "Leomund's Tiny Hut",
+        "Meld into Stone",
+        "Protection from Energy",
+        "Conjure Minor Elementals",
+        "Control Water",
+        "Fabricate",
+        "Freedom of Movement",
+        "Stone Shape",
+        "Summon Elemental|TCE",
+        "Conjure Elemental",
+        "Control Winds",
+        "Passwall",
+        "Transmute Rock",
+        "Wall of Stone"
       ],
       "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
       "optionalfeatureProgression": [
