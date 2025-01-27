@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738014070,
+    "dateLastModified": 1738015902,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -36,8 +36,8 @@
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Conduit|TCP|4",
+        "Martial Versatility|Conduit|TCP|4",
         "Extra Attack|Conduit|TCP|5",
-        "Martial Versatility|Conduit|TCP|5",
         "Improved Imbuement|Conduit|TCP|5",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|6",
@@ -418,6 +418,18 @@
       ]
     },
     {
+      "name": "Martial Versatility",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 4,
+      "isClassFeatureVariant": true,
+      "entries": [
+        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+      ]
+    },
+    {
       "name": "Extra Attack",
       "source": "TCP",
       "className": "Conduit",
@@ -436,18 +448,6 @@
       "level": 5,
       "entries": [
         "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
-      ]
-    },
-    {
-      "name": "Martial Versatility",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 5,
-      "isClassFeatureVariant": true,
-      "entries": [
-        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
-        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
       ]
     },
     {
