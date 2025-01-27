@@ -15,8 +15,11 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737944923,
-    "status": "wip"
+    "dateLastModified": 1737948075,
+    "status": "wip",
+    "optionalFeatureTypes": {
+      "FS:C": "Fighting Style: Conduit"
+    }
   },
   "class": [
     {
@@ -177,7 +180,7 @@
       "optionalfeatureProgression": [
         {
           "name": "Fighting Style",
-          "featureType": ["FS"],
+          "featureType": ["FS:C"],
           "progression": {
             "1": 1
           }

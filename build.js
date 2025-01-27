@@ -74,6 +74,9 @@ prompt.get(
       dateAdded: 1737935647,
       dateLastModified: Math.round(time / 1000),
       status: 'wip',
+      optionalFeatureTypes: {
+        'FS:C': 'Fighting Style: Conduit',
+      },
     };
     newJson['_meta'] = _meta;
     FOLDERS.forEach((folder) => {
