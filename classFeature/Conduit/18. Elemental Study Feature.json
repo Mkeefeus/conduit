@@ -3,6 +3,6 @@
   "source": "TCP",
   "className": "Conduit",
   "classSource": "TCP",
-  "level": 17,
+  "level": 18,
   "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
 }

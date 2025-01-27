@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738012750,
+    "dateLastModified": 1738014070,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -45,25 +45,22 @@
         },
         "Overcome Resistance|Conduit|TCP|7",
         "Ability Score Improvement|Conduit|TCP|8",
-        "Elemental Assault|Conduit|TCP|9",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|10",
           "gainSubclassFeature": true
         },
         "Overpower Immunity|Conduit|TCP|11",
         "Ability Score Improvement|Conduit|TCP|12",
-        "Non Combat Ability 2|Conduit|TCP|13",
-        "beefy|Conduit|TCP|14",
+        "Non Combat Ability 2|Conduit|TCP|14",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|15",
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Conduit|TCP|16",
         {
-          "classFeature": "Elemental Study Feature|Conduit|TCP|17",
+          "classFeature": "Elemental Study Feature|Conduit|TCP|18",
           "gainSubclassFeature": true
         },
-        "Elemental Barrier|Conduit|TCP|18",
         "Ability Score Improvement|Conduit|TCP|19",
         "Energetic Conduit|Conduit|TCP|20"
       ],
@@ -483,14 +480,6 @@
       ]
     },
     {
-      "name": "Elemental Assault",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 9,
-      "entries": ["To be updated"]
-    },
-    {
       "name": "Elemental Study Feature",
       "source": "TCP",
       "className": "Conduit",
@@ -524,14 +513,6 @@
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "level": 13,
-      "entries": ["To be updated"]
-    },
-    {
-      "name": "beefy",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
       "level": 14,
       "entries": ["To be updated"]
     },
@@ -559,16 +540,8 @@
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "level": 17,
-      "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
-    },
-    {
-      "name": "Elemental Barrier",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
       "level": 18,
-      "entries": ["To be updated"]
+      "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
     },
     {
       "name": "Ability Score Improvement",
@@ -605,7 +578,7 @@
         "Familiar Flame|Conduit|TCP|Branded Warrior|TCP|6",
         "Blaze|Conduit|TCP|Branded Warrior|TCP|10",
         "Ring of Fire|Conduit|TCP|Branded Warrior|TCP|15",
-        "Overheat|Conduit|TCP|Branded Warrior|TCP|17"
+        "Overheat|Conduit|TCP|Branded Warrior|TCP|18"
       ],
       "additionalSpells": [
         {
@@ -630,7 +603,7 @@
         "Comforting Cold|Conduit|TCP|Frost Guardian|TCP|6",
         "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
         "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
-        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|17"
+        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|18"
       ],
       "additionalSpells": [
         {
@@ -784,7 +757,7 @@
       "classSource": "TCP",
       "subclassShortName": "Branded Warrior",
       "subclassSource": "TCP",
-      "level": 17,
+      "level": 18,
       "header": 2,
       "entries": [
         "Starting at 17th level you gain the ability to overheat and burn at new exciting heights. Your Heat of Battle now increases by 3 at the start of your turn instead of 1."
@@ -917,7 +890,7 @@
       "classSource": "TCP",
       "subclassShortName": "Frost Guardian",
       "subclassSource": "TCP",
-      "level": 17,
+      "level": 18,
       "header": 2,
       "entries": [
         "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature’s space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."

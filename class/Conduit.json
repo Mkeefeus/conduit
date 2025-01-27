@@ -21,25 +21,22 @@
     },
     "Overcome Resistance|Conduit|TCP|7",
     "Ability Score Improvement|Conduit|TCP|8",
-    "Elemental Assault|Conduit|TCP|9",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|10",
       "gainSubclassFeature": true
     },
     "Overpower Immunity|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
-    "Non Combat Ability 2|Conduit|TCP|13",
-    "beefy|Conduit|TCP|14",
+    "Non Combat Ability 2|Conduit|TCP|14",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|15",
       "gainSubclassFeature": true
     },
     "Ability Score Improvement|Conduit|TCP|16",
     {
-      "classFeature": "Elemental Study Feature|Conduit|TCP|17",
+      "classFeature": "Elemental Study Feature|Conduit|TCP|18",
       "gainSubclassFeature": true
     },
-    "Elemental Barrier|Conduit|TCP|18",
     "Ability Score Improvement|Conduit|TCP|19",
     "Energetic Conduit|Conduit|TCP|20"
   ],
