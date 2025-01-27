@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737948075,
+    "dateLastModified": 1737952831,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -87,10 +87,10 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) Scale Mail or (b) Leather Armor",
-          "(a) a martial weapon and a shield (b) two martial weapons",
-          "(a) a dungeoneer's pack or (b) an explorer's pack",
-          "A druidic focus"
+          "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+          "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+          "A {@item druidic focus}"
         ],
         "defaultData": [
           {
@@ -354,7 +354,7 @@
           "type": "entries",
           "name": "Spell Slots",
           "entries": [
-            "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=conduit} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+            "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=conduit (TCP)} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
           ]
         },
         {
