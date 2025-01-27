@@ -1,0 +1,22 @@
+{
+  "name": "Branded Warrior",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "It's getting toasty in here eh?",
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Branded Warrior Spells|Conduit|TCP|Branded Warrior|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Heat of Battle|Conduit|TCP|Branded Warrior|TCP|3"
+    }
+  ]
+}

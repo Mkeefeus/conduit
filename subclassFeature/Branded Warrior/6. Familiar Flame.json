@@ -1,0 +1,14 @@
+{
+  "name": "Familiar Flame",
+  "source": "Branded Warrior",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 6,
+  "header": 2,
+  "entries": [
+    "Starting at 6th level, you gain resistance to fire damage. Additionally, while you are concentrating on a spell that deals fire damage, you gain a bonus to any Constitution saving throws you make to maintain concentration on that spell. The bonus equals your Intelligence modifier (minimum of +1)."
+  ]
+}

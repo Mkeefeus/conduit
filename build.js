@@ -63,7 +63,7 @@ prompt.get(
           json: 'TCP',
           abbreviation: 'TCP',
           full: 'The Conduit Package',
-          authors: ['Malcolm Keefe', 'Scott', 'Riley'],
+          authors: ['Malcolm Keefe', 'Scott', 'Ril'],
           convertedBy: ['Malcolm Keefe'],
           dateReleased: new Date(time).toISOString().split('T')[0],
           version: version,

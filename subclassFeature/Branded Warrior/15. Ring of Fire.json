@@ -1,0 +1,22 @@
+{
+  "name": "Ring of Fire",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 15,
+  "header": 2,
+  "entries": [
+    "Starting at 15th level, as an action you may ignite a ring of fire centered on a point you can see within 30 feet. The flames burn 10 feet high and 5 feet wide in a 15 foot radius, and last for a minute. Creatures that come into contact with the flames suffer one of the following effects until the end of your next turn.",
+    {
+      "type": "list",
+      "items": [
+        "A creature that is immune to fire damage becomes resistant",
+        "A creature that is resistant to fire damage has its resistance ignored",
+        "All other creatures become vulnerable to fire damage"
+      ]
+    },
+    "You can only have one ring active at a time. Once you use this feature, you must finish a long rest before you can use it again. Alternatively, you may reduce your Heat of Battle by 6 to use the ability again."
+  ]
+}

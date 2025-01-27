@@ -1,0 +1,26 @@
+{
+  "name": "Branded Warrior Spells",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+    {
+      "type": "table",
+      "caption": "Branded Warrior Spells",
+      "colLabels": ["Conduit Level", "Spell"],
+      "colStyles": ["col-2 text-center", "col-10"],
+      "rows": [
+        ["3rd", "{@spell Burning Hands}, {@spell Searing Smite}"],
+        ["5th", "{@spell Heat Metal}, {@spell Scorching Ray}"],
+        ["9th", "{@spell Fireball}, {@spell Melf's Minute Meteors|XGE}"],
+        ["13th", "{@spell Fire Shield}, {@spell Wall of Fire}"],
+        ["17th", "{@spell Flame Strike}, {@spell Immolation|XGE}"]
+      ]
+    }
+  ]
+}

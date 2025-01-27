@@ -1,0 +1,26 @@
+{
+  "name": "Branded Warrior",
+  "source": "TCP",
+  "page": 0,
+  "className": "Conduit",
+  "classSource": "TCP",
+  "shortName": "Branded Warrior",
+  "subclassFeatures": [
+    "Branded Warrior|Conduit|TCP|Branded Warrior|TCP|3",
+    "Familiar Flame|Conduit|TCP|Branded Warrior|TCP|6",
+    "Blaze|Conduit|TCP|Branded Warrior|TCP|10",
+    "Ring of Fire|Conduit|TCP|Branded Warrior|TCP|15",
+    "Overheat|Conduit|TCP|Branded Warrior|TCP|17"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "3": ["Burning Hands", "Searing Smite"],
+        "5": ["Heat Metal, Scorching Ray"],
+        "9": ["Fireball", "Melf's Minute Meteors|XGE"],
+        "13": ["Fire Shield", "Wall of Fire"],
+        "17": ["Flame Strike", "Immolation|XGE"]
+      }
+    }
+  ]
+}

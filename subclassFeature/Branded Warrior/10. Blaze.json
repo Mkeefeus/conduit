@@ -1,0 +1,14 @@
+{
+  "name": "Blaze",
+  "source": "Branded Warrior",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 10,
+  "header": 2,
+  "entries": [
+    "Starting at 10th level, when you cast a spell that deals fire damage your Heat of Battle increases by an amount equal to the level of the spell cast."
+  ]
+}
