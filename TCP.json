@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737943624,
+    "dateLastModified": 1737944702,
     "status": "wip"
   },
   "class": [
@@ -177,7 +177,7 @@
       "optionalfeatureProgression": [
         {
           "name": "Fighting Style",
-          "featureType": ["FS:F"],
+          "featureType": ["FS:C"],
           "progression": {
             "1": 1
           }
@@ -187,7 +187,7 @@
       "featProgression": [
         {
           "name": "Fighting Style",
-          "category": ["FS"],
+          "category": ["FS, FS:C"],
           "progression": {
             "1": 1
           }
