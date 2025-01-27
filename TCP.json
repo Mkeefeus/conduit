@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1737941830,
+    "dateLastModified": 1737943624,
     "status": "wip"
   },
   "class": [
@@ -150,7 +150,7 @@
         "Air Bubble|AAG",
         "Continual Flame",
         "Dust Devil|XGE",
-        "Earthbind|XXGE",
+        "Earthbind|XGE",
         "Gust of Wind",
         "Pyrotechnics|XGE",
         "Skywrite|XGE",
@@ -168,9 +168,9 @@
         "Stone Shape",
         "Summon Elemental|TCE",
         "Conjure Elemental",
-        "Control Winds",
+        "Control Winds|XGE",
         "Passwall",
-        "Transmute Rock",
+        "Transmute Rock|XGE",
         "Wall of Stone"
       ],
       "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
