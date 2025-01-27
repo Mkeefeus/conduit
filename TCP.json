@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738011393,
+    "dateLastModified": 1738012750,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -611,7 +611,7 @@
         {
           "known": {
             "3": ["Burning Hands", "Searing Smite"],
-            "5": ["Heat Metal, Scorching Ray"],
+            "5": ["Heat Metal", "Scorching Ray"],
             "9": ["Fireball", "Melf's Minute Meteors|XGE"],
             "13": ["Fire Shield", "Wall of Fire"],
             "17": ["Flame Strike", "Immolation|XGE"]
