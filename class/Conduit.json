@@ -156,22 +156,13 @@
   "optionalfeatureProgression": [
     {
       "name": "Fighting Style",
-      "featureType": ["FS:C"],
+      "featureType": ["FS"],
       "progression": {
         "1": 1
       }
     }
   ],
   "subclassTitle": "Elemental Study",
-  "featProgression": [
-    {
-      "name": "Fighting Style",
-      "category": ["FS, FS:C"],
-      "progression": {
-        "1": 1
-      }
-    }
-  ],
   "classTableGroups": [
     {
       "colLabels": ["{@filter Spells Known|spells|class=conduit}"],
