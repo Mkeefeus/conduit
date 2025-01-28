@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738082713,
+    "dateLastModified": 1738085334,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -565,6 +565,35 @@
       "level": 20,
       "entries": [
         "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
+      ]
+    }
+  ],
+  "foundryClassFeature": [
+    {
+      "name": "Energy Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "effects": [
+        {
+          "name": "Energy Imbuement (Acid)",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "flags.midi-qol.optional.imbuementAcid.damage.mwak",
+              "mode": 2,
+              "value": "1d4 acid",
+              "priority": 20
+            },
+            {
+              "key": "flags.midi-qol.optional.imbuementAcid.damage.rwak",
+              "mode": 2,
+              "value": "1d4 acid",
+              "priority": 20
+            }
+          ]
+        }
       ]
     }
   ],

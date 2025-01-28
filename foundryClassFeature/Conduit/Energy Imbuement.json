@@ -1,0 +1,27 @@
+{
+  "name": "Energy Imbuement",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 2,
+  "effects": [
+    {
+      "name": "Energy Imbuement (Acid)",
+      "transfer": true,
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.imbuementAcid.damage.mwak",
+          "mode": 2,
+          "value": "1d4 acid",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.imbuementAcid.damage.rwak",
+          "mode": 2,
+          "value": "1d4 acid",
+          "priority": 20
+        }
+      ]
+    }
+  ]
+}
