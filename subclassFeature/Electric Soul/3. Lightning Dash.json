@@ -1,0 +1,14 @@
+{
+  "name": "Lightning Dash",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Electric Soul",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "Starting at 3rd level, you may dash as a bonus action. When you dash in this way, you do not provoke opportunity attacks, and may move through other creatures' spaces. You may not end your turn inside another creature's space."
+  ]
+}

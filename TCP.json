@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738080210,
+    "dateLastModified": 1738082713,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -596,6 +596,32 @@
       ]
     },
     {
+      "name": "Electric Soul",
+      "source": "TCP",
+      "page": 0,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "shortName": "Electric Soul",
+      "subclassFeatures": [
+        "Electric Soul|Conduit|TCP|Electric Soul|TCP|3",
+        "Arcing Strikes|Conduit|TCP|Electric Soul|TCP|6",
+        "Flash of Lightning|Conduit|TCP|Electric Soul|TCP|10",
+        "Electric Discharge|Conduit|TCP|Electric Soul|TCP|15",
+        "Increased Conductivity|Conduit|TCP|Electric Soul|TCP|18"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Longstrider", "Expeditious Retreat"],
+            "5": ["Spider Climb", "Shatter"],
+            "9": ["Lightning Bolt", "Haste"],
+            "13": ["Dimension Door", "Storm Sphere|XGE"],
+            "17": ["Far Step|XGE", "Synaptic Static|XGE"]
+          }
+        }
+      ]
+    },
+    {
       "name": "Frost Guardian",
       "shortName": "Frost Guardian",
       "source": "TCP",
@@ -767,6 +793,125 @@
       ]
     },
     {
+      "name": "Electric Soul Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        {
+          "type": "table",
+          "caption": "Branded Warrior Spells",
+          "colLabels": ["Conduit Level", "Spell"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
+            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
+            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
+            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
+            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Electric Soul",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Electric Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Electric Soul Spells|Conduit|TCP|Electric Soul|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Lightning Dash|Conduit|TCP|Electric Soul|TCP|3"
+        }
+      ]
+    },
+    {
+      "name": "Lightning Dash",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Starting at 3rd level, you may dash as a bonus action. When you dash in this way, you do not provoke opportunity attacks, and may move through other creatures' spaces. You may not end your turn inside another creature's space."
+      ]
+    },
+    {
+      "name": "Arcing Strikes",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you gain resistance to lightning damage. Additionally, when you hit a creature with a weapon attack, and have the lightning imbuement on that weapon, you cause electric energy to arc to another creature. Select a different creature within 10 feet, that creature takes 1d4 lightning damage"
+      ]
+    },
+    {
+      "name": "Flash of Lightning",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At 10th level, when you hit a target the leaping arcing lightning from Arcing Strikes, you may use your bonus action to teleport within 5 feet of that target, and immediately make an attack against it. Once you use this feature, you must finish a short or long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Electric Discharge",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "At 15th level, you may use your action to create a massive electrical discharge. All creatures within 15 feet of you must make a Constitution saving throw against your Spell save DC. On a failed save, the creature takes 8d6 lightning damage and is stunned until the start of your next turn. Once you use this feature, you must finish a long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Increased Conductivity",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "At 18th level, you Arcing Strikes feature can now hit 2 additional creatures instead of 1, and the range increases to 15 feet."
+      ]
+    },
+    {
       "name": "Freezing Grasp",
       "source": "TCP",
       "className": "Conduit",
@@ -896,7 +1041,7 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature’s space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+        "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
       ]
     }
   ]

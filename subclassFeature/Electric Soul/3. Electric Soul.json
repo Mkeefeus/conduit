@@ -1,0 +1,22 @@
+{
+  "name": "Electric Soul",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Electric Soul",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "Electric Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Electric Soul Spells|Conduit|TCP|Electric Soul|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Lightning Dash|Conduit|TCP|Electric Soul|TCP|3"
+    }
+  ]
+}

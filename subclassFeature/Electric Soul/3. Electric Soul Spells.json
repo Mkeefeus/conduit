@@ -1,0 +1,27 @@
+{
+  "name": "Electric Soul Spells",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Electric Soul",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+    {
+      "type": "table",
+      "caption": "Branded Warrior Spells",
+      "colLabels": ["Conduit Level", "Spell"],
+      "colStyles": ["col-2 text-center", "col-10"],
+      "rows": [
+        ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
+        ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
+        ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
+        ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
+        ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+      ]
+    }
+  ]
+}
