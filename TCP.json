@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-01-27",
+        "dateReleased": "2025-01-28",
         "version": "0.0.1",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738015902,
+    "dateLastModified": 1738038642,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -165,6 +165,7 @@
         "Control Water",
         "Fabricate",
         "Freedom of Movement",
+        "Stoneskin",
         "Stone Shape",
         "Summon Elemental|TCE",
         "Conjure Elemental",
