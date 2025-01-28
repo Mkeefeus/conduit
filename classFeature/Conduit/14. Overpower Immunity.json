@@ -3,7 +3,7 @@
   "source": "TCP",
   "className": "Conduit",
   "classSource": "TCP",
-  "level": 11,
+  "level": 14,
   "entries": [
     "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
   ]

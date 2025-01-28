@@ -4,7 +4,7 @@
   "classFeatures": [
     "Fighting Style|Conduit|TCP|1",
     "Primordial Knowledge|Conduit|TCP|1",
-    "Elemental Mastery|Conduit|TCP|1",
+    "Primordial Creation|Conduit|TCP|1",
     "Spellcasting|Conduit|TCP|2",
     "Energy Imbuement|Conduit|TCP|2",
     {
@@ -25,9 +25,9 @@
       "classFeature": "Elemental Study Feature|Conduit|TCP|10",
       "gainSubclassFeature": true
     },
-    "Overpower Immunity|Conduit|TCP|11",
+    "Elemental Mastery|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
-    "Non Combat Ability 2|Conduit|TCP|14",
+    "OVerpower Immunity|Conduit|TCP|14",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|15",
       "gainSubclassFeature": true

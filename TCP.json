@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738038642,
+    "dateLastModified": 1738080210,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -28,7 +28,7 @@
       "classFeatures": [
         "Fighting Style|Conduit|TCP|1",
         "Primordial Knowledge|Conduit|TCP|1",
-        "Elemental Mastery|Conduit|TCP|1",
+        "Primordial Creation|Conduit|TCP|1",
         "Spellcasting|Conduit|TCP|2",
         "Energy Imbuement|Conduit|TCP|2",
         {
@@ -49,9 +49,9 @@
           "classFeature": "Elemental Study Feature|Conduit|TCP|10",
           "gainSubclassFeature": true
         },
-        "Overpower Immunity|Conduit|TCP|11",
+        "Elemental Mastery|Conduit|TCP|11",
         "Ability Score Improvement|Conduit|TCP|12",
-        "Non Combat Ability 2|Conduit|TCP|14",
+        "OVerpower Immunity|Conduit|TCP|14",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|15",
           "gainSubclassFeature": true
@@ -248,31 +248,6 @@
   ],
   "classFeature": [
     {
-      "name": "Elemental Mastery",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 1,
-      "entries": [
-        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
-        {
-          "type": "list",
-          "items": [
-            "You may create a small pool of acid to slowly corrode a metal",
-            "You may set a flammable object on fire",
-            "You may freeze an area of water or create a small amount of ice",
-            "You may create a thunderclap audible from 100 feet away",
-            "You may shoot a bolt of lightning harmlessly into the air"
-          ]
-        },
-        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
-        {
-          "type": "list",
-          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
-        }
-      ]
-    },
-    {
       "name": "Fighting Style",
       "source": "TCP",
       "className": "Conduit",
@@ -317,6 +292,31 @@
               "optionalfeature": "Unarmed Fighting|TCE"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Primordial Creation",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+        {
+          "type": "list",
+          "items": [
+            "You may create a small pool of acid to slowly corrode a metal",
+            "You may set a flammable object on fire",
+            "You may freeze an area of water or create a small amount of ice",
+            "You may create a thunderclap audible from 100 feet away",
+            "You may shoot a bolt of lightning harmlessly into the air"
+          ]
+        },
+        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+        {
+          "type": "list",
+          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
         }
       ]
     },
@@ -489,13 +489,13 @@
       "entries": ["At 10th level, you gain a feature based on your Elemental Study."]
     },
     {
-      "name": "Overpower Immunity",
+      "name": "Elemental Mastery",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "level": 11,
       "entries": [
-        "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+        "Your mastery of the elements defends you from their effects. You have advantage on saving throws against spells and effects that deal any of your imbuement damage types."
       ]
     },
     {
@@ -510,12 +510,14 @@
       ]
     },
     {
-      "name": "Non Combat Ability 2",
+      "name": "Overpower Immunity",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "level": 14,
-      "entries": ["To be updated"]
+      "entries": [
+        "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+      ]
     },
     {
       "name": "Elemental Study Feature",
