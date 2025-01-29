@@ -1,4 +1,4 @@
-const { dialogUtils, genericUtils, effectUtils, combatUtils } = chrisPremades.utils;
+const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;
 function deleteEffect(actor, id, useCPRFlag) {
   if (useCPRFlag) {
     return actor.appliedEffects.find((effect) => effect.flags['chris-premades'].info.identifier === id).delete();
@@ -17,6 +17,10 @@ if (!combatUtils.inCombat()) {
   genericUtils.notify('You are not in combat', 'warn');
   return;
 }
+if (!actorUtils.hasSpellSlots(workflow.actor)) {
+  genericUtils.notify('You do not have any spell slots available', 'warn');
+  return;
+}
 let validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];
 let buttons = validTypes.map((i) => [
   CONFIG.DND5E.damageTypes[i].label,
@@ -31,6 +35,10 @@ let numDice = await dialogUtils.selectSpellSlot(
   genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),
   { no: true }
 );
+const hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');
+if (hasImproved) {
+  numDice = numDice * 2;
+}
 if (numDice === 'pact') {
   await genericUtils.update(workflow.actor, {
     'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,
@@ -41,6 +49,7 @@ if (numDice === 'pact') {
     ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,
   });
 }
+
 let effectData = {
   name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',
   img: workflow.item.img,
@@ -64,15 +73,19 @@ let effectData = {
     {
       key: 'flags.midi-qol.optional.energyImbuement.count',
       mode: 2,
-      value: 'turn',
+      value: 'each-turn',
       priority: 20,
     },
   ],
+  flags: {
+    dae: {
+      disableIncapacitated: true,
+    },
+  },
 };
 deleteEffectIfPresent(workflow.actor, 'energyImbuement', true);
 await effectUtils.createEffect(workflow.actor, effectData, { identifier: 'energyImbuement' });
 while (combatUtils.inCombat()) {
   await genericUtils.sleep(60000);
 }
-await genericUtils.sleep(5000);
 deleteEffectIfPresent(workflow.actor, 'energyImbuement', true);

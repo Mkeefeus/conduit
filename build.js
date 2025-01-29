@@ -80,6 +80,9 @@ prompt.get(
     };
     newJson['_meta'] = _meta;
     FOLDERS.forEach((folder) => {
+      if (folder === 'macros') {
+        return;
+      }
       newJson[folder] = newJson[folder] || [];
       const jsonFiles = fs.readdirSync(`./${folder}`, { recursive: true }).filter((file) => file.endsWith('.json'));
       jsonFiles.forEach((file) => {

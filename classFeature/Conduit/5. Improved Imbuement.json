@@ -5,6 +5,6 @@
   "classSource": "TCP",
   "level": 5,
   "entries": [
-    "Beginning at 5th level, you can apply your Energy Imbuement bonus damage twice per turn rather then once per turn."
+    "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
   ]
 }
