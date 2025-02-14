@@ -26,7 +26,10 @@ let buttons = validTypes.map((i) => [
   CONFIG.DND5E.damageTypes[i].label,
   Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),
 ]);
-if (!buttons.length) return;
+if (!buttons.length) {
+  genericUtils.notify('No valid damage types found', 'warn');
+  return;
+}
 let selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);
 if (!selection) return;
 let numDice = await dialogUtils.selectSpellSlot(
@@ -35,10 +38,6 @@ let numDice = await dialogUtils.selectSpellSlot(
   genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),
   { no: true }
 );
-const hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');
-if (hasImproved) {
-  numDice = numDice * 2;
-}
 if (numDice === 'pact') {
   await genericUtils.update(workflow.actor, {
     'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,
@@ -48,6 +47,11 @@ if (numDice === 'pact') {
   await genericUtils.update(workflow.actor, {
     ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,
   });
+}
+
+const hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');
+if (hasImproved) {
+  numDice = numDice * 2;
 }
 
 let effectData = {
@@ -60,19 +64,19 @@ let effectData = {
   changes: [
     {
       key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',
-      mode: 2,
+      mode: 5,
       value: `${numDice}d4[${selection}]`,
       priority: 20,
     },
     {
       key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',
-      mode: 2,
+      mode: 5,
       value: `${numDice}d4[${selection}]`,
       priority: 20,
     },
     {
       key: 'flags.midi-qol.optional.energyImbuement.count',
-      mode: 2,
+      mode: 5,
       value: 'each-turn',
       priority: 20,
     },
