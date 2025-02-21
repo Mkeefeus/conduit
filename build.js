@@ -1,7 +1,7 @@
 const prompt = require('prompt');
 const fs = require('fs');
 
-const EXCLUDED_FOLDERS = ['node_modules', '.git', '.vscode'];
+const EXCLUDED_FOLDERS = ['node_modules', '.git', '.vscode', 'macros'];
 
 const FOLDERS = fs
   .readdirSync('./')
@@ -80,9 +80,6 @@ prompt.get(
     };
     newJson['_meta'] = _meta;
     FOLDERS.forEach((folder) => {
-      if (folder === 'macros') {
-        return;
-      }
       newJson[folder] = newJson[folder] || [];
       const jsonFiles = fs.readdirSync(`./${folder}`, { recursive: true }).filter((file) => file.endsWith('.json'));
       jsonFiles.forEach((file) => {

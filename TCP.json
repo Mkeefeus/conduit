@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-01-29",
-        "version": "0.0.1",
+        "dateReleased": "2025-02-21",
+        "version": "0.0.3",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1738126750,
+    "dateLastModified": 1740162561,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -581,13 +581,95 @@
             "img": "systems/dnd5e/icons/svg/items/feature.svg",
             "type": "script",
             "scope": "global",
-            "command": "const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;\nfunction deleteEffect(actor, id, useCPRFlag) {\n  if (useCPRFlag) {\n    return actor.appliedEffects.find((effect) => effect.flags['chris-premades'].info.identifier === id).delete();\n  } else {\n    return actor.appliedEffects.find((effect) => effect.name === id).delete();\n  }\n}\n\nfunction deleteEffectIfPresent(actor, id, useCPRFlag) {\n  if (effectUtils.getEffectByIdentifier(actor, id)) {\n    deleteEffect(actor, id, useCPRFlag);\n  }\n}\n\nif (!combatUtils.inCombat()) {\n  genericUtils.notify('You are not in combat', 'warn');\n  return;\n}\nif (!actorUtils.hasSpellSlots(workflow.actor)) {\n  genericUtils.notify('You do not have any spell slots available', 'warn');\n  return;\n}\nlet validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];\nlet buttons = validTypes.map((i) => [\n  CONFIG.DND5E.damageTypes[i].label,\n  Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),\n]);\nif (!buttons.length) return;\nlet selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);\nif (!selection) return;\nlet numDice = await dialogUtils.selectSpellSlot(\n  workflow.actor,\n  workflow.item.name,\n  genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),\n  { no: true }\n);\nconst hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');\nif (hasImproved) {\n  numDice = numDice * 2;\n}\nif (numDice === 'pact') {\n  await genericUtils.update(workflow.actor, {\n    'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,\n  });\n  numDice = workflow.actor.system.spells.pact.level;\n} else {\n  await genericUtils.update(workflow.actor, {\n    ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,\n  });\n}\n\nlet effectData = {\n  name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',\n  img: workflow.item.img,\n  origin: workflow.item.uuid,\n  duration: {\n    seconds: 60,\n  },\n  changes: [\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',\n      mode: 2,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',\n      mode: 2,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.count',\n      mode: 2,\n      value: 'each-turn',\n      priority: 20,\n    },\n  ],\n  flags: {\n    dae: {\n      disableIncapacitated: true,\n    },\n  },\n};\ndeleteEffectIfPresent(workflow.actor, 'energyImbuement', true);\nawait effectUtils.createEffect(workflow.actor, effectData, { identifier: 'energyImbuement' });\nwhile (combatUtils.inCombat()) {\n  await genericUtils.sleep(60000);\n}\ndeleteEffectIfPresent(workflow.actor, 'energyImbuement', true);\n"
+            "command": "const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;\n\nfunction deleteEffectIfPresent(actor, id, useCPRFlag) {\n  console.log(`Energy Imbuement Macro | Checking for effect ${id} on ${actor.name}`);\n  let effect = null;\n  if (useCPRFlag) {\n    effect = actor.effects.find((effect) => effect.flags['chris-premades'].info.identifier === id);\n  } else {\n    effect = actor.effects.find((effect) => effect.name === id);\n  }\n  if (!effect) {\n    return;\n  }\n  console.log(`Energy Imbuement Macro | Deleting effect ${id} from ${actor.name}`);\n  effect.delete();\n}\n\nif (!combatUtils.inCombat()) {\n  genericUtils.notify('Energy Imbuement Macro | You are not in combat', 'warn');\n  return;\n}\nif (!actorUtils.hasSpellSlots(workflow.actor)) {\n  genericUtils.notify('Energy Imbuement Macro | You do not have any spell slots available', 'warn');\n  return;\n}\nlet validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];\nlet buttons = validTypes.map((i) => [\n  CONFIG.DND5E.damageTypes[i].label,\n  Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),\n]);\nif (!buttons.length) {\n  genericUtils.notify('Energy Imbuement Macro | No valid damage types found', 'warn');\n  return;\n}\nlet selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);\nif (!selection) return;\nlet numDice = await dialogUtils.selectSpellSlot(\n  workflow.actor,\n  workflow.item.name,\n  genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),\n  { no: true }\n);\nif (numDice === 'pact') {\n  await genericUtils.update(workflow.actor, {\n    'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,\n  });\n  numDice = workflow.actor.system.spells.pact.level;\n} else {\n  await genericUtils.update(workflow.actor, {\n    ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,\n  });\n}\n\nconst hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');\nif (hasImproved) {\n  numDice = numDice * 2;\n}\n\nlet effectData = {\n  name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',\n  img: workflow.item.img,\n  origin: workflow.item.uuid,\n  duration: {\n    seconds: 60,\n  },\n  changes: [\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.count',\n      mode: 5,\n      value: 'each-turn',\n      priority: 20,\n    },\n  ],\n  flags: {\n    dae: {\n      disableIncapacitated: true,\n    },\n  },\n};\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\nawait effectUtils.createEffect(workflow.item, effectData, { identifier: 'energyImbuement' });\nwhile (combatUtils.inCombat()) {\n  console.log('Energy Imbuement Macro | Waiting for combat to end');\n  await genericUtils.sleep(20000);\n}\nconsole.log('Energy Imbuement Macro | Combat has ended, removing effect');\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\n"
           }
         },
         "midi-qol": {
           "onUseMacroName": "[postActiveEffects]ItemMacro"
         }
       }
+    },
+    {
+      "name": "Spellcasting",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "system": {
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "target": {
+          "value": "",
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "requirements": "Conduit 2",
+        "recharge": {
+          "value": null,
+          "charged": false
+        },
+        "crewed": false,
+        "properties": [],
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "enchantment": null,
+        "summons": null,
+        "prerequisites": {
+          "level": null
+        }
+      },
+      "img": "icons/magic/light/beam-rays-magenta-large.webp"
     }
   ],
   "subclass": [
@@ -943,7 +1025,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a long rest."
+        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a short rest."
       ]
     },
     {
@@ -1007,9 +1089,9 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses of them on a long rest and one use on a short rest.",
-        "As an action, you can create up to as many pillars as you have available. Pick points you can see within 60 feet of you to create the Icy Pillars. Each pillar can be either 5 ft tall and 10 ft wide or 10 ft tall and 5 ft wide. The pillars all have HP equal to 5 times your level in this class and an AC of 14. The pillars last for up to a minute, after which they melt harmlessly into the ground.",
-        "If an enemy starts their turn within 5 ft of a pillar then their movement speed is reduced by 10 ft until the end of their turn."
+        "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses on a short or long rest",
+        "As a bonus action you can create any number of pillars up to the amount you have available at a point you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
+        "Additionally, When a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you can use your reaction to grant that creature resistance to all the damage. When you grant resistance in this way, you select a pillar within 30 feet of you, this pillar takes the same damage as the selected creature."
       ]
     },
     {
@@ -1023,7 +1105,7 @@
       "header": 2,
       "entries": [
         "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
-        "Additionally, your Icy Pillars provide protection to your allies. If an allied creature starts their turn within 5 ft of a pillar, then they gain temp HP equal to your Intelligence modifier."
+        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Intelligence modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
       ]
     },
     {

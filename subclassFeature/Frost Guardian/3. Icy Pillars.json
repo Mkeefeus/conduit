@@ -8,8 +8,8 @@
   "level": 3,
   "header": 1,
   "entries": [
-    "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses of them on a long rest and one use on a short rest.",
-    "As an action, you can create up to as many pillars as you have available. Pick points you can see within 60 feet of you to create the Icy Pillars. Each pillar can be either 5 ft tall and 10 ft wide or 10 ft tall and 5 ft wide. The pillars all have HP equal to 5 times your level in this class and an AC of 14. The pillars last for up to a minute, after which they melt harmlessly into the ground.",
-    "If an enemy starts their turn within 5 ft of a pillar then their movement speed is reduced by 10 ft until the end of their turn."
+    "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses on a short or long rest",
+    "As a bonus action you can create any number of pillars up to the amount you have available at a point you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
+    "Additionally, When a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you can use your reaction to grant that creature resistance to all the damage. When you grant resistance in this way, you select a pillar within 30 feet of you, this pillar takes the same damage as the selected creature."
   ]
 }

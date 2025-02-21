@@ -1,24 +1,26 @@
 const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;
-function deleteEffect(actor, id, useCPRFlag) {
-  if (useCPRFlag) {
-    return actor.appliedEffects.find((effect) => effect.flags['chris-premades'].info.identifier === id).delete();
-  } else {
-    return actor.appliedEffects.find((effect) => effect.name === id).delete();
-  }
-}
 
 function deleteEffectIfPresent(actor, id, useCPRFlag) {
-  if (effectUtils.getEffectByIdentifier(actor, id)) {
-    deleteEffect(actor, id, useCPRFlag);
+  console.log(`Energy Imbuement Macro | Checking for effect ${id} on ${actor.name}`);
+  let effect = null;
+  if (useCPRFlag) {
+    effect = actor.effects.find((effect) => effect.flags['chris-premades'].info.identifier === id);
+  } else {
+    effect = actor.effects.find((effect) => effect.name === id);
   }
+  if (!effect) {
+    return;
+  }
+  console.log(`Energy Imbuement Macro | Deleting effect ${id} from ${actor.name}`);
+  effect.delete();
 }
 
 if (!combatUtils.inCombat()) {
-  genericUtils.notify('You are not in combat', 'warn');
+  genericUtils.notify('Energy Imbuement Macro | You are not in combat', 'warn');
   return;
 }
 if (!actorUtils.hasSpellSlots(workflow.actor)) {
-  genericUtils.notify('You do not have any spell slots available', 'warn');
+  genericUtils.notify('Energy Imbuement Macro | You do not have any spell slots available', 'warn');
   return;
 }
 let validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];
@@ -27,7 +29,7 @@ let buttons = validTypes.map((i) => [
   Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),
 ]);
 if (!buttons.length) {
-  genericUtils.notify('No valid damage types found', 'warn');
+  genericUtils.notify('Energy Imbuement Macro | No valid damage types found', 'warn');
   return;
 }
 let selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);
@@ -87,9 +89,11 @@ let effectData = {
     },
   },
 };
-deleteEffectIfPresent(workflow.actor, 'energyImbuement', true);
-await effectUtils.createEffect(workflow.actor, effectData, { identifier: 'energyImbuement' });
+deleteEffectIfPresent(workflow.item, 'energyImbuement', true);
+await effectUtils.createEffect(workflow.item, effectData, { identifier: 'energyImbuement' });
 while (combatUtils.inCombat()) {
-  await genericUtils.sleep(60000);
+  console.log('Energy Imbuement Macro | Waiting for combat to end');
+  await genericUtils.sleep(20000);
 }
-deleteEffectIfPresent(workflow.actor, 'energyImbuement', true);
+console.log('Energy Imbuement Macro | Combat has ended, removing effect');
+deleteEffectIfPresent(workflow.item, 'energyImbuement', true);
