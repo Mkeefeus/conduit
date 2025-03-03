@@ -10,6 +10,7 @@
   "header": 1,
   "entries": [
     "Starting at 3rd level you feel the heat of battle burn through you while in a fight. As your Heat of Battle builds, you gain access to compounding bonus effects as shown in the table below.",
+    "At the start of each of your turns your Heat of Battle increases by 1. Additionally, your Heat of Battle increases by 1 under the following conditions:",
     {
       "type": "list",
       "items": [
@@ -17,7 +18,6 @@
         "Marking an additional weapon attack after the first once on your turn"
       ]
     },
-    "At the start of each of your turns your Heat of Battle increases by 1. Additionally, your Heat of Battle increases by 1 under the following conditions:",
     {
       "type": "table",
       "caption": "Heat of Battle Effects",

@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-02-21",
-        "version": "0.0.3",
+        "dateReleased": "2025-03-03",
+        "version": "0.0.4",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1740162561,
+    "dateLastModified": 1741042608,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -812,6 +812,7 @@
       "header": 1,
       "entries": [
         "Starting at 3rd level you feel the heat of battle burn through you while in a fight. As your Heat of Battle builds, you gain access to compounding bonus effects as shown in the table below.",
+        "At the start of each of your turns your Heat of Battle increases by 1. Additionally, your Heat of Battle increases by 1 under the following conditions:",
         {
           "type": "list",
           "items": [
@@ -819,7 +820,6 @@
             "Marking an additional weapon attack after the first once on your turn"
           ]
         },
-        "At the start of each of your turns your Heat of Battle increases by 1. Additionally, your Heat of Battle increases by 1 under the following conditions:",
         {
           "type": "table",
           "caption": "Heat of Battle Effects",
