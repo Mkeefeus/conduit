@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-03-03",
-        "version": "0.0.4",
+        "dateReleased": "2025-03-16",
+        "version": "0.0.5",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1741042608,
+    "dateLastModified": 1742144756,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit"
@@ -38,17 +38,17 @@
         "Ability Score Improvement|Conduit|TCP|4",
         "Martial Versatility|Conduit|TCP|4",
         "Extra Attack|Conduit|TCP|5",
-        "Improved Imbuement|Conduit|TCP|5",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|6",
           "gainSubclassFeature": true
         },
-        "Overcome Resistance|Conduit|TCP|7",
+        "Improved Imbuement|Conduit|TCP|7",
         "Ability Score Improvement|Conduit|TCP|8",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|10",
           "gainSubclassFeature": true
         },
+        "Overcome Resistance|Conduit|TCP|9",
         "Elemental Mastery|Conduit|TCP|11",
         "Ability Score Improvement|Conduit|TCP|12",
         "OVerpower Immunity|Conduit|TCP|14",
@@ -441,16 +441,6 @@
       ]
     },
     {
-      "name": "Improved Imbuement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 5,
-      "entries": [
-        "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
-      ]
-    },
-    {
       "name": "Elemental Study Feature",
       "source": "TCP",
       "className": "Conduit",
@@ -459,13 +449,13 @@
       "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
     },
     {
-      "name": "Overcome Resistance",
+      "name": "Improved Imbuement",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "level": 7,
       "entries": [
-        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
+        "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
       ]
     },
     {
@@ -477,6 +467,16 @@
       "entries": [
         "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Overcome Resistance",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 9,
+      "entries": [
+        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
       ]
     },
     {

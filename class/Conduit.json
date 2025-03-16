@@ -14,17 +14,17 @@
     "Ability Score Improvement|Conduit|TCP|4",
     "Martial Versatility|Conduit|TCP|4",
     "Extra Attack|Conduit|TCP|5",
-    "Improved Imbuement|Conduit|TCP|5",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|6",
       "gainSubclassFeature": true
     },
-    "Overcome Resistance|Conduit|TCP|7",
+    "Improved Imbuement|Conduit|TCP|7",
     "Ability Score Improvement|Conduit|TCP|8",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|10",
       "gainSubclassFeature": true
     },
+    "Overcome Resistance|Conduit|TCP|9",
     "Elemental Mastery|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
     "OVerpower Immunity|Conduit|TCP|14",
