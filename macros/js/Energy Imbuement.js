@@ -15,6 +15,15 @@ function deleteEffectIfPresent(actor, id, useCPRFlag) {
   effect.delete();
 }
 
+function generateRandomString(length) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
 if (!combatUtils.inCombat()) {
   genericUtils.notify('Energy Imbuement Macro | You are not in combat', 'warn');
   return;
@@ -56,6 +65,8 @@ if (hasImproved) {
   numDice = numDice * 2;
 }
 
+const randomString = generateRandomString(8);
+
 let effectData = {
   name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',
   img: workflow.item.img,
@@ -65,19 +76,19 @@ let effectData = {
   },
   changes: [
     {
-      key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',
+      key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.mwak`,
       mode: 5,
       value: `${numDice}d4[${selection}]`,
       priority: 20,
     },
     {
-      key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',
+      key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.rwak`,
       mode: 5,
       value: `${numDice}d4[${selection}]`,
       priority: 20,
     },
     {
-      key: 'flags.midi-qol.optional.energyImbuement.count',
+      key: `flags.midi-qol.optional.energyImbuement_${randomString}.count`,
       mode: 5,
       value: 'each-turn',
       priority: 20,
