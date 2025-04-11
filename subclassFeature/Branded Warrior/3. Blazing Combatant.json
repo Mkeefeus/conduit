@@ -1,0 +1,57 @@
+{
+  "name": "Blazing Combatant",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "When you choose this archetype at 3rd level, you learn Emblems that are fueled by special dice called heat dice",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Emblems",
+          "entries": [
+            "You learn the Emblems listed below under \"Emblems\". Many Emblems enhance an attack in some way. You can only use one Emblem per attack"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Heat Dice",
+          "entries": [
+            "You have a number of heat dice equal to your proficiency bonus, which are {@dice d8}s. A heat die is expended when you use it. You regain all of your expended heat dice when you finish a short or long rest.",
+            "The power of your heat burns brightest at the start of combat, but weans over time. Heat dice diminish in the following sequence: {@dice d8}, {@dice d6}, {@dice d4}. At the start of each of your turns, yous heat die diminishes to the next die in the sequence, down to a minimum of {@dice d4}.",
+            "Your maximum heat die increases to a {@dice d10} at 10th level and {@dice d12} at 18th level."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Saving Throws",
+          "entries": [
+            "Some of your Emblems require your target to make a saving throw to resist the Emblem's effects. The saving throw DC is calculated as follows:",
+            {
+              "type": "abilityDc",
+              "name": "Emblem",
+              "attributes": ["int"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

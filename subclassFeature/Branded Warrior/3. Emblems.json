@@ -1,0 +1,48 @@
+{
+  "name": "Emblems",
+  "source": "TCP",
+  "page": 0,
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Branded Warrior",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "The Emblems are presented in alphabetical order.",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "type": "options",
+          "entries": [
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Burning Strike|TCP"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Fiery Precision|TCP"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Flare|TCP"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Radiating Presence|TCP"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Revenge of the Pyre|TCP"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Rocket Jump|TCP"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

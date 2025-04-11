@@ -1,0 +1,12 @@
+{
+  "name": "Rocket Jump",
+  "source": "TCP",
+  "page": 0,
+  "featureType": ["E:BW"],
+  "consumes": {
+    "name": "Heat Die"
+  },
+  "entries": [
+    "As a bonus action, you may expend a heat die to improve your jumping ability. When you do so, your jumping distance is doubled for the remainder of your turn."
+  ]
+}

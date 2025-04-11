@@ -16,7 +16,11 @@
     },
     {
       "type": "refSubclassFeature",
-      "subclassFeature": "Heat of Battle|Conduit|TCP|Branded Warrior|TCP|3"
+      "subclassFeature": "Blazing Combatant|Conduit|TCP|Branded Warrior|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Emblems|Conduit|TCP|Branded Warrior|TCP|3"
     }
   ]
 }

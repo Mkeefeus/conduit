@@ -1,0 +1,12 @@
+{
+  "name": "Burning Strike",
+  "source": "TCP",
+  "page": 0,
+  "featureType": ["E:BW"],
+  "consumes": {
+    "name": "Heat Die"
+  },
+  "entries": [
+    "When you hit a creature with a weapon attack, you can expend a heat die to deal additional fire damage equal to the number rolled on your heat die."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Radiating Presence",
+  "source": "TCP",
+  "page": 0,
+  "featureType": ["E:BW"],
+  "consumes": {
+    "name": "Heat Die"
+  },
+  "entries": [
+    "You can expend one heat die and use a bonus action to coat yourself in flame for 1 minute. During this time, you radiate 10 feet of bright light and 10 feet of dim light.",
+    "Additionally, when you use this emblem, roll the expended heat die. Any hostile creature that starts its turn within 10 feet of your takes damage equal to the number rolled on your current heat die."
+  ]
+}

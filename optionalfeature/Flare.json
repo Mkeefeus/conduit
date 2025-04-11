@@ -1,0 +1,12 @@
+{
+  "name": "Flare",
+  "source": "TCP",
+  "page": 0,
+  "featureType": ["E:BW"],
+  "consumes": {
+    "name": "Heat Die"
+  },
+  "entries": [
+    "When you take the attack action, you may expend a heat die and use a bonus action to throw a dart of fire at a target you can see within 60 feet of you. The dart is a ranged weapon attack with which you are proficient, and the damage is equal to the number rolled on your heat die plus your Intelligence modifier."
+  ]
+}

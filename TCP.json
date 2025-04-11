@@ -8,19 +8,1072 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-03-16",
-        "version": "0.0.6",
+        "dateReleased": "2025-04-11",
+        "version": "0.0.7",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1742166818,
+    "dateLastModified": 1744409145,
     "status": "wip",
     "optionalFeatureTypes": {
-      "FS:C": "Fighting Style: Conduit"
+      "FS:C": "Fighting Style: Conduit",
+      "E:BW": "Emblem: Branded Warrior"
     }
   },
+  "subclassFeature": [
+    {
+      "name": "Branded Warrior Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        {
+          "type": "table",
+          "caption": "Branded Warrior Spells",
+          "colLabels": ["Conduit Level", "Spell"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["3rd", "{@spell Burning Hands}, {@spell Searing Smite}"],
+            ["5th", "{@spell Heat Metal}, {@spell Scorching Ray}"],
+            ["9th", "{@spell Fireball}, {@spell Melf's Minute Meteors|XGE}"],
+            ["13th", "{@spell Fire Shield}, {@spell Wall of Fire}"],
+            ["17th", "{@spell Flame Strike}, {@spell Immolation|XGE}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blazing Combatant",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "When you choose this archetype at 3rd level, you learn Emblems that are fueled by special dice called heat dice",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Emblems",
+              "entries": [
+                "You learn the Emblems listed below under \"Emblems\". Many Emblems enhance an attack in some way. You can only use one Emblem per attack"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Heat Dice",
+              "entries": [
+                "You have a number of heat dice equal to your proficiency bonus, which are {@dice d8}s. A heat die is expended when you use it. You regain all of your expended heat dice when you finish a short or long rest.",
+                "The power of your heat burns brightest at the start of combat, but weans over time. Heat dice diminish in the following sequence: {@dice d8}, {@dice d6}, {@dice d4}. At the start of each of your turns, yous heat die diminishes to the next die in the sequence, down to a minimum of {@dice d4}.",
+                "Your maximum heat die increases to a {@dice d10} at 10th level and {@dice d12} at 18th level."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Saving Throws",
+              "entries": [
+                "Some of your Emblems require your target to make a saving throw to resist the Emblem's effects. The saving throw DC is calculated as follows:",
+                {
+                  "type": "abilityDc",
+                  "name": "Emblem",
+                  "attributes": ["int"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Branded Warrior",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "It's getting toasty in here eh?",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Branded Warrior Spells|Conduit|TCP|Branded Warrior|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Blazing Combatant|Conduit|TCP|Branded Warrior|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Emblems|Conduit|TCP|Branded Warrior|TCP|3"
+        }
+      ]
+    },
+    {
+      "name": "Emblems",
+      "source": "TCP",
+      "page": 0,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "The Emblems are presented in alphabetical order.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "options",
+              "entries": [
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Burning Strike|TCP"
+                },
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Fiery Precision|TCP"
+                },
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Flare|TCP"
+                },
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Radiating Presence|TCP"
+                },
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Revenge of the Pyre|TCP"
+                },
+                {
+                  "type": "refOptionalfeature",
+                  "optionalfeature": "Rocket Jump|TCP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Familiar Flame",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you gain resistance to fire damage. Additionally, while you are concentrating on a spell that deals fire damage, you gain a bonus to any Constitution saving throws you make to maintain concentration on that spell. The bonus equals your Intelligence modifier (minimum of +1)."
+      ]
+    },
+    {
+      "name": "Blaze",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Starting at 10th level, when you cast a spell that deals fire damage your Heat of Battle increases by an amount equal to the level of the spell cast."
+      ]
+    },
+    {
+      "name": "Ring of Fire",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "Starting at 15th level, as an action you may ignite a ring of fire centered on a point you can see within 30 feet. The flames burn 10 feet high and 5 feet wide in a 15 foot radius, and last for a minute. Creatures that come into contact with the flames suffer one of the following effects until the end of your next turn.",
+        {
+          "type": "list",
+          "items": [
+            "A creature that is immune to fire damage becomes resistant",
+            "A creature that is resistant to fire damage has its resistance ignored",
+            "All other creatures become vulnerable to fire damage"
+          ]
+        },
+        "You can only have one ring active at a time. Once you use this feature, you must finish a long rest before you can use it again. Alternatively, you may reduce your Heat of Battle by 6 to use the ability again."
+      ]
+    },
+    {
+      "name": "Overheat",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Branded Warrior",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "Starting at 17th level you gain the ability to overheat and burn at new exciting heights. Your Heat of Battle now increases by 3 at the start of your turn instead of 1."
+      ]
+    },
+    {
+      "name": "Electric Soul",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Electric Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Electric Soul Spells|Conduit|TCP|Electric Soul|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Lightning Dash|Conduit|TCP|Electric Soul|TCP|3"
+        }
+      ]
+    },
+    {
+      "name": "Electric Soul Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        {
+          "type": "table",
+          "caption": "Branded Warrior Spells",
+          "colLabels": ["Conduit Level", "Spell"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
+            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
+            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
+            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
+            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lightning Dash",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Starting at 3rd level, you may dash as a bonus action. When you dash in this way, you do not provoke opportunity attacks, and may move through other creatures' spaces. You may not end your turn inside another creature's space."
+      ]
+    },
+    {
+      "name": "Arcing Strikes",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you gain resistance to lightning damage. Additionally, when you hit a creature with a weapon attack, and have the lightning imbuement on that weapon, you cause electric energy to arc to another creature. Select a different creature within 10 feet, that creature takes 1d4 lightning damage"
+      ]
+    },
+    {
+      "name": "Flash of Lightning",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At 10th level, when you hit a target the leaping arcing lightning from Arcing Strikes, you may use your bonus action to teleport within 5 feet of that target, and immediately make an attack against it. Once you use this feature, you must finish a short or long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Electric Discharge",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "At 15th level, you may use your action to create a massive electrical discharge. All creatures within 15 feet of you must make a Constitution saving throw against your Spell save DC. On a failed save, the creature takes 8d6 lightning damage and is stunned until the start of your next turn. Once you use this feature, you must finish a long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Increased Conductivity",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Electric Soul",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "At 18th level, you Arcing Strikes feature can now hit 2 additional creatures instead of 1, and the range increases to 15 feet."
+      ]
+    },
+    {
+      "name": "Frost Guardian Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Frost Guardian Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        {
+          "type": "table",
+          "caption": "Frost Guardian Spells",
+          "colLabels": ["Conduit Level", "Spell"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["3rd", "{@spell Armor of Agathys}, {@spell Frost Fingers|IDRotF}"],
+            ["5th", "{@spell Rime's Binding Ice|FTD}, {@spell Snilloc's Snowball Swarm|XGE}"],
+            ["9th", "{@spell Sleet Storm}, {@spell Slow}"],
+            ["13th", "{@spell Ice Storm}, {@spell Control Water}"],
+            ["17th", "{@spell Cone of Cold}, {@spell Hold Monster}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Freezing Grasp",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a short rest."
+      ]
+    },
+    {
+      "name": "Icy Pillars",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses on a short or long rest",
+        "As a bonus action you can create any number of pillars up to the amount you have available at a point you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
+        "Additionally, When a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you can use your reaction to grant that creature resistance to all the damage. When you grant resistance in this way, you select a pillar within 30 feet of you, this pillar takes the same damage as the selected creature."
+      ]
+    },
+    {
+      "name": "Frost Guardian",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Frost Guardian Spells|Conduit|TCP|Frost Guardian|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Icy Pillars|Conduit|TCP|Frost Guardian|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Freezing Grasp|Conduit|TCP|Frost Guardian|TCP|3"
+        }
+      ]
+    },
+    {
+      "name": "Comforting Cold",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
+        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Intelligence modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
+      ]
+    },
+    {
+      "name": "Shattering Frost",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Starting at 10th level, you can coat enemies in a brittle layer of frost. As an action you can pick an Icy Pillar you can see and cause it to explode. All enemies in a 15-foot-radius of the pillar must make a dexterity saving throw. On a failed save, the target is coated in ice. The next attack against that creature has advantage, and deals an additional 4d6 cold damage. "
+      ]
+    },
+    {
+      "name": "Frozen Form",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "At 15th level, a protective layer of ice coats you. The ground around you freezes as you move. The ground in a 10-foot-radius centered on you is considered difficult terrain for enemies. An enemy that starts its turn in this area must make a Dexterity saving throw against your Spell Save DC or fall prone.",
+        "Additionally, your Icy Pillars influence on allies and enemies increases in range. An enemy starting their turn within 15 ft of one of your Icy Pillars has their movement speed reduced by 10 ft until the end of their turn. If an allied creature starts their turn within 15 ft of a pillar, then they gain temp HP equal to your Int modifier."
+      ]
+    },
+    {
+      "name": "Ice Prison",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Frost Guardian",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Primordial Knowledge",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
+      ]
+    },
+    {
+      "name": "Primordial Creation",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
+        {
+          "type": "list",
+          "items": [
+            "You may create a small pool of acid to slowly corrode a metal",
+            "You may set a flammable object on fire",
+            "You may freeze an area of water or create a small amount of ice",
+            "You may create a thunderclap audible from 100 feet away",
+            "You may shoot a bolt of lightning harmlessly into the air"
+          ]
+        },
+        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
+        {
+          "type": "list",
+          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
+        }
+      ]
+    },
+    {
+      "name": "Fighting Style",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 1,
+      "entries": [
+        "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+        {
+          "type": "options",
+          "count": 1,
+          "entries": [
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Archery"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Defense"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Dueling"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Great Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Two-Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Blind Fighting|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Thrown Weapon Fighting|TCE"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Unarmed Fighting|TCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Energy Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "When you reach 2nd level, you may empower you damage with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "entries": [
+        "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
+        {
+          "type": "entries",
+          "name": "Spell Slots",
+          "entries": [
+            "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=conduit (TCP)} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spells Known of 1st Level and Higher",
+          "entries": [
+            "You know two 1st-level spells of your choice from the conduit spell list.",
+            "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "entries": [
+            "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": ["int"]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": ["int"]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "entries": [
+            "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "entries": [
+            "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Study",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
+      ]
+    },
+    {
+      "name": "Martial Versatility",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 4,
+      "isClassFeatureVariant": true,
+      "entries": [
+        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 5,
+      "entries": [
+        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 6,
+      "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Improved Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 7,
+      "entries": [
+        "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 8,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Overcome Resistance",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 9,
+      "entries": [
+        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 10,
+      "entries": ["At 10th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Elemental Mastery",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 11,
+      "entries": [
+        "Your mastery of the elements defends you from their effects. You have advantage on saving throws against spells and effects that deal any of your imbuement damage types."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 12,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Overpower Immunity",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 14,
+      "entries": [
+        "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 15,
+      "entries": ["At 15th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 16,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Elemental Study Feature",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 18,
+      "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 19,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Energetic Conduit",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 20,
+      "entries": [
+        "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Branded Warrior",
+      "source": "TCP",
+      "page": 0,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "shortName": "Branded Warrior",
+      "subclassFeatures": [
+        "Branded Warrior|Conduit|TCP|Branded Warrior|TCP|3",
+        "Familiar Flame|Conduit|TCP|Branded Warrior|TCP|6",
+        "Blaze|Conduit|TCP|Branded Warrior|TCP|10",
+        "Ring of Fire|Conduit|TCP|Branded Warrior|TCP|15",
+        "Overheat|Conduit|TCP|Branded Warrior|TCP|18"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Burning Hands", "Searing Smite"],
+            "5": ["Heat Metal", "Scorching Ray"],
+            "9": ["Fireball", "Melf's Minute Meteors|XGE"],
+            "13": ["Fire Shield", "Wall of Fire"],
+            "17": ["Flame Strike", "Immolation|XGE"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Electric Soul",
+      "source": "TCP",
+      "page": 0,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "shortName": "Electric Soul",
+      "subclassFeatures": [
+        "Electric Soul|Conduit|TCP|Electric Soul|TCP|3",
+        "Arcing Strikes|Conduit|TCP|Electric Soul|TCP|6",
+        "Flash of Lightning|Conduit|TCP|Electric Soul|TCP|10",
+        "Electric Discharge|Conduit|TCP|Electric Soul|TCP|15",
+        "Increased Conductivity|Conduit|TCP|Electric Soul|TCP|18"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Longstrider", "Expeditious Retreat"],
+            "5": ["Spider Climb", "Shatter"],
+            "9": ["Lightning Bolt", "Haste"],
+            "13": ["Dimension Door", "Storm Sphere|XGE"],
+            "17": ["Far Step|XGE", "Synaptic Static|XGE"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Frost Guardian",
+      "shortName": "Frost Guardian",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassFeatures": [
+        "Frost Guardian|Conduit|TCP|Frost Guardian|TCP|3",
+        "Comforting Cold|Conduit|TCP|Frost Guardian|TCP|6",
+        "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
+        "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
+        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|18"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Armor of Agathys", "Frost Fingers|IDtoF"],
+            "5": ["Rime's Binding Ice|FTD", "Snilloc's Snowball Swarm|XGE"],
+            "9": ["Sleet Storm", "Slow"],
+            "13": ["Ice Storm", "Control Water"],
+            "17": ["Cone of Cold", "Hold Monster"]
+          }
+        }
+      ]
+    }
+  ],
+  "foundryClassFeature": [
+    {
+      "name": "Energy Imbuement",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "flags": {
+        "dae": {
+          "macro": {
+            "name": "Energy Imbuement",
+            "img": "systems/dnd5e/icons/svg/items/feature.svg",
+            "type": "script",
+            "scope": "global",
+            "command": "const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;\n\nfunction deleteEffectIfPresent(actor, id, useCPRFlag) {\n  console.log(`Energy Imbuement Macro | Checking for effect ${id} on ${actor.name}`);\n  let effect = null;\n  if (useCPRFlag) {\n    effect = actor.effects.find((effect) => effect.flags['chris-premades'].info.identifier === id);\n  } else {\n    effect = actor.effects.find((effect) => effect.name === id);\n  }\n  if (!effect) {\n    return;\n  }\n  console.log(`Energy Imbuement Macro | Deleting effect ${id} from ${actor.name}`);\n  effect.delete();\n}\n\nif (!combatUtils.inCombat()) {\n  genericUtils.notify('Energy Imbuement Macro | You are not in combat', 'warn');\n  return;\n}\nif (!actorUtils.hasSpellSlots(workflow.actor)) {\n  genericUtils.notify('Energy Imbuement Macro | You do not have any spell slots available', 'warn');\n  return;\n}\nlet validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];\nlet buttons = validTypes.map((i) => [\n  CONFIG.DND5E.damageTypes[i].label,\n  Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),\n]);\nif (!buttons.length) {\n  genericUtils.notify('Energy Imbuement Macro | No valid damage types found', 'warn');\n  return;\n}\nlet selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);\nif (!selection) return;\nlet numDice = await dialogUtils.selectSpellSlot(\n  workflow.actor,\n  workflow.item.name,\n  genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),\n  { no: true }\n);\nif (numDice === 'pact') {\n  await genericUtils.update(workflow.actor, {\n    'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,\n  });\n  numDice = workflow.actor.system.spells.pact.level;\n} else {\n  await genericUtils.update(workflow.actor, {\n    ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,\n  });\n}\n\nconst hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');\nif (hasImproved) {\n  numDice = numDice * 2;\n}\n\nlet effectData = {\n  name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',\n  img: workflow.item.img,\n  origin: workflow.item.uuid,\n  duration: {\n    seconds: 60,\n  },\n  changes: [\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.count',\n      mode: 5,\n      value: 'each-turn',\n      priority: 20,\n    },\n  ],\n  flags: {\n    dae: {\n      disableIncapacitated: true,\n    },\n  },\n};\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\nawait effectUtils.createEffect(workflow.item, effectData, { identifier: 'energyImbuement' });\nwhile (combatUtils.inCombat()) {\n  console.log('Energy Imbuement Macro | Waiting for combat to end');\n  await genericUtils.sleep(20000);\n}\nconsole.log('Energy Imbuement Macro | Combat has ended, removing effect');\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\n"
+          }
+        },
+        "midi-qol": {
+          "onUseMacroName": "[postActiveEffects]ItemMacro"
+        }
+      }
+    },
+    {
+      "name": "Spellcasting",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "level": 2,
+      "system": {
+        "activation": {
+          "type": "",
+          "cost": null,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "target": {
+          "value": "",
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": null,
+        "actionType": "",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "type": {
+          "value": "class",
+          "subtype": ""
+        },
+        "requirements": "Conduit 2",
+        "recharge": {
+          "value": null,
+          "charged": false
+        },
+        "crewed": false,
+        "properties": [],
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "enchantment": null,
+        "summons": null,
+        "prerequisites": {
+          "level": null
+        }
+      },
+      "img": "icons/magic/light/beam-rays-magenta-large.webp"
+    }
+  ],
+  "optionalfeature": [
+    {
+      "name": "Burning Strike",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "When you hit a creature with a weapon attack, you can expend a heat die to deal additional fire damage equal to the number rolled on your heat die."
+      ]
+    },
+    {
+      "name": "Fiery Precision",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "When you make a weapon attack roll against a creature, you can expend one heat to add it to the roll. You can use this emblem before or after making the attack roll, but before any effects of the attack are applied."
+      ]
+    },
+    {
+      "name": "Flare",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "When you take the attack action, you may expend a heat die and use a bonus action to throw a dart of fire at a target you can see within 60 feet of you. The dart is a ranged weapon attack with which you are proficient, and the damage is equal to the number rolled on your heat die plus your Intelligence modifier."
+      ]
+    },
+    {
+      "name": "Radiating Presence",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "You can expend one heat die and use a bonus action to coat yourself in flame for 1 minute. During this time, you radiate 10 feet of bright light and 10 feet of dim light.",
+        "Additionally, when you use this emblem, roll the expended heat die. Any hostile creature that starts its turn within 10 feet of your takes damage equal to the number rolled on your current heat die."
+      ]
+    },
+    {
+      "name": "Revenge of the Pyre",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "When another creature damages you with a melee attack, you can use your reaction and expend one heat die to deal damage equal to the number rolled to the attacking creature."
+      ]
+    },
+    {
+      "name": "Rocket Jump",
+      "source": "TCP",
+      "page": 0,
+      "featureType": ["E:BW"],
+      "consumes": {
+        "name": "Heat Die"
+      },
+      "entries": [
+        "As a bonus action, you may expend a heat die to improve your jumping ability. When you do so, your jumping distance is doubled for the remainder of your turn."
+      ]
+    }
+  ],
   "class": [
     {
       "name": "Conduit",
@@ -243,909 +1296,6 @@
             [4, 3, 3, 3, 2]
           ]
         }
-      ]
-    }
-  ],
-  "classFeature": [
-    {
-      "name": "Fighting Style",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 1,
-      "entries": [
-        "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
-        {
-          "type": "options",
-          "count": 1,
-          "entries": [
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Archery"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Defense"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Dueling"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Great Weapon Fighting"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Two-Weapon Fighting"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Blind Fighting|TCE"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Thrown Weapon Fighting|TCE"
-            },
-            {
-              "type": "refOptionalfeature",
-              "optionalfeature": "Unarmed Fighting|TCE"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Primordial Creation",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 1,
-      "entries": [
-        "At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways.",
-        {
-          "type": "list",
-          "items": [
-            "You may create a small pool of acid to slowly corrode a metal",
-            "You may set a flammable object on fire",
-            "You may freeze an area of water or create a small amount of ice",
-            "You may create a thunderclap audible from 100 feet away",
-            "You may shoot a bolt of lightning harmlessly into the air"
-          ]
-        },
-        "The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines.",
-        {
-          "type": "list",
-          "items": ["You cannot effect an area greater than 1 cubic foot", "The cannot directly effect a creature"]
-        }
-      ]
-    },
-    {
-      "name": "Primordial Knowledge",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 1,
-      "entries": [
-        "Your understanding of the primordial forces that power you has augmented your mind. At first level, you learn the Primordial language if you don't already know it."
-      ]
-    },
-    {
-      "name": "Energy Imbuement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "entries": [
-        "When you reach 2nd level, you may empower you damage with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
-      ]
-    },
-    {
-      "name": "Spellcasting",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "entries": [
-        "By the time you reach 2nd level, you have learned to use primordial energy to cast spells.",
-        {
-          "type": "entries",
-          "name": "Spell Slots",
-          "entries": [
-            "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=conduit (TCP)} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Spells Known of 1st Level and Higher",
-          "entries": [
-            "You know two 1st-level spells of your choice from the conduit spell list.",
-            "The Spells Known column of the Ranger table shows when you learn more conduit spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-            "Additionally, when you gain a level in this class, you can choose one of the conduit spells you know and replace it with another spell from the conduit spell list, which also must be of a level for which you have spell slots."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Spellcasting Ability",
-          "entries": [
-            "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
-            {
-              "type": "abilityDc",
-              "name": "Spell",
-              "attributes": ["int"]
-            },
-            {
-              "type": "abilityAttackMod",
-              "name": "Spell",
-              "attributes": ["int"]
-            }
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Ritual Casting",
-          "entries": [
-            "You can cast a conduit spell as a ritual if that spell has the ritual tag and it is one of your learned spells."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Spellcasting Focus",
-          "entries": [
-            "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Elemental Study",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 3,
-      "entries": [
-        "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 4,
-      "entries": [
-        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Martial Versatility",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 4,
-      "isClassFeatureVariant": true,
-      "entries": [
-        "{@i 4th-level conduit {@variantrule optional class features|tce|optional feature}}",
-        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you may replace a fighting style you know with another fighting style available to conduits."
-      ]
-    },
-    {
-      "name": "Extra Attack",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 5,
-      "entries": [
-        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
-      ]
-    },
-    {
-      "name": "Elemental Study Feature",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 6,
-      "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
-    },
-    {
-      "name": "Improved Imbuement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 7,
-      "entries": [
-        "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 8,
-      "entries": [
-        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Overcome Resistance",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 9,
-      "entries": [
-        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
-      ]
-    },
-    {
-      "name": "Elemental Study Feature",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 10,
-      "entries": ["At 10th level, you gain a feature based on your Elemental Study."]
-    },
-    {
-      "name": "Elemental Mastery",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 11,
-      "entries": [
-        "Your mastery of the elements defends you from their effects. You have advantage on saving throws against spells and effects that deal any of your imbuement damage types."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 12,
-      "entries": [
-        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Overpower Immunity",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 14,
-      "entries": [
-        "Beginning at 11th level, when you deal an imbuement damage type to a creature that is immune to that damage, the damage is instead resisted."
-      ]
-    },
-    {
-      "name": "Elemental Study Feature",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 15,
-      "entries": ["At 15th level, you gain a feature based on your Elemental Study."]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 16,
-      "entries": [
-        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Elemental Study Feature",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 18,
-      "entries": ["At 17th level, you gain a feature based on your Elemental Study."]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 19,
-      "entries": [
-        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Energetic Conduit",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 20,
-      "entries": [
-        "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
-      ]
-    }
-  ],
-  "foundryClassFeature": [
-    {
-      "name": "Energy Imbuement",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "flags": {
-        "dae": {
-          "macro": {
-            "name": "Energy Imbuement",
-            "img": "systems/dnd5e/icons/svg/items/feature.svg",
-            "type": "script",
-            "scope": "global",
-            "command": "const { dialogUtils, genericUtils, effectUtils, combatUtils, actorUtils } = chrisPremades.utils;\n\nfunction deleteEffectIfPresent(actor, id, useCPRFlag) {\n  console.log(`Energy Imbuement Macro | Checking for effect ${id} on ${actor.name}`);\n  let effect = null;\n  if (useCPRFlag) {\n    effect = actor.effects.find((effect) => effect.flags['chris-premades'].info.identifier === id);\n  } else {\n    effect = actor.effects.find((effect) => effect.name === id);\n  }\n  if (!effect) {\n    return;\n  }\n  console.log(`Energy Imbuement Macro | Deleting effect ${id} from ${actor.name}`);\n  effect.delete();\n}\n\nif (!combatUtils.inCombat()) {\n  genericUtils.notify('Energy Imbuement Macro | You are not in combat', 'warn');\n  return;\n}\nif (!actorUtils.hasSpellSlots(workflow.actor)) {\n  genericUtils.notify('Energy Imbuement Macro | You do not have any spell slots available', 'warn');\n  return;\n}\nlet validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];\nlet buttons = validTypes.map((i) => [\n  CONFIG.DND5E.damageTypes[i].label,\n  Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),\n]);\nif (!buttons.length) {\n  genericUtils.notify('Energy Imbuement Macro | No valid damage types found', 'warn');\n  return;\n}\nlet selection = await dialogUtils.buttonDialog(workflow.item.name, 'CHRISPREMADES.Dialog.DamageType', buttons);\nif (!selection) return;\nlet numDice = await dialogUtils.selectSpellSlot(\n  workflow.actor,\n  workflow.item.name,\n  genericUtils.format('CHRISPREMADES.Dialog.Use', { itemName: item.name }),\n  { no: true }\n);\nif (numDice === 'pact') {\n  await genericUtils.update(workflow.actor, {\n    'system.spells.pact.value': workflow.actor.system.spells.pact.value - 1,\n  });\n  numDice = workflow.actor.system.spells.pact.level;\n} else {\n  await genericUtils.update(workflow.actor, {\n    ['system.spells.spell' + numDice + '.value']: workflow.actor.system.spells['spell' + numDice].value - 1,\n  });\n}\n\nconst hasImproved = workflow.actor.items.find((i) => i.name === 'Improved Energy Imbuement');\nif (hasImproved) {\n  numDice = numDice * 2;\n}\n\nlet effectData = {\n  name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',\n  img: workflow.item.img,\n  origin: workflow.item.uuid,\n  duration: {\n    seconds: 60,\n  },\n  changes: [\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.mwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.damage.rwak',\n      mode: 5,\n      value: `${numDice}d4[${selection}]`,\n      priority: 20,\n    },\n    {\n      key: 'flags.midi-qol.optional.energyImbuement.count',\n      mode: 5,\n      value: 'each-turn',\n      priority: 20,\n    },\n  ],\n  flags: {\n    dae: {\n      disableIncapacitated: true,\n    },\n  },\n};\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\nawait effectUtils.createEffect(workflow.item, effectData, { identifier: 'energyImbuement' });\nwhile (combatUtils.inCombat()) {\n  console.log('Energy Imbuement Macro | Waiting for combat to end');\n  await genericUtils.sleep(20000);\n}\nconsole.log('Energy Imbuement Macro | Combat has ended, removing effect');\ndeleteEffectIfPresent(workflow.item, 'energyImbuement', true);\n"
-          }
-        },
-        "midi-qol": {
-          "onUseMacroName": "[postActiveEffects]ItemMacro"
-        }
-      }
-    },
-    {
-      "name": "Spellcasting",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 2,
-      "system": {
-        "activation": {
-          "type": "",
-          "cost": null,
-          "condition": ""
-        },
-        "duration": {
-          "value": "",
-          "units": ""
-        },
-        "cover": null,
-        "target": {
-          "value": "",
-          "width": null,
-          "units": "",
-          "type": "",
-          "prompt": true
-        },
-        "range": {
-          "value": null,
-          "long": null,
-          "units": ""
-        },
-        "uses": {
-          "value": null,
-          "max": "",
-          "per": null,
-          "recovery": "",
-          "prompt": true
-        },
-        "consume": {
-          "type": "",
-          "target": null,
-          "amount": null,
-          "scale": false
-        },
-        "ability": null,
-        "actionType": "",
-        "chatFlavor": "",
-        "critical": {
-          "threshold": null,
-          "damage": ""
-        },
-        "damage": {
-          "parts": [],
-          "versatile": ""
-        },
-        "formula": "",
-        "save": {
-          "ability": "",
-          "dc": null,
-          "scaling": "spell"
-        },
-        "type": {
-          "value": "class",
-          "subtype": ""
-        },
-        "requirements": "Conduit 2",
-        "recharge": {
-          "value": null,
-          "charged": false
-        },
-        "crewed": false,
-        "properties": [],
-        "attack": {
-          "bonus": "",
-          "flat": false
-        },
-        "enchantment": null,
-        "summons": null,
-        "prerequisites": {
-          "level": null
-        }
-      },
-      "img": "icons/magic/light/beam-rays-magenta-large.webp"
-    }
-  ],
-  "subclass": [
-    {
-      "name": "Branded Warrior",
-      "source": "TCP",
-      "page": 0,
-      "className": "Conduit",
-      "classSource": "TCP",
-      "shortName": "Branded Warrior",
-      "subclassFeatures": [
-        "Branded Warrior|Conduit|TCP|Branded Warrior|TCP|3",
-        "Familiar Flame|Conduit|TCP|Branded Warrior|TCP|6",
-        "Blaze|Conduit|TCP|Branded Warrior|TCP|10",
-        "Ring of Fire|Conduit|TCP|Branded Warrior|TCP|15",
-        "Overheat|Conduit|TCP|Branded Warrior|TCP|18"
-      ],
-      "additionalSpells": [
-        {
-          "known": {
-            "3": ["Burning Hands", "Searing Smite"],
-            "5": ["Heat Metal", "Scorching Ray"],
-            "9": ["Fireball", "Melf's Minute Meteors|XGE"],
-            "13": ["Fire Shield", "Wall of Fire"],
-            "17": ["Flame Strike", "Immolation|XGE"]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Electric Soul",
-      "source": "TCP",
-      "page": 0,
-      "className": "Conduit",
-      "classSource": "TCP",
-      "shortName": "Electric Soul",
-      "subclassFeatures": [
-        "Electric Soul|Conduit|TCP|Electric Soul|TCP|3",
-        "Arcing Strikes|Conduit|TCP|Electric Soul|TCP|6",
-        "Flash of Lightning|Conduit|TCP|Electric Soul|TCP|10",
-        "Electric Discharge|Conduit|TCP|Electric Soul|TCP|15",
-        "Increased Conductivity|Conduit|TCP|Electric Soul|TCP|18"
-      ],
-      "additionalSpells": [
-        {
-          "known": {
-            "3": ["Longstrider", "Expeditious Retreat"],
-            "5": ["Spider Climb", "Shatter"],
-            "9": ["Lightning Bolt", "Haste"],
-            "13": ["Dimension Door", "Storm Sphere|XGE"],
-            "17": ["Far Step|XGE", "Synaptic Static|XGE"]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Frost Guardian",
-      "shortName": "Frost Guardian",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassFeatures": [
-        "Frost Guardian|Conduit|TCP|Frost Guardian|TCP|3",
-        "Comforting Cold|Conduit|TCP|Frost Guardian|TCP|6",
-        "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
-        "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
-        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|18"
-      ],
-      "additionalSpells": [
-        {
-          "known": {
-            "3": ["Armor of Agathys", "Frost Fingers|IDtoF"],
-            "5": ["Rime's Binding Ice|FTD", "Snilloc's Snowball Swarm|XGE"],
-            "9": ["Sleet Storm", "Slow"],
-            "13": ["Ice Storm", "Control Water"],
-            "17": ["Cone of Cold", "Hold Monster"]
-          }
-        }
-      ]
-    }
-  ],
-  "subclassFeature": [
-    {
-      "name": "Branded Warrior Spells",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
-        {
-          "type": "table",
-          "caption": "Branded Warrior Spells",
-          "colLabels": ["Conduit Level", "Spell"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["3rd", "{@spell Burning Hands}, {@spell Searing Smite}"],
-            ["5th", "{@spell Heat Metal}, {@spell Scorching Ray}"],
-            ["9th", "{@spell Fireball}, {@spell Melf's Minute Meteors|XGE}"],
-            ["13th", "{@spell Fire Shield}, {@spell Wall of Fire}"],
-            ["17th", "{@spell Flame Strike}, {@spell Immolation|XGE}"]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Branded Warrior",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "It's getting toasty in here eh?",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Branded Warrior Spells|Conduit|TCP|Branded Warrior|TCP|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Heat of Battle|Conduit|TCP|Branded Warrior|TCP|3"
-        }
-      ]
-    },
-    {
-      "name": "Heat of Battle",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Starting at 3rd level you feel the heat of battle burn through you while in a fight. As your Heat of Battle builds, you gain access to compounding bonus effects as shown in the table below.",
-        "At the start of each of your turns your Heat of Battle increases by 1. Additionally, your Heat of Battle increases by 1 under the following conditions:",
-        {
-          "type": "list",
-          "items": [
-            "Taking fire damage once per round",
-            "Marking an additional weapon attack after the first once on your turn"
-          ]
-        },
-        {
-          "type": "table",
-          "caption": "Heat of Battle Effects",
-          "colLabels": ["Threshold", "Effect"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["1", "You begin to shed bright light for 10 feet, and dim light for an additional 10 feet"],
-            ["2", "You deal an extra 2 fire damage once per turn when you hit with a weapon attack"],
-            ["5", "You begin to cauterize your own wounds. You gain advantage on death saving throws"],
-            ["10", "Your weapon attacks score a critical hit on a roll of 19 or 20"]
-          ]
-        },
-        "If your Heat of Battle falls below the threshold of an effect, you lose that effect until you cross the threshold again. If you are not in combat, or you are knocked unconscious your Heat of Battle dissipates at a rate of two points per round at the end of your turn. At no point can your Heat of Battle be below 0."
-      ]
-    },
-    {
-      "name": "Familiar Flame",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "Starting at 6th level, you gain resistance to fire damage. Additionally, while you are concentrating on a spell that deals fire damage, you gain a bonus to any Constitution saving throws you make to maintain concentration on that spell. The bonus equals your Intelligence modifier (minimum of +1)."
-      ]
-    },
-    {
-      "name": "Blaze",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "Starting at 10th level, when you cast a spell that deals fire damage your Heat of Battle increases by an amount equal to the level of the spell cast."
-      ]
-    },
-    {
-      "name": "Ring of Fire",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "Starting at 15th level, as an action you may ignite a ring of fire centered on a point you can see within 30 feet. The flames burn 10 feet high and 5 feet wide in a 15 foot radius, and last for a minute. Creatures that come into contact with the flames suffer one of the following effects until the end of your next turn.",
-        {
-          "type": "list",
-          "items": [
-            "A creature that is immune to fire damage becomes resistant",
-            "A creature that is resistant to fire damage has its resistance ignored",
-            "All other creatures become vulnerable to fire damage"
-          ]
-        },
-        "You can only have one ring active at a time. Once you use this feature, you must finish a long rest before you can use it again. Alternatively, you may reduce your Heat of Battle by 6 to use the ability again."
-      ]
-    },
-    {
-      "name": "Overheat",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Branded Warrior",
-      "subclassSource": "TCP",
-      "level": 18,
-      "header": 2,
-      "entries": [
-        "Starting at 17th level you gain the ability to overheat and burn at new exciting heights. Your Heat of Battle now increases by 3 at the start of your turn instead of 1."
-      ]
-    },
-    {
-      "name": "Electric Soul Spells",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
-        {
-          "type": "table",
-          "caption": "Branded Warrior Spells",
-          "colLabels": ["Conduit Level", "Spell"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
-            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
-            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
-            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
-            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Electric Soul",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Electric Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Electric Soul Spells|Conduit|TCP|Electric Soul|TCP|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Lightning Dash|Conduit|TCP|Electric Soul|TCP|3"
-        }
-      ]
-    },
-    {
-      "name": "Lightning Dash",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Starting at 3rd level, you may dash as a bonus action. When you dash in this way, you do not provoke opportunity attacks, and may move through other creatures' spaces. You may not end your turn inside another creature's space."
-      ]
-    },
-    {
-      "name": "Arcing Strikes",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "Starting at 6th level, you gain resistance to lightning damage. Additionally, when you hit a creature with a weapon attack, and have the lightning imbuement on that weapon, you cause electric energy to arc to another creature. Select a different creature within 10 feet, that creature takes 1d4 lightning damage"
-      ]
-    },
-    {
-      "name": "Flash of Lightning",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "At 10th level, when you hit a target the leaping arcing lightning from Arcing Strikes, you may use your bonus action to teleport within 5 feet of that target, and immediately make an attack against it. Once you use this feature, you must finish a short or long rest before you can use it again."
-      ]
-    },
-    {
-      "name": "Electric Discharge",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "At 15th level, you may use your action to create a massive electrical discharge. All creatures within 15 feet of you must make a Constitution saving throw against your Spell save DC. On a failed save, the creature takes 8d6 lightning damage and is stunned until the start of your next turn. Once you use this feature, you must finish a long rest before you can use it again."
-      ]
-    },
-    {
-      "name": "Increased Conductivity",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 18,
-      "header": 2,
-      "entries": [
-        "At 18th level, you Arcing Strikes feature can now hit 2 additional creatures instead of 1, and the range increases to 15 feet."
-      ]
-    },
-    {
-      "name": "Freezing Grasp",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a short rest."
-      ]
-    },
-    {
-      "name": "Frost Guardian Spells",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Frost Guardian Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
-        {
-          "type": "table",
-          "caption": "Frost Guardian Spells",
-          "colLabels": ["Conduit Level", "Spell"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["3rd", "{@spell Armor of Agathys}, {@spell Frost Fingers|IDRotF}"],
-            ["5th", "{@spell Rime's Binding Ice|FTD}, {@spell Snilloc's Snowball Swarm|XGE}"],
-            ["9th", "{@spell Sleet Storm}, {@spell Slow}"],
-            ["13th", "{@spell Ice Storm}, {@spell Control Water}"],
-            ["17th", "{@spell Cone of Cold}, {@spell Hold Monster}"]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Frost Guardian",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Frost Guardian Spells|Conduit|TCP|Frost Guardian|TCP|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Icy Pillars|Conduit|TCP|Frost Guardian|TCP|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Freezing Grasp|Conduit|TCP|Frost Guardian|TCP|3"
-        }
-      ]
-    },
-    {
-      "name": "Icy Pillars",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses on a short or long rest",
-        "As a bonus action you can create any number of pillars up to the amount you have available at a point you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
-        "Additionally, When a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you can use your reaction to grant that creature resistance to all the damage. When you grant resistance in this way, you select a pillar within 30 feet of you, this pillar takes the same damage as the selected creature."
-      ]
-    },
-    {
-      "name": "Comforting Cold",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
-        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Intelligence modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
-      ]
-    },
-    {
-      "name": "Shattering Frost",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "Starting at 10th level, you can coat enemies in a brittle layer of frost. As an action you can pick an Icy Pillar you can see and cause it to explode. All enemies in a 15-foot-radius of the pillar must make a dexterity saving throw. On a failed save, the target is coated in ice. The next attack against that creature has advantage, and deals an additional 4d6 cold damage. "
-      ]
-    },
-    {
-      "name": "Frozen Form",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "At 15th level, a protective layer of ice coats you. The ground around you freezes as you move. The ground in a 10-foot-radius centered on you is considered difficult terrain for enemies. An enemy that starts its turn in this area must make a Dexterity saving throw against your Spell Save DC or fall prone.",
-        "Additionally, your Icy Pillars influence on allies and enemies increases in range. An enemy starting their turn within 15 ft of one of your Icy Pillars has their movement speed reduced by 10 ft until the end of their turn. If an allied creature starts their turn within 15 ft of a pillar, then they gain temp HP equal to your Int modifier."
-      ]
-    },
-    {
-      "name": "Ice Prison",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 18,
-      "header": 2,
-      "entries": [
-        "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
       ]
     }
   ]

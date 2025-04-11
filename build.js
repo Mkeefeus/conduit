@@ -76,6 +76,7 @@ prompt.get(
       status: 'wip',
       optionalFeatureTypes: {
         'FS:C': 'Fighting Style: Conduit',
+        'E:BW': 'Emblem: Branded Warrior',
       },
     };
     newJson['_meta'] = _meta;

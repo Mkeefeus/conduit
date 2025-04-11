@@ -1,0 +1,12 @@
+{
+  "name": "Revenge of the Pyre",
+  "source": "TCP",
+  "page": 0,
+  "featureType": ["E:BW"],
+  "consumes": {
+    "name": "Heat Die"
+  },
+  "entries": [
+    "When another creature damages you with a melee attack, you can use your reaction and expend one heat die to deal damage equal to the number rolled to the attacking creature."
+  ]
+}
