@@ -1,0 +1,8 @@
+{
+  "name": "Energy Affinity Feature",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 15,
+  "entries": ["At 15th level, you gain a feature based on your Energy Affinity."]
+}

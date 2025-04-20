@@ -1,8 +1,0 @@
-{
-  "name": "Elemental Study Feature",
-  "source": "TCP",
-  "className": "Conduit",
-  "classSource": "TCP",
-  "level": 6,
-  "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
-}

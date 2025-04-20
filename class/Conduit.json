@@ -8,32 +8,32 @@
     "Spellcasting|Conduit|TCP|2",
     "Energy Imbuement|Conduit|TCP|2",
     {
-      "classFeature": "Elemental Study|Conduit|TCP|3",
+      "classFeature": "Energy Affinity|Conduit|TCP|3",
       "gainSubclassFeature": true
     },
     "Ability Score Improvement|Conduit|TCP|4",
     "Martial Versatility|Conduit|TCP|4",
     "Extra Attack|Conduit|TCP|5",
     {
-      "classFeature": "Elemental Study Feature|Conduit|TCP|6",
+      "classFeature": "Energy Affinity Feature|Conduit|TCP|6",
       "gainSubclassFeature": true
     },
     "Imbued Defense|Conduit|TCP|7",
     "Ability Score Improvement|Conduit|TCP|8",
     {
-      "classFeature": "Elemental Study Feature|Conduit|TCP|10",
+      "classFeature": "Energy Affinity Feature|Conduit|TCP|10",
       "gainSubclassFeature": true
     },
     "Elemental Mastery|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
     "OVerpower Immunity|Conduit|TCP|14",
     {
-      "classFeature": "Elemental Study Feature|Conduit|TCP|15",
+      "classFeature": "Energy Affinity Feature|Conduit|TCP|15",
       "gainSubclassFeature": true
     },
     "Ability Score Improvement|Conduit|TCP|16",
     {
-      "classFeature": "Elemental Study Feature|Conduit|TCP|18",
+      "classFeature": "Energy Affinity Feature|Conduit|TCP|18",
       "gainSubclassFeature": true
     },
     "Ability Score Improvement|Conduit|TCP|19",
@@ -159,7 +159,7 @@
       }
     }
   ],
-  "subclassTitle": "Elemental Study",
+  "subclassTitle": "Energy Affinity",
   "classTableGroups": [
     {
       "colLabels": ["{@filter Spells Known|spells|class=conduit}"],
