@@ -15,7 +15,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745176956,
+    "dateLastModified": 1745177051,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -697,7 +697,7 @@
       "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
     },
     {
-      "name": "Primordial Defense",
+      "name": "Imbued Defense",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
@@ -1085,7 +1085,7 @@
           "classFeature": "Elemental Study Feature|Conduit|TCP|6",
           "gainSubclassFeature": true
         },
-        "Primordial Defense|Conduit|TCP|7",
+        "Imbued Defense|Conduit|TCP|7",
         "Ability Score Improvement|Conduit|TCP|8",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|10",
