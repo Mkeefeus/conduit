@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-04-11",
-        "version": "0.0.7",
+        "dateReleased": "2025-04-20",
+        "version": "0.0.8",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1744409145,
+    "dateLastModified": 1745176956,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -490,7 +490,7 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "At 17th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+        "At 18th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
       ]
     }
   ],
@@ -585,7 +585,7 @@
       "classSource": "TCP",
       "level": 2,
       "entries": [
-        "When you reach 2nd level, you may empower you damage with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, plus and additional 1d4 for each spell level higher then the first. If you are incapacitated, your imbuement immediately ends."
+        "When you reach 2nd level, you may empower you damage with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. The extra damage is 1d4 for a 1st-level spell slot, 1d6 for 2nd, 1d8 for 3rd, 1d10 for 4th, and 1d12 for 5th. If you are incapacitated, your imbuement immediately ends."
       ]
     },
     {
@@ -697,13 +697,13 @@
       "entries": ["At 6th level, you gain a feature based on your Elemental Study."]
     },
     {
-      "name": "Improved Imbuement",
+      "name": "Primordial Defense",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "level": 7,
       "entries": [
-        "Beginning at 5th level, your bonus imbuement damage is 2d4 for a 1st-level spell slot, plus an additional 2d4 for each spell level higher than the first. This replaces the bonus damage from the Energy Imbuement feature."
+        "When you use the Energy Imbuement feature, you may choose an imbuement damage type to gain resistance to for the duration of your Energy Imbuement."
       ]
     },
     {
@@ -715,16 +715,6 @@
       "entries": [
         "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Overcome Resistance",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "level": 9,
-      "entries": [
-        "Starting at 7th level, when you deal an imbuement damage type to a creature that is resistant to that damage, the resistance is ignored."
       ]
     },
     {
@@ -1095,13 +1085,12 @@
           "classFeature": "Elemental Study Feature|Conduit|TCP|6",
           "gainSubclassFeature": true
         },
-        "Improved Imbuement|Conduit|TCP|7",
+        "Primordial Defense|Conduit|TCP|7",
         "Ability Score Improvement|Conduit|TCP|8",
         {
           "classFeature": "Elemental Study Feature|Conduit|TCP|10",
           "gainSubclassFeature": true
         },
-        "Overcome Resistance|Conduit|TCP|9",
         "Elemental Mastery|Conduit|TCP|11",
         "Ability Score Improvement|Conduit|TCP|12",
         "OVerpower Immunity|Conduit|TCP|14",
@@ -1119,16 +1108,16 @@
       ],
       "hd": {
         "number": 1,
-        "faces": 8
+        "faces": 10
       },
-      "proficiency": ["dex", "int"],
+      "proficiency": ["con", "wis"],
       "startingProficiencies": {
         "armor": ["light", "medium", "shield"],
         "weapons": ["simple", "martial"],
         "skills": [
           {
             "choose": {
-              "from": ["acrobatics", "athletics", "history", "investigation", "nature", "survival"],
+              "from": ["acrobatics", "athletics", "history", "insight", "perception", "nature"],
               "count": 2
             }
           }
@@ -1176,7 +1165,7 @@
       },
       "multiclassing": {
         "requirements": {
-          "int": 13,
+          "wis": 13,
           "or": [
             {
               "str": 13,
@@ -1190,7 +1179,7 @@
         }
       },
       "casterProgression": "1/2",
-      "spellcastingAbility": "int",
+      "spellcastingAbility": "wis",
       "classSpells": [
         "Absorb Elements|XGE",
         "Catapult|XGE",

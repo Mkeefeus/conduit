@@ -18,13 +18,12 @@
       "classFeature": "Elemental Study Feature|Conduit|TCP|6",
       "gainSubclassFeature": true
     },
-    "Improved Imbuement|Conduit|TCP|7",
+    "Primordial Defense|Conduit|TCP|7",
     "Ability Score Improvement|Conduit|TCP|8",
     {
       "classFeature": "Elemental Study Feature|Conduit|TCP|10",
       "gainSubclassFeature": true
     },
-    "Overcome Resistance|Conduit|TCP|9",
     "Elemental Mastery|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
     "OVerpower Immunity|Conduit|TCP|14",
@@ -42,16 +41,16 @@
   ],
   "hd": {
     "number": 1,
-    "faces": 8
+    "faces": 10
   },
-  "proficiency": ["dex", "int"],
+  "proficiency": ["con", "wis"],
   "startingProficiencies": {
     "armor": ["light", "medium", "shield"],
     "weapons": ["simple", "martial"],
     "skills": [
       {
         "choose": {
-          "from": ["acrobatics", "athletics", "history", "investigation", "nature", "survival"],
+          "from": ["acrobatics", "athletics", "history", "insight", "perception", "nature"],
           "count": 2
         }
       }
@@ -99,7 +98,7 @@
   },
   "multiclassing": {
     "requirements": {
-      "int": 13,
+      "wis": 13,
       "or": [
         {
           "str": 13,
@@ -113,7 +112,7 @@
     }
   },
   "casterProgression": "1/2",
-  "spellcastingAbility": "int",
+  "spellcastingAbility": "wis",
   "classSpells": [
     "Absorb Elements|XGE",
     "Catapult|XGE",

@@ -1,0 +1,10 @@
+{
+  "name": "Primordial Defense",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 7,
+  "entries": [
+    "When you use the Energy Imbuement feature, you may choose an imbuement damage type to gain resistance to for the duration of your Energy Imbuement."
+  ]
+}
