@@ -26,7 +26,7 @@
       "type": "entries",
       "name": "Spellcasting Ability",
       "entries": [
-        "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+        "Wisdom is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
         {
           "type": "abilityDc",
           "name": "Spell",

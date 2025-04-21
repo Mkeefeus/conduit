@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-21",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745197526,
+    "dateLastModified": 1745199776,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -190,7 +190,7 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "Starting at 6th level, you gain resistance to fire damage. Additionally, while you are concentrating on a spell that deals fire damage, you gain a bonus to any Constitution saving throws you make to maintain concentration on that spell. The bonus equals your Intelligence modifier (minimum of +1)."
+        "Starting at 6th level, you gain resistance to fire damage. Additionally, while you are concentrating on a spell that deals fire damage, you gain a bonus to any Constitution saving throws you make to maintain concentration on that spell. The bonus equals your Wisdom modifier (minimum of +1)."
       ]
     },
     {
@@ -396,7 +396,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Intelligence modifier, regaining all uses on a short rest."
+        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Wisdom modifier, regaining all uses on a short rest."
       ]
     },
     {
@@ -450,7 +450,7 @@
       "header": 2,
       "entries": [
         "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
-        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Intelligence modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
+        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Wisdom modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
       ]
     },
     {
@@ -616,7 +616,7 @@
           "type": "entries",
           "name": "Spellcasting Ability",
           "entries": [
-            "Intelligence is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+            "Wisdom is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
             {
               "type": "abilityDc",
               "name": "Spell",
@@ -801,7 +801,7 @@
       "classSource": "TCP",
       "level": 20,
       "entries": [
-        "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Intelligence modifier"
+        "At 20th level, when you hit a creature with an imbued weapon, you may choose to heal for the damage dealt. You may use this feature a number of times equal to your Wisdom modifier"
       ]
     }
   ],
@@ -1023,7 +1023,7 @@
         "name": "Heat Die"
       },
       "entries": [
-        "When you take the attack action, you may expend a heat die and use a bonus action to throw a dart of fire at a target you can see within 60 feet of you. The dart is a ranged weapon attack with which you are proficient, and the damage is equal to the number rolled on your heat die plus your Intelligence modifier."
+        "When you take the attack action, you may expend a heat die and use a bonus action to throw a dart of fire at a target you can see within 60 feet of you. The dart is a ranged weapon attack with which you are proficient, and the damage is equal to the number rolled on your heat die plus your Wisdom modifier."
       ]
     },
     {

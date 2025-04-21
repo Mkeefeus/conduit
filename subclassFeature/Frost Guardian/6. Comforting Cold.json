@@ -9,6 +9,6 @@
   "header": 2,
   "entries": [
     "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
-    "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Intelligence modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
+    "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Wisdom modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
   ]
 }
