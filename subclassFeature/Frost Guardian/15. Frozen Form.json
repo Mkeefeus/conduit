@@ -9,6 +9,6 @@
   "header": 2,
   "entries": [
     "At 15th level, a protective layer of ice coats you. The ground around you freezes as you move. The ground in a 10-foot-radius centered on you is considered difficult terrain for enemies. An enemy that starts its turn in this area must make a Dexterity saving throw against your Spell Save DC or fall prone.",
-    "Additionally, your Icy Pillars influence on allies and enemies increases in range. An enemy starting their turn within 15 ft of one of your Icy Pillars has their movement speed reduced by 10 ft until the end of their turn. If an allied creature starts their turn within 15 ft of a pillar, then they gain temp HP equal to your Int modifier."
+    "Additionally, your Icy Pillars influence on allies and enemies increases in range. An enemy starting their turn within 15 ft of one of your Icy Pillars has their movement speed reduced by 10 ft until the end of their turn. If an allied creature starts their turn within 15 ft of a pillar, then they gain temp HP equal to your Wisdom modifier."
   ]
 }

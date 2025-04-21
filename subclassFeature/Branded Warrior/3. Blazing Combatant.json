@@ -47,7 +47,7 @@
             {
               "type": "abilityDc",
               "name": "Emblem",
-              "attributes": ["int"]
+              "attributes": ["wis"]
             }
           ]
         }

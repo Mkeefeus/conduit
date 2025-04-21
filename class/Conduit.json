@@ -43,14 +43,31 @@
     "number": 1,
     "faces": 10
   },
-  "proficiency": ["con", "wis"],
+  "proficiency": [
+    "con",
+    "wis"
+  ],
   "startingProficiencies": {
-    "armor": ["light", "medium", "shield"],
-    "weapons": ["simple", "martial"],
+    "armor": [
+      "light",
+      "medium",
+      "shield"
+    ],
+    "weapons": [
+      "simple",
+      "martial"
+    ],
     "skills": [
       {
         "choose": {
-          "from": ["acrobatics", "athletics", "history", "insight", "perception", "nature"],
+          "from": [
+            "acrobatics",
+            "athletics",
+            "history",
+            "insight",
+            "perception",
+            "nature"
+          ],
           "count": 2
         }
       }
@@ -66,8 +83,12 @@
     ],
     "defaultData": [
       {
-        "a": ["scale mail|phb"],
-        "b": ["leather armor|phb"]
+        "a": [
+          "scale mail|phb"
+        ],
+        "b": [
+          "leather armor|phb"
+        ]
       },
       {
         "a": [
@@ -84,8 +105,12 @@
         ]
       },
       {
-        "a": ["dungeoneer's pack|phb"],
-        "b": ["explorer's pack|phb"]
+        "a": [
+          "dungeoneer's pack|phb"
+        ],
+        "b": [
+          "explorer's pack|phb"
+        ]
       },
       {
         "_": [
@@ -107,21 +132,77 @@
       ]
     },
     "proficienciesGained": {
-      "weapons": ["simple", "martial"],
-      "armor": ["light", "medium", "shield"]
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "shield"
+      ]
     }
   },
   "casterProgression": "1/2",
   "spellcastingAbility": "wis",
+  "preparedSpells": "<$level$> / 2 + <$wis_mod$>",
+  "preparedSpellsChange": "restLong",
+  "cantripProgression": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
   "classSpells": [
+    "Acid Splash",
+    "Booming Blade|XGE",
+    "Control Flames|XGE",
+    "Create Bonfire|XGE",
+    "Frostbite|XGE",
+    "Green-Flame Blade|XGE",
+    "Gust|XGE",
+    "Lightning Lure|TCE",
+    "Mold Earth|XGE",
+    "Produce Flame",
+    "Ray of Frost",
+    "Shape Water|XGE",
+    "Shocking Grasp",
+    "Thunderclap|XGE",
+    "True Strike",
     "Absorb Elements|XGE",
+    "Armor of Agathys",
+    "Burning Hands",
     "Catapult|XGE",
-    "Create or Destroy Water",
+    "Chaos Bolt|XGE",
+    "Chromatic Orb",
     "Earth Tremor|XGE",
+    "Ensnaring Strike",
     "Faerie Fire",
     "Feather Fall",
     "Fog Cloud",
+    "Frost Fingers|IDRotF",
+    "Grease",
+    "Hellish Rebuke",
+    "Ice Knife|XGE",
     "Jump",
+    "Thunderwave",
+    "Witch Bolt",
     "Air Bubble|AAG",
     "Continual Flame",
     "Dust Devil|XGE",
@@ -149,11 +230,12 @@
     "Transmute Rock|XGE",
     "Wall of Stone"
   ],
-  "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
   "optionalfeatureProgression": [
     {
       "name": "Fighting Style",
-      "featureType": ["FS:C"],
+      "featureType": [
+        "FS:C"
+      ],
       "progression": {
         "1": 1
       }
@@ -161,10 +243,6 @@
   ],
   "subclassTitle": "Energy Affinity",
   "classTableGroups": [
-    {
-      "colLabels": ["{@filter Spells Known|spells|class=conduit}"],
-      "rows": [[0], [2], [3], [3], [4], [4], [5], [5], [6], [6], [7], [7], [8], [8], [9], [9], [10], [10], [11], [11]]
-    },
     {
       "title": "Spell Slots per Spell Level",
       "colLabels": [
@@ -175,26 +253,146 @@
         "{@filter 5th|spells|level=5|class=Ranger}"
       ],
       "rowsSpellProgression": [
-        [0, 0, 0, 0, 0],
-        [2, 0, 0, 0, 0],
-        [3, 0, 0, 0, 0],
-        [3, 0, 0, 0, 0],
-        [4, 2, 0, 0, 0],
-        [4, 2, 0, 0, 0],
-        [4, 3, 0, 0, 0],
-        [4, 3, 0, 0, 0],
-        [4, 3, 2, 0, 0],
-        [4, 3, 2, 0, 0],
-        [4, 3, 3, 0, 0],
-        [4, 3, 3, 0, 0],
-        [4, 3, 3, 1, 0],
-        [4, 3, 3, 1, 0],
-        [4, 3, 3, 2, 0],
-        [4, 3, 3, 2, 0],
-        [4, 3, 3, 3, 1],
-        [4, 3, 3, 3, 1],
-        [4, 3, 3, 3, 2],
-        [4, 3, 3, 3, 2]
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          3,
+          2
+        ],
+        [
+          4,
+          3,
+          3,
+          3,
+          2
+        ]
       ]
     }
   ]

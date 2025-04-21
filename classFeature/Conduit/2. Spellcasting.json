@@ -30,12 +30,12 @@
         {
           "type": "abilityDc",
           "name": "Spell",
-          "attributes": ["int"]
+          "attributes": ["wis"]
         },
         {
           "type": "abilityAttackMod",
           "name": "Spell",
-          "attributes": ["int"]
+          "attributes": ["wis"]
         }
       ]
     },
