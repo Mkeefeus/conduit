@@ -189,6 +189,10 @@
   "subclassTitle": "Energy Affinity",
   "classTableGroups": [
     {
+      "colLabels": ["{@filter Cantrips Known|spells|level=0|class=artificer}"],
+      "rows": [[0], [2], [2], [2], [2], [2], [2], [3], [3], [3], [3], [4], [4], [4], [4], [4], [4], [4]]
+    },
+    {
       "title": "Spell Slots per Spell Level",
       "colLabels": [
         "{@filter 1st|spells|level=1|class=Ranger}",
