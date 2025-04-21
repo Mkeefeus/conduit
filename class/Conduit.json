@@ -115,7 +115,7 @@
   "spellcastingAbility": "wis",
   "preparedSpells": "<$level$> / 2 + <$wis_mod$>",
   "preparedSpellsChange": "restLong",
-  "cantripProgression": [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
+  "cantripProgression": [0, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
   "classSpells": [
     "Acid Splash",
     "Booming Blade|TCE",

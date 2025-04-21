@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-21",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745204032,
+    "dateLastModified": 1745204260,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -1182,7 +1182,7 @@
       "spellcastingAbility": "wis",
       "preparedSpells": "<$level$> / 2 + <$wis_mod$>",
       "preparedSpellsChange": "restLong",
-      "cantripProgression": [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
+      "cantripProgression": [0, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
       "classSpells": [
         "Acid Splash",
         "Booming Blade|TCE",
