@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-21",
-        "version": "0.0.15",
+        "version": "0.0.14",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745204593,
+    "dateLastModified": 1745204928,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -1257,7 +1257,7 @@
       "classTableGroups": [
         {
           "colLabels": ["{@filter Cantrips Known|spells|level=0|class=artificer}"],
-          "rows": [[0], [2], [2], [2], [2], [2], [2], [3], [3], [3], [3], [4], [4], [4], [4], [4], [4], [4]]
+          "rows": [[0], [2], [2], [2], [2], [2], [2], [2], [2], [3], [3], [3], [3], [4], [4], [4], [4], [4], [4], [4]]
         },
         {
           "title": "Spell Slots per Spell Level",
