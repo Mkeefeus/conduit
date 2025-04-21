@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-21",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745203138,
+    "dateLastModified": 1745204032,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -1185,11 +1185,11 @@
       "cantripProgression": [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
       "classSpells": [
         "Acid Splash",
-        "Booming Blade|XGE",
+        "Booming Blade|TCE",
         "Control Flames|XGE",
         "Create Bonfire|XGE",
         "Frostbite|XGE",
-        "Green-Flame Blade|XGE",
+        "Green-Flame Blade|TCE",
         "Gust|XGE",
         "Lightning Lure|TCE",
         "Mold Earth|XGE",
