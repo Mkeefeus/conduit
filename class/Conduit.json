@@ -43,31 +43,14 @@
     "number": 1,
     "faces": 10
   },
-  "proficiency": [
-    "con",
-    "wis"
-  ],
+  "proficiency": ["con", "wis"],
   "startingProficiencies": {
-    "armor": [
-      "light",
-      "medium",
-      "shield"
-    ],
-    "weapons": [
-      "simple",
-      "martial"
-    ],
+    "armor": ["light", "medium", "shield"],
+    "weapons": ["simple", "martial"],
     "skills": [
       {
         "choose": {
-          "from": [
-            "acrobatics",
-            "athletics",
-            "history",
-            "insight",
-            "perception",
-            "nature"
-          ],
+          "from": ["acrobatics", "athletics", "history", "insight", "perception", "nature"],
           "count": 2
         }
       }
@@ -83,12 +66,8 @@
     ],
     "defaultData": [
       {
-        "a": [
-          "scale mail|phb"
-        ],
-        "b": [
-          "leather armor|phb"
-        ]
+        "a": ["scale mail|phb"],
+        "b": ["leather armor|phb"]
       },
       {
         "a": [
@@ -105,12 +84,8 @@
         ]
       },
       {
-        "a": [
-          "dungeoneer's pack|phb"
-        ],
-        "b": [
-          "explorer's pack|phb"
-        ]
+        "a": ["dungeoneer's pack|phb"],
+        "b": ["explorer's pack|phb"]
       },
       {
         "_": [
@@ -132,43 +107,15 @@
       ]
     },
     "proficienciesGained": {
-      "weapons": [
-        "simple",
-        "martial"
-      ],
-      "armor": [
-        "light",
-        "medium",
-        "shield"
-      ]
+      "weapons": ["simple", "martial"],
+      "armor": ["light", "medium", "shield"]
     }
   },
   "casterProgression": "1/2",
   "spellcastingAbility": "wis",
   "preparedSpells": "<$level$> / 2 + <$wis_mod$>",
   "preparedSpellsChange": "restLong",
-  "cantripProgression": [
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    2,
-    3,
-    3,
-    3,
-    3,
-    4,
-    4,
-    4,
-    4,
-    4,
-    4,
-    4
-  ],
+  "cantripProgression": [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4],
   "classSpells": [
     "Acid Splash",
     "Booming Blade|XGE",
@@ -233,9 +180,7 @@
   "optionalfeatureProgression": [
     {
       "name": "Fighting Style",
-      "featureType": [
-        "FS:C"
-      ],
+      "featureType": ["FS:C"],
       "progression": {
         "1": 1
       }
@@ -253,146 +198,26 @@
         "{@filter 5th|spells|level=5|class=Ranger}"
       ],
       "rowsSpellProgression": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          2,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          3,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          3,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          2,
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          2,
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          0,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          2,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          2,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          0,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          1,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          1,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          2,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          2,
-          0
-        ],
-        [
-          4,
-          3,
-          3,
-          3,
-          1
-        ],
-        [
-          4,
-          3,
-          3,
-          3,
-          1
-        ],
-        [
-          4,
-          3,
-          3,
-          3,
-          2
-        ],
-        [
-          4,
-          3,
-          3,
-          3,
-          2
-        ]
+        [0, 0, 0, 0, 0],
+        [2, 0, 0, 0, 0],
+        [3, 0, 0, 0, 0],
+        [3, 0, 0, 0, 0],
+        [4, 2, 0, 0, 0],
+        [4, 2, 0, 0, 0],
+        [4, 3, 0, 0, 0],
+        [4, 3, 0, 0, 0],
+        [4, 3, 2, 0, 0],
+        [4, 3, 2, 0, 0],
+        [4, 3, 3, 0, 0],
+        [4, 3, 3, 0, 0],
+        [4, 3, 3, 1, 0],
+        [4, 3, 3, 1, 0],
+        [4, 3, 3, 2, 0],
+        [4, 3, 3, 2, 0],
+        [4, 3, 3, 3, 1],
+        [4, 3, 3, 3, 1],
+        [4, 3, 3, 3, 2],
+        [4, 3, 3, 3, 2]
       ]
     }
   ]
