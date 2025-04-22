@@ -33,7 +33,6 @@ if (!actorUtils.hasSpellSlots(workflow.actor)) {
   return;
 }
 let validTypes = ['acid', 'cold', 'fire', 'lightning', 'thunder'];
-let die = ['d4', 'd6', 'd8', 'd10', 'd12'];
 let buttons = validTypes.map((i) => [
   CONFIG.DND5E.damageTypes[i].label,
   Object.keys(CONFIG.DND5E.damageTypes).find((j) => j === i),
@@ -68,7 +67,6 @@ if (slotUsed === 'pact') {
 }
 
 const randomString = generateRandomString(8);
-const damageDie = die[slotUsed - 1];
 
 let effectData = {
   name: workflow.item.name + ' (' + CONFIG.DND5E.damageTypes[selection].label + ')',
@@ -81,19 +79,19 @@ let effectData = {
     {
       key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.mwak`,
       mode: 5,
-      value: `1${damageDie}[${selection}]`,
+      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4`: ''}[${selection}] + @abilities.wis.mod[${selection}]`,
       priority: 20,
     },
     {
       key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.rwak`,
       mode: 5,
-      value: `1${damageDie}[${selection}]`,
+      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4`: ''}[${selection}] + @abilities.wis.mod[${selection}]`,
       priority: 20,
     },
     {
       key: `flags.midi-qol.optional.energyImbuement_${randomString}.criticalDamage`,
       mode: 5,
-      value: `1${damageDie}[${selection}]`,
+      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4`: ''}[${selection}]`,
       priority: 20,
     },
     {
@@ -102,6 +100,12 @@ let effectData = {
       value: 'every',
       priority: 20,
     },
+    {
+      key: `flags.midi-qol.optional.energyImbuement_${randomString}.force`,
+      mode: 5,
+      value: 1,
+      priority: 20,
+    }
   ],
   flags: {
     dae: {
