@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-24",
-        "version": "0.0.24",
+        "version": "0.0.25",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745525697,
+    "dateLastModified": 1745525824,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -890,7 +890,7 @@
       "additionalSpells": [
         {
           "prepared": {
-            "3": ["Longstrider", "Expeditious Retreat"],
+            "3": ["Longstrider", "Zephyr Strike"],
             "5": ["Blur", "Spider Climb"],
             "9": ["Ashardalon's Stride", "Haste"],
             "13": ["Dimension Door", "Freedom of Movement"],
