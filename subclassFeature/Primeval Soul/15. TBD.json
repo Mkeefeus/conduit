@@ -8,7 +8,5 @@
   "subclassSource": "TCP",
   "level": 15,
   "header": 2,
-  "entries": [
-    "TBD"
-  ]
+  "entries": ["TBD"]
 }
