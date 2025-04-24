@@ -16,11 +16,11 @@
       "colLabels": ["Conduit Level", "Spell"],
       "colStyles": ["col-2 text-center", "col-10"],
       "rows": [
-        ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
-        ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
-        ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
-        ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
-        ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+        ["3rd", "{@spell Longstrider}, {@spell Zephyr Strike|XGE}"],
+        ["5th", "{@spell Blur}, {@spell Spider Climb}"],
+        ["9th", "{@spell Ashardalon's Stride|FTD}, {@spell Haste}"],
+        ["13th", "{@spell Dimension Door}, {@spell Freedom of Movement}"],
+        ["17th", "{@spell Far Step|XGE}, {@spell Steel Wind Strike|XGE}"]
       ]
     }
   ]

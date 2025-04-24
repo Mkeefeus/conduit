@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-24",
-        "version": "0.0.22",
+        "version": "0.0.23",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745525000,
+    "dateLastModified": 1745525212,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -392,11 +392,11 @@
           "colLabels": ["Conduit Level", "Spell"],
           "colStyles": ["col-2 text-center", "col-10"],
           "rows": [
-            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
-            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
-            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
-            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
-            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+            ["3rd", "{@spell Longstrider}, {@spell Zephyr Strike|XGE}"],
+            ["5th", "{@spell Blur}, {@spell Spider Climb}"],
+            ["9th", "{@spell Ashardalon's Stride|FTD}, {@spell Haste}"],
+            ["13th", "{@spell Dimension Door}, {@spell Freedom of Movement}"],
+            ["17th", "{@spell Far Step|XGE}, {@spell Steel Wind Strike|XGE}"]
           ]
         }
       ]
