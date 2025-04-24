@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-24",
-        "version": "0.0.21",
+        "version": "0.0.22",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745524573,
+    "dateLastModified": 1745525000,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -439,18 +439,28 @@
           "type": "entries",
           "name": "Speed",
           "entries": [
-            "Your movement speed icnreases by 10 feet",
-            "You gain a fly speed equal to your movement speed. At the end of each of your turns, you will begin to plummet",
-            "During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+            {
+              "type": "list",
+              "items": [
+                "Your movement speed increases by 10ft",
+                "You gain a fly speed equal to your movement speed. At the end of each of your turns, you will begin to plummet",
+                "During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+              ]
+            }
           ]
         },
         {
           "type": "entries",
           "name": "Power",
           "entries": [
-            "Your movement speed decreases by 10ft",
-            "You gain a +1 bonus to your AC",
-            "When you hit with a weapon attack, you may force the target to make a Strength saving throw. The DC for this save is 8 + Wisdom modifier + Proficiency Bonus. On a failed save, you either force the target away from you 5ft, or knock them prone."
+            {
+              "type": "list",
+              "items": [
+                "Your movement speed increases by 10ft",
+                "You gain a +1 bonus to your AC",
+                "When you hit with a weapon attack, you may force the target to make a Strength saving throw. The DC for this save is 8 + Wisdom modifier + Proficiency Bonus. On a failed save, you either force the target away from you 5ft, or knock them prone."
+              ]
+            }
           ]
         },
         "You may use this feature a number of times equal to your proficiency bonus regaining all uses on long rest"
