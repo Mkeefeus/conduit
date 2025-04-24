@@ -1,10 +1,10 @@
 {
-  "name": "Electric Soul Spells",
+  "name": "Primeval Soul Spells",
   "source": "TCP",
   "className": "Conduit",
   "classSource": "TCP",
   "page": 0,
-  "subclassShortName": "Electric Soul",
+  "subclassShortName": "Primeval Soul",
   "subclassSource": "TCP",
   "level": 3,
   "header": 1,

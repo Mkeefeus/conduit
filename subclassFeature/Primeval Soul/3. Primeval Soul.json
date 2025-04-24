@@ -1,0 +1,22 @@
+{
+  "name": "Primeval Soul",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Primeval Soul",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "Primeval Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
+    },
+    {
+      "type": "refSubclassFeature",
+      "subclassFeature": "Energy Surge|Conduit|TCP|Primeval Soul|TCP|3"
+    }
+  ]
+}

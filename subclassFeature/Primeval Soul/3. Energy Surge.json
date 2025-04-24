@@ -1,0 +1,33 @@
+{
+  "name": "Energy Soul",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Primeval Soul",
+  "subclassSource": "TCP",
+  "level": 3,
+  "header": 1,
+  "entries": [
+    "At 3rd level you harness the energy around you to move fast and strike hard. As a bonus action, you may take a stance for up to a minute. You choose a stance each time you use this feature, and can switch between stances for the duration as a bonus action.",
+    {
+      "type": "entries",
+      "name": "Speed",
+      "entries": [
+        "Your movement speed icnreases by 10 feet",
+        "You gain a fly speed equal to your movement speed. At the end of each of your turns, you will begin to plummet",
+        "During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Power",
+      "entries": [
+        "Your movement speed decreases by 10ft",
+        "You gain a +1 bonus to your AC",
+        "When you hit with a weapon attack, you may force the target to make a Strength saving throw. The DC for this save is 8 + Wisdom modifier + Proficiency Bonus. On a failed save, you either force the target away from you 5ft, or knock them prone."
+      ]
+    },
+    "You may use this feature a number of times equal to your proficiency bonus regaining all uses on long rest"
+  ]
+}

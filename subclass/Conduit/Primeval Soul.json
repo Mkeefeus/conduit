@@ -1,16 +1,16 @@
 {
-  "name": "Electric Soul",
+  "name": "Primeval Soul",
   "source": "TCP",
   "page": 0,
   "className": "Conduit",
   "classSource": "TCP",
-  "shortName": "Electric Soul",
+  "shortName": "Primeval Soul",
   "subclassFeatures": [
-    "Electric Soul|Conduit|TCP|Electric Soul|TCP|3",
-    "Arcing Strikes|Conduit|TCP|Electric Soul|TCP|6",
-    "Flash of Lightning|Conduit|TCP|Electric Soul|TCP|10",
-    "Electric Discharge|Conduit|TCP|Electric Soul|TCP|15",
-    "Increased Conductivity|Conduit|TCP|Electric Soul|TCP|18"
+    "Primeval Soul|Conduit|TCP|Primeval Soul|TCP|3",
+    "TBD|Conduit|TCP|Primeval Soul|TCP|6",
+    "TBD|Conduit|TCP|Primeval Soul|TCP|10",
+    "TBD|Conduit|TCP|Primeval Soul|TCP|15",
+    "TBD|Conduit|TCP|Primeval Soul|TCP|18"
   ],
   "additionalSpells": [
     {

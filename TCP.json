@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-04-22",
-        "version": "0.0.19",
+        "dateReleased": "2025-04-24",
+        "version": "0.0.20",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745290282,
+    "dateLastModified": 1745524393,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -242,125 +242,6 @@
       ]
     },
     {
-      "name": "Electric Soul",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Electric Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Electric Soul Spells|Conduit|TCP|Electric Soul|TCP|3"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Lightning Dash|Conduit|TCP|Electric Soul|TCP|3"
-        }
-      ]
-    },
-    {
-      "name": "Electric Soul Spells",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
-        {
-          "type": "table",
-          "caption": "Branded Warrior Spells",
-          "colLabels": ["Conduit Level", "Spell"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
-            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
-            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
-            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
-            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Lightning Dash",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Starting at 3rd level, you may dash as a bonus action. When you dash in this way, you do not provoke opportunity attacks, and may move through other creatures' spaces. You may not end your turn inside another creature's space."
-      ]
-    },
-    {
-      "name": "Arcing Strikes",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "Starting at 6th level, you gain resistance to lightning damage. Additionally, when you hit a creature with a weapon attack, and have the lightning imbuement on that weapon, you cause electric energy to arc to another creature. Select a different creature within 10 feet, that creature takes 1d4 lightning damage"
-      ]
-    },
-    {
-      "name": "Flash of Lightning",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "At 10th level, when you hit a target the leaping arcing lightning from Arcing Strikes, you may use your bonus action to teleport within 5 feet of that target, and immediately make an attack against it. Once you use this feature, you must finish a short or long rest before you can use it again."
-      ]
-    },
-    {
-      "name": "Electric Discharge",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "At 15th level, you may use your action to create a massive electrical discharge. All creatures within 15 feet of you must make a Constitution saving throw against your Spell save DC. On a failed save, the creature takes 8d6 lightning damage and is stunned until the start of your next turn. Once you use this feature, you must finish a long rest before you can use it again."
-      ]
-    },
-    {
-      "name": "Increased Conductivity",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "page": 0,
-      "subclassShortName": "Electric Soul",
-      "subclassSource": "TCP",
-      "level": 18,
-      "header": 2,
-      "entries": [
-        "At 18th level, you Arcing Strikes feature can now hit 2 additional creatures instead of 1, and the range increases to 15 feet."
-      ]
-    },
-    {
       "name": "Frost Guardian Spells",
       "source": "TCP",
       "className": "Conduit",
@@ -491,6 +372,144 @@
       "header": 2,
       "entries": [
         "At 18th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+      ]
+    },
+    {
+      "name": "Primeval Soul Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        {
+          "type": "table",
+          "caption": "Branded Warrior Spells",
+          "colLabels": ["Conduit Level", "Spell"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["3rd", "{@spell Longstrider}, {@spell Expeditious Retreat}"],
+            ["5th", "{@spell Spider Climb}, {@spell Shatter}"],
+            ["9th", "{@spell Lightning Bolt}, {@spell Haste}"],
+            ["13th", "{@spell Dimension Door}, {@spell Storm Sphere|XGE}"],
+            ["17th", "{@spell Far Step|XGE}, {@spell Synaptic Static|XGE}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primeval Soul",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Primeval Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Energy Surge|Conduit|TCP|Primeval Soul|TCP|3"
+        }
+      ]
+    },
+    {
+      "name": "Energy Soul",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level you harness the energy around you to move fast and strike hard. As a bonus action, you may take a stance for up to a minute. You choose a stance each time you use this feature, and can switch between stances for the duration as a bonus action.",
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your movement speed icnreases by 10 feet",
+            "You gain a fly speed equal to your movement speed. At the end of each of your turns, you will begin to plummet",
+            "During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Power",
+          "entries": [
+            "Your movement speed decreases by 10ft",
+            "You gain a +1 bonus to your AC",
+            "When you hit with a weapon attack, you may force the target to make a Strength saving throw. The DC for this save is 8 + Wisdom modifier + Proficiency Bonus. On a failed save, you either force the target away from you 5ft, or knock them prone."
+          ]
+        },
+        "You may use this feature a number of times equal to your proficiency bonus regaining all uses on long rest"
+      ]
+    },
+    {
+      "name": "TBD",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you gain resistance to lightning damage. Additionally, when you hit a creature with a weapon attack, and have the lightning imbuement on that weapon, you cause electric energy to arc to another creature. Select a different creature within 10 feet, that creature takes 1d4 lightning damage"
+      ]
+    },
+    {
+      "name": "TBD",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At 10th level, when you hit a target the leaping arcing lightning from TBD, you may use your bonus action to teleport within 5 feet of that target, and immediately make an attack against it. Once you use this feature, you must finish a short or long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "TBD",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "At 15th level, you may use your action to create a massive electrical discharge. All creatures within 15 feet of you must make a Constitution saving throw against your Spell save DC. On a failed save, the creature takes 8d6 lightning damage and is stunned until the start of your next turn. Once you use this feature, you must finish a long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "TBD",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "page": 0,
+      "subclassShortName": "Primeval Soul",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "At 18th level, you TBD feature can now hit 2 additional creatures instead of 1, and the range increases to 15 feet."
       ]
     }
   ],
@@ -828,32 +847,6 @@
       ]
     },
     {
-      "name": "Electric Soul",
-      "source": "TCP",
-      "page": 0,
-      "className": "Conduit",
-      "classSource": "TCP",
-      "shortName": "Electric Soul",
-      "subclassFeatures": [
-        "Electric Soul|Conduit|TCP|Electric Soul|TCP|3",
-        "Arcing Strikes|Conduit|TCP|Electric Soul|TCP|6",
-        "Flash of Lightning|Conduit|TCP|Electric Soul|TCP|10",
-        "Electric Discharge|Conduit|TCP|Electric Soul|TCP|15",
-        "Increased Conductivity|Conduit|TCP|Electric Soul|TCP|18"
-      ],
-      "additionalSpells": [
-        {
-          "known": {
-            "3": ["Longstrider", "Expeditious Retreat"],
-            "5": ["Spider Climb", "Shatter"],
-            "9": ["Lightning Bolt", "Haste"],
-            "13": ["Dimension Door", "Storm Sphere|XGE"],
-            "17": ["Far Step|XGE", "Synaptic Static|XGE"]
-          }
-        }
-      ]
-    },
-    {
       "name": "Frost Guardian",
       "shortName": "Frost Guardian",
       "source": "TCP",
@@ -874,6 +867,32 @@
             "9": ["Sleet Storm", "Slow"],
             "13": ["Ice Storm", "Control Water"],
             "17": ["Cone of Cold", "Hold Monster"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Primeval Soul",
+      "source": "TCP",
+      "page": 0,
+      "className": "Conduit",
+      "classSource": "TCP",
+      "shortName": "Primeval Soul",
+      "subclassFeatures": [
+        "Primeval Soul|Conduit|TCP|Primeval Soul|TCP|3",
+        "TBD|Conduit|TCP|Primeval Soul|TCP|6",
+        "TBD|Conduit|TCP|Primeval Soul|TCP|10",
+        "TBD|Conduit|TCP|Primeval Soul|TCP|15",
+        "TBD|Conduit|TCP|Primeval Soul|TCP|18"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": ["Longstrider", "Expeditious Retreat"],
+            "5": ["Spider Climb", "Shatter"],
+            "9": ["Lightning Bolt", "Haste"],
+            "13": ["Dimension Door", "Storm Sphere|XGE"],
+            "17": ["Far Step|XGE", "Synaptic Static|XGE"]
           }
         }
       ]
