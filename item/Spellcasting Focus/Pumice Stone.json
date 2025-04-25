@@ -1,0 +1,13 @@
+{
+  "name": "Pumice Stone",
+  "source": "TCP",
+  "page": 0,
+  "type": "SCF",
+  "focus": ["Conduit"],
+  "rarity": "none",
+  "weight": 1,
+  "value": 1000,
+  "entries": [
+    "A light, porous volcanic rock formed when lava cools quickly. A conduit can use such an object as a spellcasting focus."
+  ]
+}

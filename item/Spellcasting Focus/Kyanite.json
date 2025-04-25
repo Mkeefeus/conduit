@@ -1,0 +1,13 @@
+{
+  "name": "Kyanite",
+  "source": "TCP",
+  "page": 0,
+  "type": "SCF",
+  "focus": ["Conduit"],
+  "rarity": "none",
+  "weight": 1,
+  "value": 1000,
+  "entries": [
+    "A blue silicate mineral made under high pressure. A conduit can use such an object as a spellcasting focus."
+  ]
+}

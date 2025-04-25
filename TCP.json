@@ -8,20 +8,108 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-04-24",
-        "version": "0.0.25",
+        "dateReleased": "2025-04-25",
+        "version": "0.0.23",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745525824,
+    "dateLastModified": 1745602041,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
       "E:BW": "Emblem: Branded Warrior"
     }
   },
+  "item": [
+    {
+      "name": "Fulgurite",
+      "source": "TCP",
+      "page": 0,
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "rarity": "none",
+      "weight": 1,
+      "value": 1000,
+      "entries": [
+        "A natural glass formed when lightning strikes sand, fusing the grains into a glassy tube. A conduit can use such an object as a spellcasting focus."
+      ]
+    },
+    {
+      "name": "Kyanite",
+      "source": "TCP",
+      "page": 0,
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "rarity": "none",
+      "weight": 1,
+      "value": 1000,
+      "entries": [
+        "A blue silicate mineral made under high pressure. A conduit can use such an object as a spellcasting focus."
+      ]
+    },
+    {
+      "name": "Petrified Wood",
+      "source": "TCP",
+      "page": 0,
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "rarity": "none",
+      "weight": 1,
+      "value": 1000,
+      "entries": [
+        "A piece of wood that has turned to stone over the ages. A conduit can use such an object as a spellcasting focus."
+      ]
+    },
+    {
+      "name": "Primordial Focus",
+      "source": "TCP",
+      "page": 0,
+      "rarity": "none",
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "entries": [
+        "A primordial focus is the result of extreme elemental force, such as a piece of kyanite, fulgurite, pumice stone, tektite, or petrified wood. A conduit can use such an object as a spellcasting focus.",
+        {
+          "type": "list",
+          "items": [
+            "{@item Kyanite|TCP}",
+            "{@item Fulgurite|TCP}",
+            "{@item Pumice Stone|TCP}",
+            "{@item Tektite|TCP}",
+            "{@item Petrified Wood|TCP}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pumice Stone",
+      "source": "TCP",
+      "page": 0,
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "rarity": "none",
+      "weight": 1,
+      "value": 1000,
+      "entries": [
+        "A light, porous volcanic rock formed when lava cools quickly. A conduit can use such an object as a spellcasting focus."
+      ]
+    },
+    {
+      "name": "Tektite",
+      "source": "TCP",
+      "page": 0,
+      "type": "SCF",
+      "focus": ["Conduit"],
+      "rarity": "none",
+      "weight": 1,
+      "value": 1000,
+      "entries": [
+        "A natural glass formed when a meteorite strikes the earth, fusing the surrounding soil into a glassy mass. A conduit can use such an object as a spellcasting focus."
+      ]
+    }
+  ],
   "subclassFeature": [
     {
       "name": "Branded Warrior Spells",
@@ -655,9 +743,7 @@
         {
           "type": "entries",
           "name": "Spellcasting Focus",
-          "entries": [
-            "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-          ]
+          "entries": ["You can use a {@item primordial focus|TCP} as a spellcasting focus for your conduit spells."]
         }
       ]
     },
@@ -1145,7 +1231,7 @@
           "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
           "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-          "A {@item druidic focus}"
+          "A {@item primordial focus|TCP}"
         ],
         "defaultData": [
           {

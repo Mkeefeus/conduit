@@ -1,0 +1,13 @@
+{
+  "name": "Tektite",
+  "source": "TCP",
+  "page": 0,
+  "type": "SCF",
+  "focus": ["Conduit"],
+  "rarity": "none",
+  "weight": 1,
+  "value": 1000,
+  "entries": [
+    "A natural glass formed when a meteorite strikes the earth, fusing the surrounding soil into a glassy mass. A conduit can use such an object as a spellcasting focus."
+  ]
+}

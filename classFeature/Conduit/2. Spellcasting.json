@@ -44,9 +44,7 @@
     {
       "type": "entries",
       "name": "Spellcasting Focus",
-      "entries": [
-        "You can use a {@item druidic focus|phb} as a spellcasting focus for your conduit spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
-      ]
+      "entries": ["You can use a {@item primordial focus|TCP} as a spellcasting focus for your conduit spells."]
     }
   ]
 }
