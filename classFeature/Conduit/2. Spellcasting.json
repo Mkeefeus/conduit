@@ -20,15 +20,15 @@
       "entries": [
         "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=Conduit (TCP)}. To cast one of your conduit spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
         "You prepare the list of conduit spells that are available for you to cast, choosing from the {@filter conduit spell list|spells|class=Conduit (TCP)}. When you do so, choose a number of conduit spells equal to your Wisdom modifier + half your conduit level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
-        "For example, if you are a 5th-level conduit, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-        "You can change your list of prepared spells when you finish a long rest. Preparing a new list of conduit spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+        "For example, if you are a 5th-level conduit, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell {@spell burning hands}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+        "You can change your list of prepared spells when you finish a long rest. Preparing a new list of conduit spells requires time spent in meditation: at least 1 minute per spell level for each spell on your list."
       ]
     },
     {
       "type": "entries",
       "name": "Spellcasting Ability",
       "entries": [
-        "Wisdom is your spellcasting ability for your Conduit spells, since you learn your Conduit spells through dedicated study and memorization. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
+        "Wisdom is your spellcasting ability for your Conduit spells, since your magic draws upon your conection to the primordial forces around you. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Conduit spell you cast and when making an attack roll with one.",
         {
           "type": "abilityDc",
           "name": "Spell",
