@@ -10,7 +10,7 @@
       "type": "entries",
       "name": "Cantrips",
       "entries": [
-        "You learn two cantrips of your choice from the conduit spell list. You learn additional conduit cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Conduit table.",
+        "You learn two cantrips of your choice from the {@filter conduit spell list|spells|level=0|class=Conduit (TCP)}. You learn additional conduit cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Conduit table.",
         "When you gain a level in this class, you can replace one conduit cantrip you know with another cantrip from the conduit spell list."
       ]
     },
@@ -18,8 +18,8 @@
       "type": "entries",
       "name": "Preparing and Casting Spells",
       "entries": [
-        "The Conduit table shows how many spell slots you have to cast your conduit spells. To cast one of your conduit spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-        "You prepare the list of conduit spells that are available for you to cast, choosing from the conduit spell list. When you do so, choose a number of conduit spells equal to your Wisdom modifier + half your conduit level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+        "The Conduit table shows how many spell slots you have to cast your {@filter conduit spells|spells|class=Conduit (TCP)}. To cast one of your conduit spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+        "You prepare the list of conduit spells that are available for you to cast, choosing from the {@filter conduit spell list|spells|class=Conduit (TCP)}. When you do so, choose a number of conduit spells equal to your Wisdom modifier + half your conduit level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
         "For example, if you are a 5th-level conduit, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
         "You can change your list of prepared spells when you finish a long rest. Preparing a new list of conduit spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
       ]

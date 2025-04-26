@@ -1,0 +1,38 @@
+{
+  "name": "Borrowed Power",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "level": 11,
+  "entries": [
+    "As an action you may call upon the power of elementals. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
+    {
+      "type": "item",
+      "name": "Fire",
+      "entries": [
+        "Gouts of molten lava erupt from your body. Each creature in a 30-foot-radius sphere centered on yourself must make a Dexterity saving throw. On a failed saving throw, a creature takes {@damage 4d6} fire damage and {@damage 4d6} bludgeoning damage. On a successful saving throw, a creature takes half as much damage."
+      ]
+    },
+    {
+      "type": "item",
+      "name": "Earth",
+      "entries": [
+        "One creature of your choice within 30 feet must make a Constitution saving throw. On a failed save, the creature takes {@damage 6d6} bludgeoning damage and has the {@condition blinded} condition until the start of your next turn. On a successful save, the creature takes half as much damage only."
+      ]
+    },
+    {
+      "type": "item",
+      "name": "Water",
+      "entries": [
+        "You magically shoot water in a 60-foot line that is 5 feet wide. Each creature in that line must make a Dexterity saving throw. On a failure, a target takes {@damage 6d6} cold damage and, if it is Huge or smaller, is pushed up to 20 feet away from you and knocked {@condition prone}. On a success, a target takes half the cold damage, but is neither pushed nor knocked {@condition prone}."
+      ]
+    },
+    {
+      "type": "item",
+      "name": "Air",
+      "entries": [
+        "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point you can see within 60 feet of you. The whirlwind lasts as long as you maintain {@status concentration} (as if {@status concentration||concentrating} on a spell). Any creature other than you that enters the whirlwind must succeed on a Strength saving throw or be {@condition restrained} by it. You can move the whirlwind up to 20 feet as an action, and creatures {@condition restrained} by the whirlwind move with it. The whirlwind ends if you lose sight of it."
+      ]
+    }
+  ]
+}

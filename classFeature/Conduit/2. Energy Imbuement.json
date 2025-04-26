@@ -5,6 +5,11 @@
   "classSource": "TCP",
   "level": 2,
   "entries": [
-    "When you reach 2nd level, you may empower your damage with one of the following “imbuement damage types”: Acid, Cold, Fire, Lightning, Thunder. As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. Expending a 1st level spell slot allows you to add your Wisdom modifier to the damage. A 2nd level slot additionally adds 1d4 damage, with an additional d4 for each level above 2nd. If you are incapacitated, your imbuement immediately ends."
+    "When you reach 2nd level, you may empower your damage with one of the following \"imbuement damage types\":",
+    {
+      "type": "list",
+      "items": ["Acid", "Cold", "Fire", "Lightning", "Thunder"]
+    },
+    "As a bonus action, you may expend a spell slot to activate this power. While Energy Imbuement is active, your weapon attacks deal extra damage once per turn for the next minute. Expending a 1st level spell slot allows you to add your Wisdom modifier to the damage. A 2nd level slot additionally adds {@damage 1d4} damage, with an additional {@damage 1d4} for each level above 2nd. If you are {@condition incapacitated}, your imbuement immediately ends."
   ]
 }
