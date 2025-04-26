@@ -26,7 +26,7 @@
     },
     "Borrowed Power|Conduit|TCP|11",
     "Ability Score Improvement|Conduit|TCP|12",
-    "OVerpower Immunity|Conduit|TCP|14",
+    "Sure Footed|Conduit|TCP|14",
     {
       "classFeature": "Energy Affinity Feature|Conduit|TCP|15",
       "gainSubclassFeature": true
@@ -37,7 +37,7 @@
       "gainSubclassFeature": true
     },
     "Ability Score Improvement|Conduit|TCP|19",
-    "Energetic Conduit|Conduit|TCP|20"
+    "Chosen of the Elementals|Conduit|TCP|20"
   ],
   "hd": {
     "number": 1,
