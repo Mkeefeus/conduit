@@ -5,7 +5,7 @@
   "classSource": "TCP",
   "level": 11,
   "entries": [
-    "At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
+    "At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus. Once you use this feature, you must finish a short or long rest before you can use it again.",
     {
       "type": "item",
       "name": "Fire",

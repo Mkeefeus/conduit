@@ -11,10 +11,10 @@ theme: 5ePHB
 
 ```css
 .page #example + table td {
-	border:1px dashed #00000030;
+  border: 1px dashed #00000030;
 }
 .page {
-	padding-bottom : 1.1cm;
+  padding-bottom: 1.1cm;
 }
 ```
 
@@ -211,7 +211,7 @@ When you use the Energy Imbuement feature, you may choose an imbuement damage ty
 
 ### Borrowed Power
 
-At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus
+At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus. Once you use this feature, you must finish a short of long rest before you can use it again.
 
 **Fire.** Gouts of molten lava erupt from your body. Each creature in a 30-foot-radius sphere centered on yourself must make a Dexterity saving throw. On a failed saving throw, a creature takes 4d6 fire damage and 4d6 bludgeoning damage. On a successful saving throw, a creature takes half as much damage.
 
@@ -232,16 +232,15 @@ Starting at 14th level, your connection to the earth beneath you is strengthened
 
 Atop the hierarchy of elementals lies the Leviathan, Zaratan, Phoenix, and Elder Tempest. At 20th level, each of these legendary creatures recognizes your power, and has granted you a boon. If a boon requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus.
 
-**Leviathan.** As an action, you create a wave of water that extends from a point you can see within 120. The wave is up to 250 feet long, up to 250 feet tall, and up to 50 feet wide. Each hostile creature in the wave must make a Strength saving throw. On a failed save, a creature takes 7d12 bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone. The water spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 250 feet of it, and then it vanishes. Once you use this boon, you cannot do so again for 1 week.
+**Leviathan.** As an action, you create a wave of water that extends from a point you can see within 120. The wave is up to 250 feet long, up to 250 feet tall, and up to 50 feet wide. Each hostile creature in the wave must make a Strength saving throw. On a failed save, a creature takes 7d12 bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone. The water spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 250 feet of it, and then it vanishes. Once you use this feature, you must finish a long rest before you can use it again.
 
-**Zaratan.** As an action, you conjure a shell of rock. Until the start of your next turn, you are resistant to all damage and are restrained. At the start of your next turn, you regain 8d10 hit points and are no longer restrained. Once you have used this feature you cannot do so again until you have finished a long rest.
+**Zaratan.** As an action, you conjure a shell of rock. Until the start of your next turn, you are resistant to all damage and are restrained. At the start of your next turn, you regain 8d10 hit points and are no longer restrained. Once you use this feature, you must finish a long rest before you can use it again.
 
-**Phoenix.** When you die, your body explodes into a burst of flame. Each hostile creature in a 60-foot-radius around you must make a Dexterity saving throw, taking 4d10 fire damage on a failed save, or half as much on a successful one. Instead of dying, you are restored to life with half of your hit point maximum. Once you have used this boon, you cannot use it again for one year.
+**Phoenix.** When you die, your body explodes into a burst of flame. Each hostile creature in a 60-foot-radius around you must make a Dexterity saving throw, taking 4d10 fire damage on a failed save, or half as much on a successful one. Instead of dying, you are restored to life with half of your hit point maximum. Once you use this feature, you must finish a long rest before you can use it again.
 
-**Elder Tempest.** Each hostile creature within 120 feet of you must make a Dexterity saving throw, taking 6d8 lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also stunned until the end of its next turn. Once you have used this boon you cannot use it again until you finish a short or long rest.
+**Elder Tempest.** Each hostile creature within 120 feet of you must make a Dexterity saving throw, taking 6d8 lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also stunned until the end of its next turn. Once you use this feature, you must finish a long rest before you can use it again.
 
-
-## Elemental Study
+## Energy Affinity
 
 All Conduit have different affinities and specialties that augment their abilities. Choose one of the following affinities at 3rd level.
 
@@ -369,6 +368,15 @@ Maelstrom
 Passwall  
 Transmute Rock  
 Wall of Stone  
+}}
+
+{{homebreweryCredits
+Made With
+
+{{homebreweryIcon}}
+
+The Homebrewery  
+[Homebrewery.Naturalcrit.com](https://homebrewery.naturalcrit.com)
 }}
 
 {{pageNumber,auto}}
