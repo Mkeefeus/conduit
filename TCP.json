@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-04-26",
-        "version": "0.0.28",
+        "version": "0.0.29",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745638873,
+    "dateLastModified": 1745639349,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -810,7 +810,7 @@
       "classSource": "TCP",
       "level": 7,
       "entries": [
-        "When you use the Energy Imbuement feature, you may choose an imbuement damage type to gain resistance to for the duration of your Energy Imbuement."
+        "Starting at 11th level, when you use the Energy Imbuement feature you may choose an imbuement damage type to gain resistance to for the duration of your Energy Imbuement."
       ]
     },
     {
@@ -839,7 +839,7 @@
       "classSource": "TCP",
       "level": 11,
       "entries": [
-        "As an action you may call upon the power of elementals. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
+        "At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
         {
           "type": "item",
           "name": "Fire",
@@ -888,7 +888,7 @@
       "classSource": "TCP",
       "level": 14,
       "entries": [
-        "You connection to the earth beneath you is strengthened. While you are standing on solid ground, you cannot be forcefully moved against your will, and you have advantage on saves against being knocked prone. Additionally, you gain tremorsense out to a range of 60 feet."
+        "Starting at 14th level, your connection to the earth beneath you is strengthened. While you are standing on solid ground, you cannot be forcefully moved against your will, and you have advantage on saves against being knocked prone. Additionally, you gain tremorsense out to a range of 60 feet."
       ]
     },
     {
@@ -936,7 +936,7 @@
       "classSource": "TCP",
       "level": 20,
       "entries": [
-        "Atop the hierarchy of elementals lies the {@creature Leviathan|MPMM}, {@creature Zaratan|MPMM}, {@creature Phoenix|MPMM}, and {@creature Elder Tempest|MPMM}. Each of these legendary creatures recognizes your power, and has granted you a boon. If a boon requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus.",
+        "Atop the hierarchy of elementals lies the {@creature Leviathan|MPMM}, {@creature Zaratan|MPMM}, {@creature Phoenix|MPMM}, and {@creature Elder Tempest|MPMM}. At 20th level, each of these legendary creatures recognizes your power, and has granted you a boon. If a boon requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus.",
         {
           "type": "item",
           "name": "Leviathan",

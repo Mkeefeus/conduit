@@ -5,7 +5,7 @@
   "classSource": "TCP",
   "level": 11,
   "entries": [
-    "As an action you may call upon the power of elementals. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
+    "At 11th level you may call upon the power of elementals as an action. Each time you use this ability, choose one of the following. If an ability requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus",
     {
       "type": "item",
       "name": "Fire",

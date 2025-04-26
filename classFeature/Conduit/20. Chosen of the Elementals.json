@@ -5,7 +5,7 @@
   "classSource": "TCP",
   "level": 20,
   "entries": [
-    "Atop the hierarchy of elementals lies the {@creature Leviathan|MPMM}, {@creature Zaratan|MPMM}, {@creature Phoenix|MPMM}, and {@creature Elder Tempest|MPMM}. Each of these legendary creatures recognizes your power, and has granted you a boon. If a boon requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus.",
+    "Atop the hierarchy of elementals lies the {@creature Leviathan|MPMM}, {@creature Zaratan|MPMM}, {@creature Phoenix|MPMM}, and {@creature Elder Tempest|MPMM}. At 20th level, each of these legendary creatures recognizes your power, and has granted you a boon. If a boon requires a saving throw, the DC is 8 + Wisdom modifier + Proficiency Bonus.",
     {
       "type": "item",
       "name": "Leviathan",
