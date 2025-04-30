@@ -1,0 +1,13 @@
+{
+  "name": "Shattering Pillars",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Guardian",
+  "subclassSource": "TCP",
+  "level": 10,
+  "header": 2,
+  "entries": [
+    "Starting at 10th level, you can coat enemies in an elemental primer. As an action you can pick a Pillar you can see and cause it to explode. All enemies in a 15-foot-radius of the pillar must make a dexterity saving throw. On a failed save, the target is primed. The next attack against that creature has advantage, and deals an additional {@damage 4d6} damage."
+  ]
+}

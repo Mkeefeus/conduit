@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-04-26",
-        "version": "0.0.30",
+        "dateReleased": "2025-04-30",
+        "version": "0.0.32",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1745685343,
+    "dateLastModified": 1745985421,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -330,137 +330,133 @@
       ]
     },
     {
-      "name": "Frost Guardian Spells",
+      "name": "Grasp of the Protector",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
+      "subclassShortName": "Guardian",
       "subclassSource": "TCP",
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Frost Guardian Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        "At 3rd level, you may use your action to try to select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your proficiency bonus, regaining all uses on a short or long rest."
+      ]
+    },
+    {
+      "name": "Guardian Spells",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Guardian Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
         {
           "type": "table",
-          "caption": "Frost Guardian Spells",
+          "caption": "Guardian Spells",
           "colLabels": ["Conduit Level", "Spell"],
           "colStyles": ["col-2 text-center", "col-10"],
           "rows": [
-            ["3rd", "{@spell Armor of Agathys}, {@spell Frost Fingers|IDRotF}"],
-            ["5th", "{@spell Rime's Binding Ice|FTD}, {@spell Snilloc's Snowball Swarm|XGE}"],
-            ["9th", "{@spell Sleet Storm}, {@spell Slow}"],
-            ["13th", "{@spell Ice Storm}, {@spell Control Water}"],
-            ["17th", "{@spell Cone of Cold}, {@spell Hold Monster}"]
+            ["3rd", "{@spell Earth Tremor|XGE}, {@spell Faerie Fire}"],
+            ["5th", "{@spell Hold Person}, {@spell Maximilian's Earthen Grasp|XGE}"],
+            ["9th", "{@spell Erupting Earth|XGE}, {@spell Slow}"],
+            ["13th", "{@spell Freedom of Movement}, {@spell Wall of Fire}"],
+            ["17th", "{@spell Control Winds|XGE}, {@spell Hold Monster}"]
           ]
         }
       ]
     },
     {
-      "name": "Freezing Grasp",
+      "name": "Guardian",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
+      "subclassShortName": "Guardian",
       "subclassSource": "TCP",
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you may use your action to try to freeze an opponent in place. Select a target within 30 feet. That target must make a dexterity saving throw or be grappled until the start of your next turn. You may use this feature a number of times equal to your Wisdom modifier, regaining all uses on a short rest."
-      ]
-    },
-    {
-      "name": "Icy Pillars",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "At 3rd level you learn how to create and shape ice to hinder your foes and assist your allies. You gain an amount of Icy Pillars equal to your prof bonus and regain all uses on a short or long rest",
-        "As a bonus action you can create any number of pillars up to the amount you have available at a point you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
-        "Additionally, When a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you can use your reaction to grant that creature resistance to all the damage. When you grant resistance in this way, you select a pillar within 30 feet of you, this pillar takes the same damage as the selected creature."
-      ]
-    },
-    {
-      "name": "Frost Guardian",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "Frost Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+        "Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Frost Guardian Spells|Conduit|TCP|Frost Guardian|TCP|3"
+          "subclassFeature": "Guardian Spells|Conduit|TCP|Guardian|TCP|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Icy Pillars|Conduit|TCP|Frost Guardian|TCP|3"
+          "subclassFeature": "Warding Pillars|Conduit|TCP|Guardian|TCP|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Freezing Grasp|Conduit|TCP|Frost Guardian|TCP|3"
+          "subclassFeature": "Grasp of the Protector|Conduit|TCP|Guardian|TCP|3"
         }
       ]
     },
     {
-      "name": "Comforting Cold",
+      "name": "Warding Pillars",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
+      "subclassShortName": "Guardian",
+      "subclassSource": "TCP",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "At 3rd level you learn how to create and shape the elements to hinder your foes and assist your allies. You gain an amount of Pillars equal to your prof bonus and regain all uses on a short or long rest",
+        "As a bonus action you can create any number of pillars up to the amount you have available at points you can see within 60 feet. Each pillar can be either 5 ft tall, 10 feet thick and 10 ft wide or 10 ft tall and 5 feet thick and 5 ft wide. The pillars all have HP equal to 5 times your level in this class, are immune to Cold, Psychic, and Poison damage, and an AC of 14. You can move a pillar up to 20 feet on your turn as a bonus action. The pillars last for up to a hour, after which they melt harmlessly into the ground.",
+        "Additionally, when a creature that you can see within 30 feet of you takes damage, and you are within 30 feet of a pillar, you may use your reaction to have that pillar take a portion of the damage. Select an amount up to your Conduit level plus your Wisdom modifier, and not more then the pillar's HP. The pillar takes that amount of damage, and the targeted creature takes the remainder."
+      ]
+    },
+    {
+      "name": "Heal and Hinder",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Guardian",
       "subclassSource": "TCP",
       "level": 6,
       "header": 2,
       "entries": [
-        "At 6th level, you've adapted to the cold and it doesn't bother you anymore. You gain resistance to cold damage.",
-        "Additionally, your Icy Pillars provide protection to your allies, and freeze the ground to hinder your enemies. If an allied creature comes within 10 feet of a pillar, then they gain temp HP equal to your Wisdom modifier. If a creature moves within 10 feet of a pillar, it must make a dexterity saving throw against your spell save DC. On a failed save, the target is knocked prone. When you create a pillar you can choose any number of creatures to be immune to this effect."
+        "Starting at level 6, your Warding Pillars provide protection to your allies. If an allied creature comes within 10 feet of a pillar, they gain temp HP equal to your Wisdom modifier. Additionally, a 10 foot radius around your pilliar is difficult terrain for creatures of your choice."
       ]
     },
     {
-      "name": "Shattering Frost",
+      "name": "Shattering Pillars",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
+      "subclassShortName": "Guardian",
       "subclassSource": "TCP",
       "level": 10,
       "header": 2,
       "entries": [
-        "Starting at 10th level, you can coat enemies in a brittle layer of frost. As an action you can pick an Icy Pillar you can see and cause it to explode. All enemies in a 15-foot-radius of the pillar must make a dexterity saving throw. On a failed save, the target is coated in ice. The next attack against that creature has advantage, and deals an additional 4d6 cold damage. "
+        "Starting at 10th level, you can coat enemies in an elemental primer. As an action you can pick a Pillar you can see and cause it to explode. All enemies in a 15-foot-radius of the pillar must make a dexterity saving throw. On a failed save, the target is primed. The next attack against that creature has advantage, and deals an additional {@damage 4d6} damage."
       ]
     },
     {
-      "name": "Frozen Form",
+      "name": "Imprison",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
-      "subclassSource": "TCP",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "At 15th level, a protective layer of ice coats you. The ground around you freezes as you move. The ground in a 10-foot-radius centered on you is considered difficult terrain for enemies. An enemy that starts its turn in this area must make a Dexterity saving throw against your Spell Save DC or fall prone.",
-        "Additionally, your Icy Pillars influence on allies and enemies increases in range. An enemy starting their turn within 15 ft of one of your Icy Pillars has their movement speed reduced by 10 ft until the end of their turn. If an allied creature starts their turn within 15 ft of a pillar, then they gain temp HP equal to your Wisdom modifier."
-      ]
-    },
-    {
-      "name": "Ice Prison",
-      "source": "TCP",
-      "className": "Conduit",
-      "classSource": "TCP",
-      "subclassShortName": "Frost Guardian",
+      "subclassShortName": "Guardian",
       "subclassSource": "TCP",
       "level": 18,
       "header": 2,
       "entries": [
-        "At 18th level, you learn to encase your foes in your Icy Pillars. When you create your Icy Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+        "At 18th level, you learn to encase your foes in your Warding Pillars. When you create your Warding Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
       ]
+    },
+    {
+      "name": "Protector's Embrace",
+      "source": "TCP",
+      "className": "Conduit",
+      "classSource": "TCP",
+      "subclassShortName": "Guardian",
+      "subclassSource": "TCP",
+      "level": 18,
+      "header": 2,
+      "entries": ["You gain the benefits of your pillars. Write this better later."]
     },
     {
       "name": "Primeval Soul Spells",
@@ -544,7 +540,7 @@
             {
               "type": "list",
               "items": [
-                "Your movement speed increases by 10ft",
+                "Your movement speed decreases by 10ft",
                 "You gain a +1 bonus to your AC",
                 "When you hit with a weapon attack, you may force the target to make a Strength saving throw. The DC for this save is 8 + Wisdom modifier + Proficiency Bonus. On a failed save, you either force the target away from you 5ft, or knock them prone."
               ]
@@ -555,7 +551,7 @@
       ]
     },
     {
-      "name": "TBD",
+      "name": "Accelerated Reflexes",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
@@ -564,7 +560,10 @@
       "subclassSource": "TCP",
       "level": 6,
       "header": 2,
-      "entries": ["TBD"]
+      "entries": [
+        "Beginning at 6th level, your excess energy improves your reflexes. You have advantage on initiative checks.",
+        "Additionally, when a hostile creature within 30 feet of you makes an attack against a target other than you, you may use your reaction to move up to your movement speed without provoking attacks of opportunity, and make a weapon attack against the attacking creature. You may react in this way a number of times equal to your proficiency bonus, regaining all uses on a short or long rest."
+      ]
     },
     {
       "name": "TBD",
@@ -996,26 +995,26 @@
       ]
     },
     {
-      "name": "Frost Guardian",
-      "shortName": "Frost Guardian",
+      "name": "Guardian",
+      "shortName": "Guardian",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
       "subclassFeatures": [
-        "Frost Guardian|Conduit|TCP|Frost Guardian|TCP|3",
-        "Comforting Cold|Conduit|TCP|Frost Guardian|TCP|6",
-        "Shattering Frost|Conduit|TCP|Frost Guardian|TCP|10",
-        "Frozen Form|Conduit|TCP|Frost Guardian|TCP|15",
-        "Ice Prison|Conduit|TCP|Frost Guardian|TCP|18"
+        "Guardian|Conduit|TCP|Guardian|TCP|3",
+        "Heal and Hinder|Conduit|TCP|Guardian|TCP|6",
+        "Shattering Pillars|Conduit|TCP|Guardian|TCP|10",
+        "Imprison|Conduit|TCP|Guardian|TCP|15",
+        "Protector's Embrace|Conduit|TCP|Guardian|TCP|18"
       ],
       "additionalSpells": [
         {
           "known": {
-            "3": ["Armor of Agathys", "Frost Fingers|IDtoF"],
-            "5": ["Rime's Binding Ice|FTD", "Snilloc's Snowball Swarm|XGE"],
-            "9": ["Sleet Storm", "Slow"],
-            "13": ["Ice Storm", "Control Water"],
-            "17": ["Cone of Cold", "Hold Monster"]
+            "3": ["Earth Tremor|XGE", "Faerie Fire"],
+            "5": ["Hold Person", "Maximilian's Earthen Grasp|XGE"],
+            "9": ["Erupting Earth|XGE", "Slow"],
+            "13": ["Freedom of Movement", "Wall of Fire"],
+            "17": ["Control Winds|XGE", "Hold Monster"]
           }
         }
       ]
@@ -1029,7 +1028,7 @@
       "shortName": "Primeval Soul",
       "subclassFeatures": [
         "Primeval Soul|Conduit|TCP|Primeval Soul|TCP|3",
-        "TBD|Conduit|TCP|Primeval Soul|TCP|6",
+        "Accelerated Reflexes|Conduit|TCP|Primeval Soul|TCP|6",
         "TBD|Conduit|TCP|Primeval Soul|TCP|10",
         "TBD|Conduit|TCP|Primeval Soul|TCP|15",
         "TBD|Conduit|TCP|Primeval Soul|TCP|18"

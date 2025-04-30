@@ -1,0 +1,13 @@
+{
+  "name": "Heal and Hinder",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Guardian",
+  "subclassSource": "TCP",
+  "level": 6,
+  "header": 2,
+  "entries": [
+    "Starting at level 6, your Warding Pillars provide protection to your allies. If an allied creature comes within 10 feet of a pillar, they gain temp HP equal to your Wisdom modifier. Additionally, a 10 foot radius around your pilliar is difficult terrain for creatures of your choice."
+  ]
+}

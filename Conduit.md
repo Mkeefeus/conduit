@@ -70,9 +70,9 @@ theme: 5ePHB
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
--   (_a_) a martial weapon and a shield or (_b_) two martial weapons
--   (_a_) five javelins or (_b_) any simple melee weapon
--   (_a_) a dungeoneer's pack or (_b_) an explorer's pack
+- (_a_) a martial weapon and a shield or (_b_) two martial weapons
+- (_a_) five javelins or (_b_) any simple melee weapon
+- (_a_) a dungeoneer's pack or (_b_) an explorer's pack
 
 \column
 
@@ -97,19 +97,19 @@ Your understanding of the primordial forces that power you has augmented your mi
 
 At 1st level, your knowledge and experience with primordial energy aids you in everyday life. Over the course of a minute, you may create or manipulate Acid, Fire, Ice, Thunder and Lightning for up to an hour in the following ways
 
--   You may create a small pool of acid to slowly corrode a metal
--   You may set a flammable object on fire
--   You may freeze an area of water or create a small amount of ice
--   You may create a thunderclap audible from 100 feet away
--   You may shoot a bolt of lightning harmlessly into the air
+- You may create a small pool of acid to slowly corrode a metal
+- You may set a flammable object on fire
+- You may freeze an area of water or create a small amount of ice
+- You may create a thunderclap audible from 100 feet away
+- You may shoot a bolt of lightning harmlessly into the air
 
 {{pageNumber,auto}}
 \page
 
 The effects end if stopped by normal means, such as putting water on a fire, when you dismiss them, or when an hour has passed. You might be able to achieve something beyond the scope of the above examples. State your desired effect to the DM as precisely as possible. All effects must fall within the following confines:
 
--   You cannot effect an area greater then 1 cubic foot
--   It cannot directly effect a creature
+- You cannot effect an area greater then 1 cubic foot
+- It cannot directly effect a creature
 
 ### Fighting Style
 
@@ -117,14 +117,14 @@ The effects end if stopped by normal means, such as putting water on a fire, whe
 
 At 1st level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.
 
--   **Archery:** You gain a +2 bonus to attack rolls you make with ranged weapons.
--   **Blind Fighting:** You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
--   **Defense:** While you are wearing armor, you gain a +1 bonus to AC.
--   **Dueling:** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
--   **Great Weapon Fighting:** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
--   **Thrown Weapon Fighting:** You can draw a weapon that has the thrown property as part of the attack you make with the weapon. In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
--   **Two-Weapon Fighting:** When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
--   **Unarmed Fighting:** Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8. At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.
+- **Archery:** You gain a +2 bonus to attack rolls you make with ranged weapons.
+- **Blind Fighting:** You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
+- **Defense:** While you are wearing armor, you gain a +1 bonus to AC.
+- **Dueling:** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+- **Great Weapon Fighting:** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
+- **Thrown Weapon Fighting:** You can draw a weapon that has the thrown property as part of the attack you make with the weapon. In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
+- **Two-Weapon Fighting:** When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+- **Unarmed Fighting:** Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8. At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.
 
 \column
 
@@ -144,7 +144,7 @@ The Conduit table shows how many spell slots you have to cast your conduit spell
 
 You prepare the list of conduit spells that are available for you to cast, choosing from the conduit spell list. When you do so, choose a number of conduit spells equal to your Wisdom modifier + half your conduit level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.
 
-For example, if you are a 5th-level conduit, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell *burning hands*, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
+For example, if you are a 5th-level conduit, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell _burning hands_, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
 
 You can change your list of prepared spells when you finish a long rest. Preparing a new list of conduit spells requires time spent in meditation: at least 1 minute per spell level for each spell on your list.
 
@@ -160,8 +160,7 @@ Wisdom is your spellcasting ability for your Conduit spells, since your magic dr
 
 #### Spellcasting Focus
 
-You can use a *primordial focus* as a spellcasting focus for your conduit spells.
-
+You can use a _primordial focus_ as a spellcasting focus for your conduit spells.
 
 {{pageNumber,auto}}
 \page
@@ -245,7 +244,6 @@ Atop the hierarchy of elementals lies the Leviathan, Zaratan, Phoenix, and Elder
 All Conduit have different affinities and specialties that augment their abilities. Choose one of the following affinities at 3rd level.
 
 ## put subclasses here
-
 
 {{pageNumber,auto}}
 \page

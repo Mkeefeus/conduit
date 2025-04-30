@@ -1,0 +1,25 @@
+{
+  "name": "Guardian",
+  "shortName": "Guardian",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassFeatures": [
+    "Guardian|Conduit|TCP|Guardian|TCP|3",
+    "Heal and Hinder|Conduit|TCP|Guardian|TCP|6",
+    "Shattering Pillars|Conduit|TCP|Guardian|TCP|10",
+    "Imprison|Conduit|TCP|Guardian|TCP|15",
+    "Protector's Embrace|Conduit|TCP|Guardian|TCP|18"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "3": ["Earth Tremor|XGE", "Faerie Fire"],
+        "5": ["Hold Person", "Maximilian's Earthen Grasp|XGE"],
+        "9": ["Erupting Earth|XGE", "Slow"],
+        "13": ["Freedom of Movement", "Wall of Fire"],
+        "17": ["Control Winds|XGE", "Hold Monster"]
+      }
+    }
+  ]
+}

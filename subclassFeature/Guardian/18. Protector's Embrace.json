@@ -1,0 +1,11 @@
+{
+  "name": "Protector's Embrace",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "subclassShortName": "Guardian",
+  "subclassSource": "TCP",
+  "level": 18,
+  "header": 2,
+  "entries": ["You gain the benefits of your pillars. Write this better later."]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Accelerated Reflexes",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Primeval Soul",
+  "subclassSource": "TCP",
+  "level": 6,
+  "header": 2,
+  "entries": [
+    "Beginning at 6th level, your excess energy improves your reflexes. You have advantage on initiative checks.",
+    "Additionally, when a hostile creature within 30 feet of you makes an attack against a target other than you, you may use your reaction to move up to your movement speed without provoking attacks of opportunity, and make a weapon attack against the attacking creature. You may react in this way a number of times equal to your proficiency bonus, regaining all uses on a short or long rest."
+  ]
+}
