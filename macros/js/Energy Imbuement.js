@@ -79,19 +79,13 @@ let effectData = {
     {
       key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.mwak`,
       mode: 5,
-      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4` : ''}[${selection}] + @abilities.wis.mod[${selection}]`,
+      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4[${selection}] + ` : ''} @abilities.wis.mod[${selection}]`,
       priority: 20,
     },
     {
       key: `flags.midi-qol.optional.energyImbuement_${randomString}.damage.rwak`,
       mode: 5,
-      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4` : ''}[${selection}] + @abilities.wis.mod[${selection}]`,
-      priority: 20,
-    },
-    {
-      key: `flags.midi-qol.optional.energyImbuement_${randomString}.criticalDamage`,
-      mode: 5,
-      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4` : ''}[${selection}]`,
+      value: `${slotUsed >= 2 ? `${slotUsed - 1}d4[${selection}] + ` : ''} @abilities.wis.mod[${selection}]`,
       priority: 20,
     },
     {
@@ -113,6 +107,15 @@ let effectData = {
     },
   },
 };
+
+if (slotUsed > 1) {
+  effectData.changes.push({
+    key: `flags.midi-qol.optional.energyImbuement_${randomString}.criticalDamage`,
+    mode: 5,
+    value: `${slotUsed >= 2 ? `${slotUsed - 1}d4[${selection}]` : ''}`,
+    priority: 20,
+  });
+}
 
 if (hasLevelSeven) {
   effectData.changes.push({

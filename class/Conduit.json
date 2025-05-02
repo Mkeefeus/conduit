@@ -88,11 +88,11 @@
         "b": ["explorer's pack|phb"]
       },
       {
-        "_": [
-          {
-            "equipmentType": "focusSpellcastingDruidic"
-          }
-        ]
+        "a": ["fulgurite|TCP"],
+        "b": ["kyanite|TCP"],
+        "c": ["petrified wood|TCP"],
+        "d": ["pumice stone|TCP"],
+        "e": ["tektite|TCP"]
       }
     ]
   },

@@ -3,6 +3,7 @@
   "source": "TCP",
   "page": 0,
   "type": "SCF",
+  "scfType": "conduit",
   "focus": ["Conduit"],
   "rarity": "none",
   "weight": 1,

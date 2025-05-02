@@ -4,6 +4,7 @@
   "page": 0,
   "rarity": "none",
   "type": "SCF",
+  "scfType": "conduit",
   "focus": ["Conduit"],
   "entries": [
     "A primordial focus is the result of extreme elemental force, such as a piece of kyanite, fulgurite, pumice stone, tektite, or petrified wood. A conduit can use such an object as a spellcasting focus.",
