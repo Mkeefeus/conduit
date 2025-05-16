@@ -1,5 +1,5 @@
 {
-  "name": "Protector's Embrace",
+  "name": "Warding Mastery",
   "source": "TCP",
   "className": "Conduit",
   "classSource": "TCP",
@@ -7,5 +7,7 @@
   "subclassSource": "TCP",
   "level": 18,
   "header": 2,
-  "entries": ["You gain the benefits of your pillars. Write this better later."]
+  "entries": [
+    "Starting at 18th level, there is no limit to the number of pillars you can create. You may only have a number of pillars equal to your proficiency bonus created at any given time."
+  ]
 }
