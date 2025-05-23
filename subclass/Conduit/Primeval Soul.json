@@ -8,9 +8,9 @@
   "subclassFeatures": [
     "Primeval Soul|Conduit|TCP|Primeval Soul|TCP|3",
     "Accelerated Reflexes|Conduit|TCP|Primeval Soul|TCP|6",
-    "TBD|Conduit|TCP|Primeval Soul|TCP|10",
-    "TBD|Conduit|TCP|Primeval Soul|TCP|15",
-    "TBD|Conduit|TCP|Primeval Soul|TCP|18"
+    "Empowered Surge|Conduit|TCP|Primeval Soul|TCP|10",
+    "Improved Control|Conduit|TCP|Primeval Soul|TCP|15",
+    "Overload|Conduit|TCP|Primeval Soul|TCP|18"
   ],
   "additionalSpells": [
     {

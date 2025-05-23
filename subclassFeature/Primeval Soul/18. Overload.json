@@ -1,0 +1,14 @@
+{
+  "name": "Overload",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Primeval Soul",
+  "subclassSource": "TCP",
+  "level": 18,
+  "header": 2,
+  "entries": [
+    "At 18th level you gain the ability to consume your energy and create a powerful blast. As an action you create a 60ft radius sphere centered on yourself and select an imbuement damage type. Any hostile creatures within the sphere must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes {@damage 24d6 + 40} damage of the selected type, or half that damage on a successful save. Afterwards, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over you."
+  ]
+}

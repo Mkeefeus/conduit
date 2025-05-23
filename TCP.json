@@ -8,14 +8,14 @@
         "full": "The Conduit Package",
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
-        "dateReleased": "2025-05-16",
-        "version": "0.0.37",
+        "dateReleased": "2025-05-23",
+        "version": "0.0.42",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1747414065,
+    "dateLastModified": 1748027850,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -450,7 +450,7 @@
       "level": 15,
       "header": 2,
       "entries": [
-        "At 18th level, you learn to encase your foes in your Warding Pillars. When you create your Warding Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
+        "At 15th level, you learn to encase your foes in your Warding Pillars. When you create your Warding Pillars, you can now choose to create them in a creature's space. The creature must make a Dexterity saving throw against your Spell Save DC. On a failed save, the creature is grappled and restrained as they become encased in your Icy Pillar. A creature may repeat this saving throw at the end of each of their turns. On a successful save the creature is freed and moved to the next closest open space to the pillar."
       ]
     },
     {
@@ -574,7 +574,7 @@
       ]
     },
     {
-      "name": "TBD",
+      "name": "Empowered Surge",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
@@ -583,10 +583,24 @@
       "subclassSource": "TCP",
       "level": 10,
       "header": 2,
-      "entries": ["TBD"]
+      "entries": [
+        "Starting at 10th level, your Energy Surge gains additional benefits:",
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "While in speed stance, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Power",
+          "entries": ["While in power stance, you gain advantage Saving Throws against effects you can see."]
+        }
+      ]
     },
     {
-      "name": "TBD",
+      "name": "Improved Control",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
@@ -595,10 +609,12 @@
       "subclassSource": "TCP",
       "level": 15,
       "header": 2,
-      "entries": ["TBD"]
+      "entries": [
+        "Starting at level 15, while your Energy Surge is active, you may swap stances once on each of your turns as a free action. Additionally, if you roll initiative and have no uses of Energy Surge remaining, you gain 1 use"
+      ]
     },
     {
-      "name": "TBD",
+      "name": "Overload",
       "source": "TCP",
       "className": "Conduit",
       "classSource": "TCP",
@@ -607,7 +623,9 @@
       "subclassSource": "TCP",
       "level": 18,
       "header": 2,
-      "entries": ["TBD"]
+      "entries": [
+        "At 18th level you gain the ability to consume your energy and create a powerful blast. As an action you create a 60ft radius sphere centered on yourself and select an imbuement damage type. Any hostile creatures within the sphere must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes {@damage 24d6 + 40} damage of the selected type, or half that damage on a successful save. Afterwards, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over you."
+      ]
     }
   ],
   "classFeature": [
@@ -923,7 +941,7 @@
       "className": "Conduit",
       "classSource": "TCP",
       "level": 18,
-      "entries": ["At 17th level, you gain a feature based on your Energy Affinity."]
+      "entries": ["At 18th level, you gain a feature based on your Energy Affinity."]
     },
     {
       "name": "Ability Score Improvement",
@@ -1037,9 +1055,9 @@
       "subclassFeatures": [
         "Primeval Soul|Conduit|TCP|Primeval Soul|TCP|3",
         "Accelerated Reflexes|Conduit|TCP|Primeval Soul|TCP|6",
-        "TBD|Conduit|TCP|Primeval Soul|TCP|10",
-        "TBD|Conduit|TCP|Primeval Soul|TCP|15",
-        "TBD|Conduit|TCP|Primeval Soul|TCP|18"
+        "Empowered Surge|Conduit|TCP|Primeval Soul|TCP|10",
+        "Improved Control|Conduit|TCP|Primeval Soul|TCP|15",
+        "Overload|Conduit|TCP|Primeval Soul|TCP|18"
       ],
       "additionalSpells": [
         {

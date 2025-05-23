@@ -1,0 +1,26 @@
+{
+  "name": "Empowered Surge",
+  "source": "TCP",
+  "className": "Conduit",
+  "classSource": "TCP",
+  "page": 0,
+  "subclassShortName": "Primeval Soul",
+  "subclassSource": "TCP",
+  "level": 10,
+  "header": 2,
+  "entries": [
+    "Starting at 10th level, your Energy Surge gains additional benefits:",
+    {
+      "type": "entries",
+      "name": "Speed",
+      "entries": [
+        "While in speed stance, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "Power",
+      "entries": ["While in power stance, you gain advantage Saving Throws against effects you can see."]
+    }
+  ]
+}
