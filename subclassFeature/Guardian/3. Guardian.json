@@ -8,7 +8,7 @@
   "level": 3,
   "header": 1,
   "entries": [
-    "Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+    "Guardians harness elemental energy to empower and defend themselves and their allies.",
     {
       "type": "refSubclassFeature",
       "subclassFeature": "Guardian Spells|Conduit|TCP|Guardian|TCP|3"

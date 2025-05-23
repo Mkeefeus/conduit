@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-05-23",
-        "version": "0.0.42",
+        "version": "0.0.44",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1748027850,
+    "dateLastModified": 1748033292,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -358,7 +358,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Guardian Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Guardian Spells table.",
+        "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Conduit spell list, the spell is nonetheless a Conduit spell for you.",
         {
           "type": "table",
           "caption": "Guardian Spells",
@@ -384,7 +385,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Guardians harness the power of Cold energy to empower and defend themselves and their allies.",
+        "Guardians harness elemental energy to empower and defend themselves and their allies.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Guardian Spells|Conduit|TCP|Guardian|TCP|3"
@@ -477,7 +478,12 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Branded Warrior Spells table. The spells counts as Conduit spells for you, but they don't count against the number of Conduit spells you know.",
+        "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Primeval Soul Spells table.",
+        "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Conduit spell list, the spell is nonetheless a Conduit spell for you.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
+        },
         {
           "type": "table",
           "caption": "Branded Warrior Spells",
@@ -504,7 +510,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Primeval Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+        "Primeval Souls wield primordial power, using it to improve their speed and lethality.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
@@ -784,7 +790,7 @@
       "classSource": "TCP",
       "level": 3,
       "entries": [
-        "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 17th level."
+        "At 3rd level, you choose an focus to augment your abilities. Choose one of the options detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, 15th, and 18th level."
       ]
     },
     {
@@ -913,7 +919,7 @@
       "classSource": "TCP",
       "level": 14,
       "entries": [
-        "Starting at 14th level, your connection to the earth beneath you is strengthened. While you are standing on solid ground, you cannot be forcefully moved against your will, and you have advantage on saves against being knocked prone. Additionally, you gain tremorsense out to a range of 60 feet."
+        "Starting at 14th level, your connection to the earth beneath you is strengthened. You cannot be forcefully moved against your will, and you have advantage on saves against being knocked prone. Additionally, you gain tremorsense out to a range of 60 feet."
       ]
     },
     {

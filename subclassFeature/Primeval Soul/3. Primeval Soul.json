@@ -9,7 +9,7 @@
   "level": 3,
   "header": 1,
   "entries": [
-    "Primeval Souls have studied storms and the power of lightning, using it to empower their speed and lethality.",
+    "Primeval Souls wield primordial power, using it to improve their speed and lethality.",
     {
       "type": "refSubclassFeature",
       "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
