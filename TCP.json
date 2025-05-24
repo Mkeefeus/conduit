@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-05-24",
-        "version": "0.0.46",
+        "version": "0.0.47",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1748054193,
+    "dateLastModified": 1748056449,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -1117,6 +1117,17 @@
       "className": "Conduit",
       "classSource": "TCP",
       "level": 2,
+      "activities": [
+        {
+          "type": "utility",
+          "activation": {
+            "type": "bonus",
+            "value": null,
+            "override": false,
+            "condition": ""
+          }
+        }
+      ],
       "flags": {
         "dae": {
           "macro": {

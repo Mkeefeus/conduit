@@ -4,6 +4,17 @@
   "className": "Conduit",
   "classSource": "TCP",
   "level": 2,
+  "activities": [
+    {
+      "type": "utility",
+      "activation": {
+        "type": "bonus",
+        "value": null,
+        "override": false,
+        "condition": ""
+      }
+    }
+  ],
   "flags": {
     "dae": {
       "macro": {
