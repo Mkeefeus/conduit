@@ -14,7 +14,7 @@
   ],
   "additionalSpells": [
     {
-      "known": {
+      "prepared": {
         "3": ["Burning Hands", "Searing Smite"],
         "5": ["Heat Metal", "Scorching Ray"],
         "9": ["Fireball", "Melf's Minute Meteors|XGE"],
@@ -22,5 +22,17 @@
         "17": ["Flame Strike", "Immolation|XGE"]
       }
     }
+  ],
+  "subclassSpells": [
+    "Burning Hands",
+    "Searing Smite",
+    "Heat Metal",
+    "Scorching Ray",
+    "Fireball",
+    "Melf's Minute Meteors|XGE",
+    "Fire Shield",
+    "Wall of Fire",
+    "Flame Strike",
+    "Immolation|XGE"
   ]
 }

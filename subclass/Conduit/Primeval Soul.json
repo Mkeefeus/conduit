@@ -15,12 +15,39 @@
   "additionalSpells": [
     {
       "prepared": {
-        "3": ["Longstrider", "Zephyr Strike"],
-        "5": ["Blur", "Spider Climb"],
-        "9": ["Ashardalon's Stride", "Haste"],
-        "13": ["Dimension Door", "Freedom of Movement"],
-        "17": ["Far Step", "Steel Wind Strike"]
+        "3": [
+          "Longstrider",
+          "Zephyr Strike|XGE"
+        ],
+        "5": [
+          "Blur",
+          "Spider Climb"
+        ],
+        "9": [
+          "Ashardalon's Stride|FTD",
+          "Haste"
+        ],
+        "13": [
+          "Dimension Door",
+          "Freedom of Movement"
+        ],
+        "17": [
+          "Far Step|XGE",
+          "Steel Wind Strike|XGE"
+        ]
       }
     }
+  ],
+  "subclassSpells": [
+    "Longstrider",
+    "Zephyr Strike|XGE",
+    "Blur",
+    "Spider Climb",
+    "Ashardalon's Stride|FTD",
+    "Haste",
+    "Dimension Door",
+    "Freedom of Movement",
+    "Far Step|XGE",
+    "Steel Wind Strike|XGE"
   ]
 }
