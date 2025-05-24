@@ -9,13 +9,13 @@
         "authors": ["Malcolm Keefe", "Scott", "Ril"],
         "convertedBy": ["Malcolm Keefe"],
         "dateReleased": "2025-05-24",
-        "version": "0.0.45",
+        "version": "0.0.46",
         "color": "0bdbe2"
       }
     ],
     "edition": "classic",
     "dateAdded": 1737935647,
-    "dateLastModified": 1748053530,
+    "dateLastModified": 1748054193,
     "status": "wip",
     "optionalFeatureTypes": {
       "FS:C": "Fighting Style: Conduit",
@@ -1012,7 +1012,7 @@
       ],
       "additionalSpells": [
         {
-          "known": {
+          "prepared": {
             "3": ["Burning Hands", "Searing Smite"],
             "5": ["Heat Metal", "Scorching Ray"],
             "9": ["Fireball", "Melf's Minute Meteors|XGE"],
@@ -1020,6 +1020,18 @@
             "17": ["Flame Strike", "Immolation|XGE"]
           }
         }
+      ],
+      "subclassSpells": [
+        "Burning Hands",
+        "Searing Smite",
+        "Heat Metal",
+        "Scorching Ray",
+        "Fireball",
+        "Melf's Minute Meteors|XGE",
+        "Fire Shield",
+        "Wall of Fire",
+        "Flame Strike",
+        "Immolation|XGE"
       ]
     },
     {
@@ -1037,7 +1049,7 @@
       ],
       "additionalSpells": [
         {
-          "known": {
+          "prepared": {
             "3": ["Earth Tremor|XGE", "Faerie Fire"],
             "5": ["Hold Person", "Maximilian's Earthen Grasp|XGE"],
             "9": ["Erupting Earth|XGE", "Slow"],
@@ -1045,6 +1057,18 @@
             "17": ["Control Winds|XGE", "Hold Monster"]
           }
         }
+      ],
+      "subclassSpells": [
+        "Earth Tremor|XGE",
+        "Faerie Fire",
+        "Hold Person",
+        "Maximilian's Earthen Grasp|XGE",
+        "Erupting Earth|XGE",
+        "Slow",
+        "Freedom of Movement",
+        "Wall of Fire",
+        "Control Winds|XGE",
+        "Hold Monster"
       ]
     },
     {
@@ -1064,13 +1088,25 @@
       "additionalSpells": [
         {
           "prepared": {
-            "3": ["Longstrider", "Zephyr Strike"],
+            "3": ["Longstrider", "Zephyr Strike|XGE"],
             "5": ["Blur", "Spider Climb"],
-            "9": ["Ashardalon's Stride", "Haste"],
+            "9": ["Ashardalon's Stride|FTD", "Haste"],
             "13": ["Dimension Door", "Freedom of Movement"],
-            "17": ["Far Step", "Steel Wind Strike"]
+            "17": ["Far Step|XGE", "Steel Wind Strike|XGE"]
           }
         }
+      ],
+      "subclassSpells": [
+        "Longstrider",
+        "Zephyr Strike|XGE",
+        "Blur",
+        "Spider Climb",
+        "Ashardalon's Stride|FTD",
+        "Haste",
+        "Dimension Door",
+        "Freedom of Movement",
+        "Far Step|XGE",
+        "Steel Wind Strike|XGE"
       ]
     }
   ],
