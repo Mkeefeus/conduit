@@ -62,7 +62,7 @@
       "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
       "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
       "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-      "A {@item primordial focus|TCP}"
+      "a {@item primordial focus|TCP}"
     ],
     "defaultData": [
       {

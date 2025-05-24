@@ -12,10 +12,6 @@
     "At 3rd level, you lean an additional spells when you reach certain levels in this class, as shown in the Primeval Soul Spells table.",
     "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the Conduit spell list, the spell is nonetheless a Conduit spell for you.",
     {
-      "type": "refSubclassFeature",
-      "subclassFeature": "Primeval Soul Spells|Conduit|TCP|Primeval Soul|TCP|3"
-    },
-    {
       "type": "table",
       "caption": "Branded Warrior Spells",
       "colLabels": ["Conduit Level", "Spell"],

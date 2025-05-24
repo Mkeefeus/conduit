@@ -1,5 +1,6 @@
 const prompt = require('prompt');
 const fs = require('fs');
+const jsonData = require('./TCP.json');
 
 const EXCLUDED_FOLDERS = ['node_modules', '.git', '.vscode', 'macros'];
 
@@ -38,7 +39,7 @@ prompt.get(
   {
     properties: {
       version: {
-        description: 'Enter new version number',
+        description: 'Enter new version number (Current: ' + jsonData._meta.sources[0].version + ')',
         type: 'string',
         pattern: /^\d+\.\d+\.\d+$/,
         message: 'Version must be in the format x.y.z where x, y, and z are numbers',
