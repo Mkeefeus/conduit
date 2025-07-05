@@ -11,7 +11,7 @@
   },
   "scripts": {
     "destructure": "bun run destructure.js && bun run format",
-    "build": "bun run build.js && bun run format",
+    "build": "bun run format && bun run build.js",
     "format": "prettier --write ."
   },
   "dependencies": {
